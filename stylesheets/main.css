@@ -64,11 +64,11 @@ ol, ul {
   font-size: 0.7em; }
 
 body {
-  -webkit-animation: fade-in 1.5s;
-  -moz-animation: fade-in 1.5s;
-  -ms-animation: fade-in 1.5s;
-  -o-animation: fade-in 1.5s;
-  animation: fade-in 1.5s;
+  -webkit-animation: fade-in 800ms;
+  -moz-animation: fade-in 800ms;
+  -ms-animation: fade-in 800ms;
+  -o-animation: fade-in 800ms;
+  animation: fade-in 800ms;
   background: #0B1F2A; }
 
 .content {
@@ -125,12 +125,18 @@ svg.logo:hover {
   0% {
     margin-left: -3%;
     opacity: 0; }
+  30% {
+    margin-left: -2%;
+    opacity: 0; }
   100% {
     margin-left: 0;
     opacity: 1; } }
 @-moz-keyframes slide-from-left {
   0% {
     margin-left: -3%;
+    opacity: 0; }
+  30% {
+    margin-left: -2%;
     opacity: 0; }
   100% {
     margin-left: 0;
@@ -139,12 +145,18 @@ svg.logo:hover {
   0% {
     margin-left: -3%;
     opacity: 0; }
+  30% {
+    margin-left: -2%;
+    opacity: 0; }
   100% {
     margin-left: 0;
     opacity: 1; } }
 @keyframes slide-from-left {
   0% {
     margin-left: -3%;
+    opacity: 0; }
+  30% {
+    margin-left: -2%;
     opacity: 0; }
   100% {
     margin-left: 0;
@@ -153,12 +165,18 @@ svg.logo:hover {
   0% {
     margin-right: -3%;
     opacity: 0; }
+  30% {
+    margin-right: -2%;
+    opacity: 0; }
   100% {
     margin-right: 0;
     opacity: 1; } }
 @-moz-keyframes slide-from-right {
   0% {
     margin-right: -3%;
+    opacity: 0; }
+  30% {
+    margin-right: -2%;
     opacity: 0; }
   100% {
     margin-right: 0;
@@ -167,12 +185,18 @@ svg.logo:hover {
   0% {
     margin-right: -3%;
     opacity: 0; }
+  30% {
+    margin-right: -2%;
+    opacity: 0; }
   100% {
     margin-right: 0;
     opacity: 1; } }
 @keyframes slide-from-right {
   0% {
     margin-right: -3%;
+    opacity: 0; }
+  30% {
+    margin-right: -2%;
     opacity: 0; }
   100% {
     margin-right: 0;
