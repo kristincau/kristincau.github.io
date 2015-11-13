@@ -5,7 +5,15 @@ observer.check()
   });
 
 $(document).ready(function() {
-	if ( $(window).width() > 468) {     
+	if ( $(window).width() > 468) {  
+			$(".image.--sketch").click(function() { 
+				if ($(this).hasClass('--large')){
+					$(this).removeClass('--large',200);
+				}
+				else{
+					$(this).addClass('--large',200);
+				}
+			})   
 			$(".project-item-container").hover(function() {
 				$(this).children(".project-title").addClass('project-title--toggle', 200);
 				$(this).children(".project-description").addClass('project-description--toggle', 200);
@@ -41,76 +49,12 @@ $(document).ready(function() {
 			// $(".project-nav--fixed").removeClass('project-nav--fixed').addClass('project-nav', 200);
 		}
 	})
+	if(window.location.href.indexOf("#thanks") > -1) {
+	    removeHidden('.text.--thanks');
+    	$("html, body").animate({ scrollTop: $(document).height() }, 300);
+    }
+
 });
-
-function swap_data(project_id, slide_id) {
-	var id = slide_id + (slide_id-1);
-	var arrow_id = id +1;	
-	$(".overview__nav__link .link--active").removeClass("link--active").addClass("link");
-	$(".overview__nav__link:nth-child("+id+") button").removeClass("link").addClass("link--active");
-	$(".overview__nav .icon--next.--emp").attr('class', '').attr('class', 'icon--next --deemp');
-	$(".overview__nav .icon--next:nth-child("+arrow_id+")").attr('class', '').attr('class', 'icon--next --emp');
-	var data = get_data(project_id, slide_id);
-	$(".overview__description .text-header").text(data[0]);
-	$(".overview__description .text-body").text(data[1]);
-	fix_next_link(project_id, slide_id);	
-	if (data[2] == 'img') {
-		if ($(".overview__image").hasClass('--video')) {
-			$(".overview__image").removeClass('--video');
-		}
-		$(".overview__image").fadeOut(200, function() { $(this).attr('src',data[3]).fadeIn(200) });;
-	}
-	else {
-		if (!$(".overview__image").hasClass('--video')) {
-			$(".overview__image").addClass('--video');
-		}
-		$(".overview__image").attr('src',data[3]);
-	}
-}
-
-function fix_next_link(project_id, slide_id){
-	$nextLink = $(".link--next");
-	var slide_limit = get_data_length(project_id);
-	var next_id = slide_id+1;
-	if (next_id > slide_limit) {
-		$nextLink.addClass('--hidden');
-		// $nextLink.attr("onclick","swap_data('"+project_id+"',1);").text('Back to the start<svg class="arrow--right"><use xlink:href="#arrow-icon"></use></svg>');
-	}
-	else {
-		if ($nextLink.hasClass('--hidden')) {
-			$nextLink.removeClass('--hidden');
-		}
-		$nextLink.attr("onclick","swap_data('"+project_id+"',"+next_id+");");
-	}
-}
-
-function toggle_section(){
-	var target = event.target;
-	var section = $(target).closest('p').next();
-	if (section.hasClass('--hidden')) {
-		section.removeClass('--hidden').addClass('--full', 250);		
-	}
-	else {
-		section.removeClass('--full', 250, function() {$(this).addClass('--hidden')});
-	}
-}
-
-// return raw_data[str title, str content, str type, str src;
-function get_data(project_id, slide_id) {
-	slide_id = slide_id-1;
-	var data_object = JSON.parse(project_data);
-	console.log(data_object.overview_data[project_id].length);
-	var raw_data = [data_object.overview_data[project_id][slide_id].title,
-									data_object.overview_data[project_id][slide_id].content,
-									data_object.overview_data[project_id][slide_id].type,
-									data_object.overview_data[project_id][slide_id].src]
-	return raw_data;
-}
-
-function get_data_length(project_id) {
-	var data_object = JSON.parse(project_data);
-	return data_object.overview_data[project_id].length;
-}
 
 function open_menu() {
 	$('.icon--menu').find("use").attr('xlink:href','#icon-close');
