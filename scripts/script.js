@@ -20,6 +20,8 @@ $(document).ready(function() {
 	}
 })	
 
+// link--active link--active--white
+
 function open_menu() {
 	$('.icon--menu').find("use").attr('xlink:href','#icon-close');
 	$('.icon--menu').attr('class','icon--close');

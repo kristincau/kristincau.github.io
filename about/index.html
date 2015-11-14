@@ -28,7 +28,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
 	<script src='../scripts/jquery-1.11.3.min.js'></script>	
 	<script src='../scripts/jquery-ui.min.js'></script>	
 	<script src='../scripts/fontfaceobserver.js'></script>
@@ -52,7 +52,7 @@
 	<nav>
 		<button onclick="open_menu()" class='link --menu'><svg class='icon--menu'><use xlink:href='#icon-menu'></use></svg></button>
 		<ul class='nav'>
-	  	<li class='nav__logo' ><a href="../index.html"><img src='/images/main-logo.svg'></a></li>
+	  	<li class='nav__logo' ><a href="../index.html"><img src='../images/main-logo.svg'></a></li>
 	  	<li class='nav__link' ><a class='link link--white' href="../#work">Work</a></li>
 	  	<li class='nav__link' ><a class='link link--white' href="../resume">R&#0233;sum&#0233;</a></li>
 	  	<li class='nav__link' ><a class='link--active link--active--white' href="/">About</a></li>
@@ -60,7 +60,7 @@
 	</nav>
 
 	<div class='content --about'>
-		<img class='img --about' src='../images/about_me.jpg'></br></br>
+		<img class='image --about' src='../images/about_me.jpg'></br></br>
 		
 		<h1 class='text-header --page'>About</h1>
 		<div class='section --text --about'>
@@ -93,7 +93,7 @@
 		<p class='text --error --content --hidden'>Are you sure you wrote me a message?</p>
 		<input type="button" class='button --about' value="E-Mail Me" onclick="hgsubmit();"> 
 		<input type="hidden" name="redirect" value="/about/index.html#thanks"> 
-<!-- 		<input type="hidden" name="redirect" value="http://www.kristinau.com/about#thanks">  -->
+		<input type="hidden" name="redirect" value="http://www.kristinau.com/about#thanks"> 
 		<p class='text --thanks --hidden'><b>Thank you for the message! I'll get back to you shortly.</b></p>
 		</form> 
 	</div>
