@@ -6,15 +6,6 @@ observer.check()
 
 $(document).ready(function() {
 	if ( $(window).width() > 468) {  
-		$(".project-item-container").hover(function() {
-			$(this).children(".project-title").addClass('project-title--toggle', 200);
-			$(this).children(".project-description").addClass('project-description--toggle', 200);
-			$(this).children(".project__bar").addClass('project__bar--toggle', 250); }, 
-			function() {
-				$(this).children(".project-title").removeClass('project-title--toggle', 200);
-				$(this).children(".project-description").removeClass('project-description--toggle', 200);
-				$(this).children(".project__bar").removeClass('project__bar--toggle', 200); }
-			);
 		$(window).scroll(function() {
 			if ($(window).scrollTop() > 35) {
 				$("nav .nav").addClass('--inverse', 200);

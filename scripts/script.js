@@ -5,18 +5,30 @@ observer.check()
   });
 
 $(document).ready(function() {
+	// var vh = $(window).height()*0.6;
 	if ( $(window).width() > 468) {     
-	$(".project-item-container").hover(function() {
-			$(this).children(".project-title").addClass('project-title--toggle', 200);
-			$(this).children(".project-description").addClass('project-description--toggle', 200);
-			$(this).children(".project__bar").addClass('project__bar--toggle', 250);
-			$(this).children(".thumb").addClass('thumb--toggle', 250);
-		}, function() {
-			$(this).children(".project-title").removeClass('project-title--toggle', 200);
-			$(this).children(".project-description").removeClass('project-description--toggle', 200);
-			$(this).children(".project__bar").removeClass('project__bar--toggle', 200);
-			$(this).children(".thumb--toggle").removeClass('thumb--toggle', 250);			
-		})
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 200) {
+				$("body").removeClass('home', 300);
+				$(".intro__name").attr('class','intro__name--inverse');
+				$(".intro__position").addClass('--inverse', 200);
+				$(".text-header.--page").removeClass('--white', 200);
+				$("nav .nav").addClass('--inverse', 200);
+				$(".nav__logo").attr('class', '').attr('class', 'nav__logo--fixed');		
+				$(".nav .nav__link .link--white").removeClass('link--white').addClass('link--inverse', 200);
+				$(".nav .nav__link .link--active--white").removeClass('link--active--white').addClass('link--active--inverse', 200);
+			}
+			else {
+				$("body").addClass('home', 300);			
+				$(".intro__name--inverse").attr('class','intro__name');
+				$(".intro__position").removeClass('--inverse', 200);					
+				$(".text-header.--page").addClass('--white', 200);
+				$("nav .nav").removeClass('--inverse', 200);			
+				$(".nav__logo--fixed").attr('class', '').attr('class', 'nav__logo');					
+				$(".nav .nav__link .link--inverse").removeClass('link--inverse').addClass('link--white', 200);
+				$(".nav .nav__link .link--active--inverse").removeClass('link--active--inverse').addClass('link--active--white', 200);
+			}
+		});
 	}
 })	
 
