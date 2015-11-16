@@ -475,7 +475,7 @@ p .link, p .link--active, p .nav .link:hover, .nav p .link:hover, p .button {
 nav {
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 98;
   width: 100%; }
 
 .icon--menu {
@@ -536,6 +536,43 @@ nav .nav.--inverse {
   border-bottom: 1px solid #c8c8c8;
   margin-top: -15px;
   height: 68px; }
+
+.nav__link:hover .container.--subnav {
+  visibility: visible;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=10); }
+
+.container.--subnav {
+  z-index: 99;
+  position: absolute;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  padding: 5px 0;
+  margin-left: -85px;
+  visibility: hidden;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0); }
+
+.subnav-item {
+  position: relative;
+  background: rgba(253, 253, 253, 0.9);
+  width: 100%;
+  padding: 8px;
+  text-align: right; }
+
+.link.--subnav, .--subnav.link--active, .nav .--subnav.link:hover, .--subnav.button {
+  font-weight: 400;
+  color: #868686;
+  font-size: 0.8em; }
+
+.link.--subnav:hover, .--subnav.link--active:hover, .--subnav.button:hover {
+  color: #e5ce21 !important;
+  border: none; }
 
 @media screen and (max-width: 486px) {
   nav {
