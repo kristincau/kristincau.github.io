@@ -678,6 +678,9 @@ body {
     margin: auto;
     background: none; }
 
+  .text--intro {
+    display: none; }
+
   .intro__name {
     width: 80%;
     min-width: initial;
