@@ -2354,6 +2354,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.95); }
 
 .intro h1 {
+  font-weight: 900;
   font-size: 2.125rem;
   line-height: 2rem;
   margin-top: 4rem;
@@ -2364,7 +2365,7 @@ ul {
 .intro h3 {
   font-size: 1rem;
   line-height: 2rem;
-  margin-top: 11rem;
+  margin-top: 9rem;
   padding-top: 0.833rem;
   padding-bottom: 0.167rem;
   margin-bottom: 0rem; }
@@ -2391,10 +2392,30 @@ header h1 {
 header h3 {
   font-size: 1rem;
   line-height: 2rem;
-  margin-top: 8rem;
+  margin-top: 6rem;
   padding-top: 0.833rem;
   padding-bottom: 0.167rem;
   margin-bottom: 0rem; }
+
+header.about h1 {
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  padding-top: 0.19525rem;
+  padding-bottom: 0.30475rem;
+  margin-bottom: -0.5rem; }
+
+header.about p {
+  font-family: "Nimbus Sans", sans-serif;
+  font-weight: 300;
+  color: #626468;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  padding-top: 0.2495rem;
+  padding-bottom: 0.2505rem;
+  margin-bottom: 7.5rem; }
 
 .project-list__project {
   margin: 0 0 64px 0;
@@ -2537,6 +2558,18 @@ header h3 {
   padding-top: 0.58262rem;
   padding-bottom: 0.41738rem;
   margin-bottom: 2rem; }
+
+.about__link {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: -0.5rem;
+  padding-top: 0.433rem;
+  padding-bottom: 0.067rem;
+  margin-bottom: 0rem; }
+
+.about__body div:last-child {
+  margin-bottom: 16px; }
 
 footer {
   background-color: #FAF5F3;

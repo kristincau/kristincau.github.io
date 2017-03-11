@@ -1,0 +1,13 @@
+.about__link {
+	display: block;
+	@include plumber(		
+		$baseline: $accent-baseline,
+		$grid-height: 0.5rem,
+    	$line-height: 3,
+		$font-size: 2
+	);
+}
+
+.about__body div:last-child {
+	margin-bottom: 16px;
+}
