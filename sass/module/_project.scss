@@ -1,0 +1,102 @@
+//Project Subnav
+.project__subnav {
+	padding-top: 48px;
+}
+
+.subnav__link {
+	display: block;
+	font-family: $font-sans;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: $type-lightgrey;
+	@include plumber(
+		$baseline: $sans-baseline,
+		$font-size: .85
+	);
+	@include transition(50ms);
+}
+
+.subnav__link:hover {
+	color: $dark-orange;
+}
+
+.subnav__link--active {
+	font-weight: 400;
+	color: $dark-orange;
+}
+
+//Project Body
+.project__body h2 {
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+		$leading-top: 3,
+		$leading-bottom: 1
+	);	
+}
+
+.project__body p {
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.125,
+		$leading-bottom: 1
+	);
+}
+
+.project__body ol li {
+	font-family: $font-serif;
+	font-weight: 600;
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.125
+	);
+}
+
+//Project Images
+.project__body img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 32px;	
+	border-radius: 2px;
+	// display: none;
+}
+
+.row__img {
+	margin-bottom: 32px;
+	width: 121%
+}
+
+
+//Project End
+.project__end {
+	margin-bottom: 64px;
+}
+
+.project__end:before {
+    content: '';
+    width: 8.33% * 3;
+    border-bottom: solid 1px $med-orange;
+    display:block;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.project__end h2 {
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+		$leading-top: 4
+	);	
+}
+
+.project__end p {
+	font-family: $font-serif;
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.125,
+		$leading-bottom: 2
+	);	
+}
+
+

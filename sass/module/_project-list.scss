@@ -1,0 +1,50 @@
+.project-list__project {
+	margin: 0 0 64px 0;
+	padding: 0 !important;
+	//height: 332px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 16px rgba(0,0,0,.15);
+	@include transition(300ms);
+}
+
+.project-list__project:hover {
+	box-shadow: 8px 8px 32px rgba(0,0,0,.15);
+}
+
+.project-list__project div {
+	padding: 0;
+}
+
+.project-list__project h2 {
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+		$leading-top: 2,
+		$leading-bottom: 2
+	);
+}
+
+.project-list__project h3 {
+	@include plumber(
+		$baseline: $sans-baseline,
+		$font-size: 1,
+		$leading-top: 4
+	);
+}
+
+.project-list__project p {
+	font-family: $font-sans;
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 0.75px;
+	color: $type-grey;
+	@include plumber(
+		$baseline: $sans-baseline,
+		$font-size: 1,
+		$leading-bottom: 4
+	);
+}
+
+.project-list__project .image {
+	background-image: url(../images/ab-splash.png);
+}

@@ -1,0 +1,62 @@
+.navbar--intro {
+	margin-top: 176px;
+}
+
+.navbar--intro .navbar__item {
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1,
+		$leading-bottom: 3
+	);
+}
+
+.navbar--intro .name {
+	font-family: $font-accent;
+	color: $type-lightgrey;
+	font-weight: 900;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+		$leading-bottom: 3
+	);
+}
+
+.navbar {
+	width: 100%;
+	//padding-top: 16px;	
+	
+}
+
+.navbar .navbar__item {
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1,
+		$leading-top: 1
+	);
+}
+
+.navbar .name {
+	font-family: $font-accent;
+	color: $type-lightgrey;
+	font-weight: 900;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+		$leading-top: 1
+	);
+}
+
+.headhesive {
+	position: fixed;                   /* fix the element */
+	top: 0;                            /* make sure it's at the top */
+	transform: translateY(-100%);      /* move it off screen */
+	@include transition(200ms); /* add animation */
+	z-index: 99;
+}
+
+.headhesive--stick {
+	transform: translateY(0%); /* move it back on screen */
+	box-shadow: 2px 2px 8px rgba(0,0,0,.10);
+	background-color: rgba(255,255,255,.95);
+}
+

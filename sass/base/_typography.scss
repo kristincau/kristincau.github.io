@@ -1,0 +1,116 @@
+// .text { font-family: $font-primary; }
+// .link, .project-description, .error--404, .text--copyright, .caption, .input, .project-text__type { font-family: $font-link; }
+// .intro__easteregg, .intro__position, .text-header--project, .text--intro { font-family: $font-accent; }
+// .project-text__title, .project-title, .text-header, .error--title { font-family: $font-project; }
+
+// .fonts-loaded .text { font-family: $font-primary-loaded; }
+// .fonts-loaded .link, .fonts-loaded .project-description, .fonts-loaded .error--404, .fonts-loaded .text--copyright, .fonts-loaded .caption, .fonts-loaded .input, .fonts-loaded .project-text__type { font-family: $font-link-loaded; }
+// .fonts-loaded .intro__easteregg, .fonts-loaded .intro__position, .fonts-loaded .text-header--project, .fonts-loaded .text--intro { font-family: $font-accent-loaded; }
+// .fonts-loaded .project-text__title, .fonts-loaded .project-title, .fonts-loaded .text-header, .fonts-loaded .error--title { font-family: $font-project-loaded; }
+
+@include plumber-set-defaults(
+    $grid-height: 1rem,
+    $line-height: 2,
+    $leading-top: 0,
+    $leading-bottom: 0
+);
+
+
+h1, h2, h3, h4, h5, h6, p, nav, ul {
+	color: $black;
+}
+
+a {
+	font-family: $font-accent;
+	font-weight: 600;
+	color: $type-lightgrey;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1,
+		$leading-top: 1
+	);
+	@include transition(200ms);
+}
+
+a:hover {
+	color: $type-grey;
+}
+
+h1 {
+	font-family: $font-accent;
+	font-weight: 600;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5,
+	    $leading-top: 1,
+	    $leading-bottom: 2
+	);	
+}
+
+
+h2 {
+	font-family: $font-accent;
+	font-weight: 600;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.5
+	);	
+}
+
+
+h3 {
+	font-family: $font-sans;
+	text-transform: uppercase;
+	display: inline-block;        
+	letter-spacing: .75px;
+	font-weight: 200;
+	color: $type-grey;
+	@include plumber(
+		$baseline: $sans-baseline,
+		$font-size: 1
+	);
+}
+.weight--heavy {
+	font-weight: 600;	
+	color: $type-grey;
+}
+
+
+h4 {
+	font-family: $font-accent;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	font-weight: 600;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1,
+		$leading-top: 1    	
+	);	
+}
+
+.clr-md-org {
+	color: $med-orange;
+}
+
+
+p {
+	font-family: $font-serif;
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.25
+	);
+}
+
+ul {
+	font-family: $font-sans;
+	color: $type-grey;
+	@include plumber(
+		$baseline: $sans-baseline,
+		$font-size: 1,
+		$leading-top: 0
+	);
+}
+
+
+
+

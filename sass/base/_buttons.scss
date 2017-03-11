@@ -1,0 +1,42 @@
+.btn {
+	background-color: $dark-orange;
+	border-radius: 8px;
+	@include transition(200ms);
+}
+
+.btn:first-child {
+	margin-left: 24px;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.btn h4 {
+	color: $white;
+	text-align: center;
+	letter-spacing: 2px;
+	@include plumber(
+		$grid-height: 0.5rem,
+		$baseline: $accent-baseline,
+		$font-size: 1.85,
+		$line-height: 4,
+		$leading-top: 1
+	);
+}
+
+.btn p.tag {
+	font-family: $font-sans;
+	color: $orange-2!important;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 100;
+	@include plumber(
+		$grid-height: 0.5rem,
+		$baseline: $sans-baseline,
+		$font-size: 1.7,
+		$line-height: 3,
+		$leading-bottom: 2
+	);
+}

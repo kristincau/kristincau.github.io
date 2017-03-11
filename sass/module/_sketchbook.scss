@@ -1,0 +1,29 @@
+.image--sb { object-fit: contain;}
+.sb-row { margin: 8% 0;}
+
+.section--head--sketchbook{ padding: 8% 0 6% 0; }
+.section--sketchbook{ padding: 0 10% 10% 10%; }
+.text--sketchbook, .text-header--sketchbook{ text-align: center; }
+
+#pretty {  width: 35%; margin-left: 28%; }
+#nadia, #dock, #stephgabe { width: 53%;}
+#ducks, #road { width: 42%; }
+#road {margin-top: -16%;}
+#dragon { width: 30%; margin-top: -5%; margin-right: 3%;}
+#tiffany, #attic { width: 42% ;}
+.flex--renders { @include justify-content(space-around);}
+
+@media screen and (min-width:486px) and (max-width:768px) {
+	.section--sketchbook{ padding: 0 5% 10% 5%; }
+}
+
+@media screen and (max-width:486px) {
+	.section--sketchbook{ padding: 0 0 10% 0; }
+	.flex--sb-row, .flex--renders {
+	}
+
+	#pretty {width: 70%; margin: 5% 15%;}
+	#nadia, #ducks, #road, #tiffany, #attic  { width: 90%; margin: 5%;}
+	#dock, #stephgabe { width: 100%; margin: 5% 0;}
+	#dragon {width: 50%; margin: 5% 25%;}
+}
