@@ -6,8 +6,13 @@
 	@include plumber(
 		$baseline: $accent-baseline,
 		$font-size: 1,
-		$leading-bottom: 3
+		$leading-bottom: 2
 	);
+}
+
+.navbar__item--active {
+	@extend .navbar__item;
+	color: $black;
 }
 
 .navbar--intro .name {
@@ -17,7 +22,7 @@
 	@include plumber(
 		$baseline: $accent-baseline,
 		$font-size: 1.5,
-		$leading-bottom: 3
+		$leading-bottom: 2
 	);
 }
 

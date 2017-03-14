@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, nav, ul {
 
 a {
 	font-family: $font-accent;
-	font-weight: 600;
+	font-weight: 500;
 	color: $type-lightgrey;
 	@include plumber(
 		$baseline: $accent-baseline,
@@ -62,7 +62,7 @@ h3 {
 	font-family: $font-sans;
 	text-transform: uppercase;
 	display: inline-block;        
-	letter-spacing: .75px;
+	letter-spacing: 1.8px;
 	font-weight: 200;
 	color: $type-grey;
 	@include plumber(
@@ -79,7 +79,7 @@ h3 {
 h4 {
 	font-family: $font-accent;
 	text-transform: uppercase;
-	letter-spacing: 0.07em;
+	letter-spacing: 2px;
 	font-weight: 600;
 	@include plumber(
 		$baseline: $accent-baseline,

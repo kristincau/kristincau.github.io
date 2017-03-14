@@ -30,10 +30,12 @@
 //Standard project headers
 header h1 {
 	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.5,
-		$leading-top: 3,
-		$leading-bottom: 10
+		$baseline: $accent-baseline,		
+		$grid-height: 0.5rem,
+		$font-size: 3,
+		$line-height: 5,
+		$leading-top: 5,
+		$leading-bottom: 28
 	);
 }
 
@@ -41,9 +43,50 @@ header h3 {
 	@include plumber(
 		$baseline: $sans-baseline,
 		$font-size: 1,
-		$leading-top: 7
+		$leading-top: 10
 	);
 }
+
+.header__image {
+	width: auto;
+	height: 600px;
+		background-color: $color-ab;
+	margin-left: -160px;
+	margin-bottom: 24px;
+	margin-top: 8px;
+	padding: 16px;
+	// -moz-box-shadow:    inset 0 0 10px #000000;
+ //   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 16px #000000;
+   -webkit-clip-path: polygon(280px 0, 0 90%, 100% 90%, 100% 0);
+}
+
+// .box .inner{
+// 	-moz-transform:rotate(30deg);
+// 	-webkit-transform:rotate(30deg);
+// 	-o-transform:rotate(30deg);
+// 	width:60vw;
+// 	height:1000px;
+// 	margin-top:-160px;
+// 	margin-left:160px;
+// 	overflow:hidden;
+// 	background-color: $color-ab;
+// 	box-shadow:         inset 0 0 16px #000000;
+// 	// float:right;
+// }
+// .box .inner .content{
+// 	-moz-transform:rotate(-30deg);
+// 	-webkit-transform:rotate(-30deg);
+// 	-o-transform:rotate(-30deg);
+// 	width:30vw;
+// 	height:auto;
+// 	margin-top:200px;
+// 	margin-left:-200px;
+// 	// overflow:hidden;
+// 	background-color: $color-ab;
+
+// }
+
 
 //About page header
 header.about h1 {
