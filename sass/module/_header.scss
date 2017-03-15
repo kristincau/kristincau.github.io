@@ -19,22 +19,40 @@
 }
 
 .intro h3 {
-	@include plumber(	
-		$baseline: $sans-baseline,
-		$font-size: $size-h3,    
-	    $leading-top: 10
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(	
+			$baseline: $sans-baseline,
+			$font-size: $size-h3,    
+		    $leading-top: 10
+		);
+	}
+	@include for-phone-only {
+		@include plumber(	
+			$baseline: $sans-baseline,
+			$font-size: $size-h3-mobile,    
+		    $leading-top: 10
+		);
+	}
 }
 
 .intro p {
 	font-family: $font-sans;
 	font-weight: 300;
 	color: $type-grey;
-	@include plumber(
-		$baseline: $sans-baseline,
-		$font-size: 1.5,
-		$leading-top: 3
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $sans-baseline,
+			$font-size: 1.5,
+			$leading-top: 3
+		);	
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $sans-baseline,
+			$font-size: 1.5,
+			$leading-top: 2
+		);
+	}
 }
 
 //Standard project headers
@@ -68,7 +86,7 @@ header h3 {
 		@include plumber(
 			$baseline: $sans-baseline,
 			$font-size: $size-h3,
-			$leading-top: 10
+			$leading-top: 8
 		);
 	}
 	@include for-phone-only {
@@ -76,7 +94,7 @@ header h3 {
 		@include plumber(
 			$baseline: $sans-baseline,
 			$font-size: 1,
-			$leading-top: 2
+			$leading-top: 3
 		);
 	}
 

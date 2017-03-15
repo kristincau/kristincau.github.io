@@ -1,4 +1,10 @@
 //Sketchbook header
+.sketch__header h3 {
+	@include for-phone-only {
+		display: none;
+	}
+}
+
 header.sketch__header h1 {
 	font-weight: 900;
 	@include plumber(
@@ -25,7 +31,9 @@ header.sketch__header p {
 }
 
 .sketch__body {
-	margin-bottom: 48px;
+	@include for-tablet-portrait-up {
+		margin-bottom: 48px;	
+	}
 }
 
 .sketch__header img {
@@ -34,15 +42,28 @@ header.sketch__header p {
 }
 
 .sketch__body img {
-	margin: 32px 0;
+	@include for-phone-only {
+		width: 100%;
+		margin: 32px 0;
+	}
+}
+
+.sketch__body img {
+	@include for-tablet-portrait-up {
+		margin: 32px 0;
+	}
 }
 
 .ht-420 img {
-	height: 420px;
-	width: auto;
+	@include for-tablet-portrait-up {
+		height: 420px;
+		width: auto;
+	}
 }
 
 .ht-320 img {
-	height: 320px;
-	width: auto;
+	@include for-tablet-portrait-up {
+		height: 320px;
+		width: auto;
+	}
 }

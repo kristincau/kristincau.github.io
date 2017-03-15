@@ -15,44 +15,87 @@ footer h2{
 
 footer h4{
 	color: $type-grey;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-		$font-size: $size-h4-2x,
-		$leading-top: 5,	
-		$leading-bottom: 3	
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+			$font-size: $size-h4-2x,
+			$leading-top: 5,	
+			$leading-bottom: 3	
+		);
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+			$font-size: $size-h4-2x-mobile,
+			$leading-top: 5,	
+			$leading-bottom: 3	
+		);
+	}
 }
 
 footer p {
 	font-family: $font-sans;
 	color: $type-grey;
-	@include plumber(		
-		$baseline: $sans-baseline,
-		$grid-height: 0.5rem,
-    	$line-height: 3,
-		$font-size: 2,
-		$leading-top: 1
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $sans-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 3,
+			$font-size: 2,
+			$leading-top: 1
+		);
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $sans-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 4,
+			$font-size: 2.5,
+			$leading-top: 1
+		);		
+	}
 }
 
 footer a {
 	display: block;
-	@include plumber(		
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-    	$line-height: 3,
-		$font-size: 2
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 3,
+			$font-size: 2
+		);
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 4,
+			$font-size: $size-nav-mobile*2
+		);
+	}
 }
 
 .footer__biolink {
-	@include plumber(		
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-		$font-size: 2,
-		$leading-top: 2
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+			$font-size: 2,
+			$leading-top: 2
+		);		
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 4,
+	    	$leading-top: 2,
+			$font-size: $size-nav-mobile*2
+		);
+	}
 }
 
 footer .copyright {

@@ -1,4 +1,10 @@
 //About page header
+header.about h3 {
+	@include for-phone-only {
+		display: none;
+	}
+}
+
 header.about h1 {
 	font-weight: 900;
 	@include plumber(

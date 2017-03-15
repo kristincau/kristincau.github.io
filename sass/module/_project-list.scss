@@ -63,11 +63,20 @@
 }
 
 .project-list__project h3 {
-	@include plumber(
-		$baseline: $sans-baseline,
-		$font-size: $size-h3,
-		$leading-top: 4
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $sans-baseline,
+			$font-size: $size-h3,
+			$leading-top: 4
+		);
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $sans-baseline,
+			$font-size: $size-h3-mobile,
+			$leading-top: 4
+		);
+	}
 }
 
 .project-list__project p {

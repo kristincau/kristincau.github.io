@@ -1,30 +1,71 @@
 .navbar--intro {
-	margin-top: 200px;
+	@include for-tablet-portrait-up{
+		margin-top: 200px;	
+	}
+	@include for-phone-only {
+		margin-top: 120px;
+	}
 }
 
-.navbar--intro .navbar__item {
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1,
-		$leading-bottom: 2
-	);
+.navbar__item {
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: $size-nav-desktop,
+			$leading-bottom: 1,
+			$leading-top: 1
+		);
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: $size-nav-mobile,
+			$leading-bottom: 1
+		);
+	}
+	
+}
+
+.name {
+	font-family: $font-accent;
+	color: $type-lightgrey;
+	font-weight: 500;
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 1.5,
+			$leading-top: 1, 
+			$leading-bottom: 1
+		);
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 1.5,
+			$leading-top: 2,
+			$leading-bottom: 1
+		);
+	}
 }
 
 .navbar__item--active {
 	@extend .navbar__item;
 	color: $black;
+	font-weight: 600;
+}
+.navbar__item--active:after {
+	content: '';
+	border-bottom: 3px solid $black;
+	display: block;
+	@include for-tablet-portrait-up {
+		width: 120%;
+	}
+	@include for-phone-only {
+		width: 50%;
+		margin-left: 25%;	
+	}
 }
 
-.navbar--intro .name {
-	font-family: $font-accent;
-	color: $type-lightgrey;
-	font-weight: 500;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.5,
-		$leading-bottom: 2
-	);
-}
 
 .navbar {
 	width: 100%;
@@ -32,24 +73,6 @@
 	
 }
 
-.navbar .navbar__item {
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1,
-		$leading-top: 1
-	);
-}
-
-.navbar .name {
-	font-family: $font-accent;
-	color: $type-lightgrey;
-	font-weight: 500;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.5,
-		$leading-top: 1
-	);
-}
 
 .headhesive {
 	position: fixed;                   /* fix the element */
@@ -63,5 +86,6 @@
 	transform: translateY(0%); /* move it back on screen */
 	box-shadow: 2px 2px 8px rgba(0,0,0,.10);
 	background-color: rgba(255,255,255,.95);
+	border-bottom: none;
 }
 
