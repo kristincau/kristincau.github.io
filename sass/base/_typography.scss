@@ -62,12 +62,12 @@ h3 {
 	font-family: $font-sans;
 	text-transform: uppercase;
 	display: inline-block;        
-	letter-spacing: 0.09375rem;
+	letter-spacing: 0.0625rem;
 	font-weight: 200;
 	color: $type-grey;
 	@include plumber(
 		$baseline: $sans-baseline,
-		$font-size: 1
+		$font-size: $size-h3
 	);
 }
 .weight--heavy {
@@ -79,11 +79,11 @@ h3 {
 h4 {
 	font-family: $font-accent;
 	text-transform: uppercase;
-	letter-spacing: 0.125rem;
+	letter-spacing: 0.05rem;
 	font-weight: 600;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 1,
+		$font-size: 0.875,
 		$leading-top: 1    	
 	);	
 }

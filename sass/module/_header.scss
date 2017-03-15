@@ -1,17 +1,27 @@
 //Intro (Home) Headers
 .intro h1 {
 	font-weight: 700;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 2.5,
-		$leading-top: 8
-	);
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 3.5,
+			$leading-top: 8
+		);
+	}
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 2,
+			$leading-top: 8
+		);
+	}
+	
 }
 
 .intro h3 {
 	@include plumber(	
 		$baseline: $sans-baseline,
-		$font-size: 1,    
+		$font-size: $size-h3,    
 	    $leading-top: 10
 	);
 }
@@ -23,7 +33,7 @@
 	@include plumber(
 		$baseline: $sans-baseline,
 		$font-size: 1.5,
-		$leading-top: 2
+		$leading-top: 3
 	);
 }
 
@@ -57,8 +67,8 @@ header h3 {
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $sans-baseline,
-			$font-size: 1,
-			$leading-top: 8
+			$font-size: $size-h3,
+			$leading-top: 10
 		);
 	}
 	@include for-phone-only {
@@ -71,105 +81,3 @@ header h3 {
 	}
 
 }
-// .header__body {
-// 	position: relative;
-// }
-.header__image--mobile-ab {
-	// position: absolute;
-	// top: 0;
-	// left:0;
-	@include for-phone-only {
-		// display: visible;
-		max-width: 140% !important;
-		margin-bottom: -80%;
-		margin-left: -20%;
-		z-index: 0;
-		// -webkit-filter: brightness(50%); 
-	}
-	@include for-tablet-portrait-up {
-		display: none;
-	}
-	// display: none;
-
-	// background:  linear-gradient(
- //      rgba(20, 20, 26, 0.6), 
- //      rgba(20, 20, 26, 0.6)
- //    ),
- //    url(../images/ab-00-splash.png);
- //    width: 100vw;
-}
-
-.header__image--mobile-ab:before {
-	// position: absolute;
-	// top: 0;
-	// left:0;
-	@include for-phone-only {
-		// display: visible;
-		content: '';
-		width: 100px;
-		height: 100px;
-		background: rgba(20, 20, 26, 0.6);
-		// -webkit-filter: brightness(50%); 
-	}
-	@include for-tablet-portrait-up {
-		display: none;
-	}
-	// display: none;
-
-	// background:  linear-gradient(
- //      rgba(20, 20, 26, 0.6), 
- //      rgba(20, 20, 26, 0.6)
- //    ),
- //    url(../images/ab-00-splash.png);
- //    width: 100vw;
-}
-
-.header__image {
-	@include for-tablet-portrait-up {
-		width: 800px;
-		height: 560px;
-		margin-left: -160px;
-		margin-bottom: 24px;
-		margin-top: 8px;
-	   -webkit-clip-path: polygon(280px 0, 0 100%, 100% 100%, 100% 0);	
-	}
-	@include for-phone-only {
-		display: none;	
-	}
-	
-}
-
-.white-sm {
-	@include for-phone-only {
-		color: $white !important;
-	}
-}
-
-// .box .inner{
-// 	-moz-transform:rotate(30deg);
-// 	-webkit-transform:rotate(30deg);
-// 	-o-transform:rotate(30deg);
-// 	width:60vw;
-// 	height:1000px;
-// 	margin-top:-160px;
-// 	margin-left:160px;
-// 	overflow:hidden;
-// 	background-color: $color-ab;
-// 	box-shadow:         inset 0 0 16px #000000;
-// 	// float:right;
-// }
-// .box .inner .content{
-// 	-moz-transform:rotate(-30deg);
-// 	-webkit-transform:rotate(-30deg);
-// 	-o-transform:rotate(-30deg);
-// 	width:30vw;
-// 	height:auto;
-// 	margin-top:200px;
-// 	margin-left:-200px;
-// 	// overflow:hidden;
-// 	background-color: $color-ab;
-
-// }
-
-
-

@@ -1,7 +1,7 @@
 .project-list__project {
 	margin: 0 0 48px 0;
 	padding: 0 !important;
-	border-radius: 8px;
+	border-radius: 2px;
 	overflow: hidden;
 	box-shadow: 4px 4px 16px rgba(0,0,0,.3);
 	@include transition(300ms);
@@ -65,7 +65,7 @@
 .project-list__project h3 {
 	@include plumber(
 		$baseline: $sans-baseline,
-		$font-size: 1,
+		$font-size: $size-h3,
 		$leading-top: 4
 	);
 }

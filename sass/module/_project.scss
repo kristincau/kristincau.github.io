@@ -1,6 +1,13 @@
 //Project Subnav
 .project__subnav {
-	padding-top: 48px;
+	@include for-tablet-portrait-up {
+		padding-top: 48px;		
+	}
+	@include for-phone-only {
+		display: none !important;
+	}
+
+
 }
 
 .subnav__link {
@@ -28,6 +35,53 @@
 .project {
 	margin-bottom: 32px;
 }
+
+//Project Header Image
+.header__image--mobile-ab {
+	@include for-phone-only {
+		max-width: 140% !important;
+		margin-bottom: -80%;
+		margin-left: -20%;
+		z-index: 0;
+	}
+	@include for-tablet-portrait-up {
+		display: none;
+	}
+}
+
+.header__image--mobile-ab:before {
+	@include for-phone-only {
+		content: '';
+		width: 100px;
+		height: 100px;
+		background: rgba(20, 20, 26, 0.6); 
+	}
+	@include for-tablet-portrait-up {
+		display: none;
+	}
+}
+
+.header__image {
+	@include for-tablet-portrait-up {
+		width: 800px;
+		height: 560px;
+		margin-left: -120px;
+		margin-bottom: 24px;
+		margin-top: 8px;
+	   -webkit-clip-path: polygon(280px 0, 0 100%, 100% 100%, 100% 0);	
+	}
+	@include for-phone-only {
+		display: none;	
+	}
+	
+}
+
+.white-sm {
+	@include for-phone-only {
+		color: $white !important;
+	}
+}
+
 
 //Project Body
 .project__body h2 {

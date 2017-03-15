@@ -2,10 +2,15 @@
 	background-color: $dark-orange;
 	border-radius: 8px;
 	@include transition(200ms);
+	@include for-phone-only {
+		margin-bottom: 32px;
+	}
 }
 
 .btn:first-child {
-	margin-left: 24px;
+	@include for-tablet-portrait-up {
+		margin-left: 24px;		
+	}	
 }
 
 .btn:hover {

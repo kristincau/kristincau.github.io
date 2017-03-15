@@ -7,7 +7,7 @@ $grid-columns: 12 !default;
 // Set the gutter between columns.
 $gutter-width: 48px !default;
 // Set a margin for the container sides.
-$outer-margin: 0 !default;
+$outer-margin: 24px !default;
 // Create or remove breakpoints for your project
 // Syntax:
 // name SIZErem,
@@ -228,10 +228,6 @@ $name: xs;
 
     .last-#{$name} {
       order: 1;
-    }
-
-    .hidden-#{$name} {
-      display: none !important;
-    }
+    }  
   }
 }
