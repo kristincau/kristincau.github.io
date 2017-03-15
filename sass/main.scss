@@ -1,11 +1,12 @@
+// Helpers
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/breakpoints";
+
 // Vendor
 @import "vendor/flex";
 @import "vendor/plumber";
 @import "vendor/flexboxgrid";
-
-// Helpers
-@import "helpers/mixins";
-@import "helpers/variables";
 
 // Base
 @import "base/reset";
@@ -15,12 +16,12 @@
 
 // Module
 // @import "module/home";
-// @import "module/sketchbook";
 // @import "module/error";
 @import "module/nav";
 @import "module/header";
 @import "module/project-list";
 @import "module/project";
+@import "module/sketch";
 @import "module/about";
 @import "module/footer";
 

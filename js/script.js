@@ -3,14 +3,15 @@ $(window).load(function() {
   var navdiff = $('#subnav').height()- ($('.project__body p').last().height()+$('.project__body h2').last().height());
   if (navdiff > 0 ) {
     navdiff = Math.ceil(navdiff/16)*16;
-    console.log(navdiff);
+    // console.log(navdiff);
     $('.project__body p').last().css('margin-bottom','+'+navdiff+'px');
   }
 
-  $("#ab__comparison").twentytwenty();
+  $("#comparison").twentytwenty();
   var header = new Headhesive('.navbar');
 
-  var bottomHeight = Math.ceil(($('footer').height()+$('.project__end').height())/16)*16+$('.project__body p').last().height()+32;
+  var bottomHeight = $('footer').outerHeight()+$('.project__end').outerHeight()+96+32;
+
   $("#subnav").sticky({topSpacing:80, bottomSpacing: bottomHeight});
 
   var subnav = $('#subnav');

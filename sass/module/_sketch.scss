@@ -1,5 +1,5 @@
-//About page header
-header.about h1 {
+//Sketchbook header
+header.sketch__header h1 {
 	font-weight: 900;
 	@include plumber(
 		$grid-height: 0.5rem,
@@ -10,7 +10,7 @@ header.about h1 {
 	);
 }
 
-header.about p {
+header.sketch__header p {
 	font-family: $font-sans;
 	font-weight: 300;
 	color: $type-grey;
@@ -24,16 +24,25 @@ header.about p {
 	);
 }
 
-.about__link {
-	display: block;
-	@include plumber(		
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-    	$line-height: 3,
-		$font-size: 2
-	);
+.sketch__body {
+	margin-bottom: 48px;
 }
 
-.about__body div:last-child {
-	margin-bottom: 16px;
+.sketch__header img {
+	width: 100%;
+	margin: 32px 0;
+}
+
+.sketch__body img {
+	margin: 32px 0;
+}
+
+.ht-420 img {
+	height: 420px;
+	width: auto;
+}
+
+.ht-320 img {
+	height: 320px;
+	width: auto;
 }

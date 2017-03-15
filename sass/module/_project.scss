@@ -25,6 +25,10 @@
 	color: $dark-orange;
 }
 
+.project {
+	margin-bottom: 32px;
+}
+
 //Project Body
 .project__body h2 {
 	@include plumber(

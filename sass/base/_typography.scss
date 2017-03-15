@@ -26,7 +26,7 @@ a {
 	color: $type-lightgrey;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 1,
+		$font-size: 1.1,
 		$leading-top: 1
 	);
 	@include transition(200ms);
@@ -62,7 +62,7 @@ h3 {
 	font-family: $font-sans;
 	text-transform: uppercase;
 	display: inline-block;        
-	letter-spacing: 1.8px;
+	letter-spacing: 0.09375rem;
 	font-weight: 200;
 	color: $type-grey;
 	@include plumber(
@@ -79,7 +79,7 @@ h3 {
 h4 {
 	font-family: $font-accent;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
 	font-weight: 600;
 	@include plumber(
 		$baseline: $accent-baseline,

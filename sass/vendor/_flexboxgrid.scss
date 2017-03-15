@@ -12,10 +12,12 @@ $outer-margin: 0 !default;
 // Syntax:
 // name SIZErem,
 $breakpoints:
-  sm 33.29em 37.49rem,
-  md 33.3em 37.5rem,
-  lg 67em 75rem !default;
-$flexboxgrid-max-width: 960px !default;
+  sm 33.29em 37.49rem 35rem,
+  md 33.3em 37.5rem 40rem,
+  lg 67em 75rem 70rem !default;
+$flexboxgrid-phone-max-width: 320px !default;
+$flexboxgrid-tablet-max-width: 800px !default;
+$flexboxgrid-desktop-max-width: 960px !default;
 
 //
 // -- Stop editing -- //
@@ -25,9 +27,17 @@ $gutter-compensation: $gutter-width * .5 * -1;
 $half-gutter-width: $gutter-width * .5;
 
 .wrapper {
-  box-sizing: border-box;
-  max-width: $flexboxgrid-max-width;
+  box-sizing: border-box;  
   margin: 0 auto;
+  @include for-phone-only {
+    max-width: $flexboxgrid-phone-max-width;
+  }
+  @include for-tablet-portrait-up {
+    max-width: $flexboxgrid-tablet-max-width;
+  }
+  @include for-desktop-up {
+    max-width: $flexboxgrid-desktop-max-width;
+  }
 }
 
 .container-fluid {
@@ -172,7 +182,6 @@ $name: xs;
       @include justify-content(flex-start);
       text-align: start;
     }
-
     .center-#{$name} {
       @include justify-content(center);
       text-align: center;
