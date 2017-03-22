@@ -134,6 +134,7 @@
 }
 
 .project__body p {
+	font-family: $font-serif;
 	@include plumber(
 		$baseline: $serif-baseline,
 		$font-size: 1.125,

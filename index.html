@@ -23,6 +23,7 @@
 
 	
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">	
+	<!-- <link rel="stylesheet" href="http://basehold.it/16/54B088"> -->
 	<!-- <link rel="stylesheet" href="http://basehold.it/8/54B088"> -->
 
 	<!--<script src='scripts/jquery-1.11.3.min.js'></script>	
@@ -37,46 +38,52 @@
 </head>
 
 <body>
-	<header class='intro wrapper container'>
-		<h3 class='weight--heavy'>Kristin Au&nbsp;</h3><h3>/ Product Designer</h3>
-		<h1>Sweat the big picture&mdash;</h1>
-		<p>and then sweat the details.</p>
+	<header>
+		<div class='intro__container'>
+			<div class='intro wrapper container-fluid'>
+				<h5>Kristin Au, Product Designer</h5>
+				<h1>Sweat the big picture&mdash;</h1>
+			</div>
+		</div>
+		<div class='intro wrapper container-fluid'>
+			<p>and then sweat the details.</p>
+		</div>
 	</header>
 
-	<nav class='navbar--intro wrapper container'>
-		<div class='row'>
-			<span class='navbar__item col-xs-12 center-xs col-sm-9 last-sm right-sm name'>Kristin Au</span>		
-		  	<a class='navbar__item--active col-xs-4 center-xs col-sm-1 left-sm' href="#work">Work</a>
-		  	<a class='navbar__item col-xs-4 center-xs col-sm-1 left-sm' href="/sketch">Sketch</a>
-		  	<a class='navbar__item col-xs-4 center-xs col-sm-1 left-sm' href="/about">About</a>
+	<nav class='navbar--intro wrapper container-fluid'>
+		<div class='row'>	
+		  	<a class='navbar__item--active col-xs-4 center-xs col-sm-2 left-sm' href="#work">Work</a>
+		  	<a class='navbar__item col-xs-4 center-xs col-sm-2 left-sm' href="/sketch">Sketch</a>
+		  	<a class='navbar__item col-xs-4 center-xs col-sm-2 left-sm' href="/about">About</a>
 		</div>
 	</nav>
 
 	
 	<a name='work'></a>
-	<div class='wrapper container project-list'>
+	<div class='wrapper container-fluid project-list'>
 
 		<a href='/canopy'>
 			<div class='row project-list__project'>
-				<div class='col-xs-11 col-sm-4 col-xs-offset-1'>
-					<div class='project-list__project-title'><h3 class='weight--heavy'>Canopy&nbsp;</h3><h3>/ VenueNext</h3></div>
-					<h2>An Integrated Management System for Venues</h2>
-					<p>Research, UX, Visual Design</p>
-				</div>
-				<div  class='col-xs-12 col-sm-7'>
+				<div  class='col-xs-12 col-md-6 col-lg-7'>
 					<img class='project-list__project-image' src='images/canopy-00-splash.png'>
-				</div>		
+				</div>	
+				<div class='col-xs-10 col-md-5 col-lg-5'>
+					<div class='project-list__project-title'><h3>Canopy / VenueNext</h3></div>
+					<h2>An Integrated Management System for Venues</h2>
+					<!-- <p>Research, UX, Visual Design</p> -->
+				</div>
+					
 			</div>
 		</a>
 
 		<a href='/appbuilder'>
 			<div class='row project-list__project'>
-				<div class='col-xs-10 col-sm-4 col-xs-offset-1'>
+				<div class='col-xs-10 col-md-4 col-xs-offset-1'>
 					<div class='project-list__project-title'><h3 class='weight--heavy'>App Builder&nbsp;</h3><h3>/ VenueNext</h3></div>
 					<h2>A Content and Style Manager for your Venue’s App</h2>
 					<p>Research, UX, Visual Design</p>
 				</div>
-				<div  class='col-xs-12 col-sm-7'>
+				<div  class='col-xs-12 col-md-7'>
 					<img class='project-list__project-image' src='images/ab-00-splash.png'>
 				</div>		
 			</div>
@@ -84,12 +91,12 @@
 
 		<!-- <a href=''> -->
 			<div class='row project-list__project project-list__project--pending'>
-				<div class='col-xs-11 col-sm-4 col-xs-offset-1'>
+				<div class='col-xs-10 col-md-4 col-xs-offset-1'>
 					<div class='project-list__project-title'><h3 class='weight--heavy'>FabLab Studio&nbsp;</h3><h3>/ Fablab Tacoma LLC</h3></div>
 					<h2>Reenvisioning the Makerspace Experience</h2>
 					<p>UX, Visual Design, Illustration</p>
 				</div>
-				<div  class='col-xs-12 col-sm-7'>
+				<div  class='col-xs-12 col-md-7'>
 					<img class='project-list__project-image' src='images/fab-00-splash.png'>
 				</div>		
 			</div>
@@ -97,12 +104,12 @@
 
 		<!-- <a href=''> -->
 			<div class='row project-list__project project-list__project--pending'>
-				<div class='col-xs-11 col-sm-4 col-xs-offset-1'>
+				<div class='col-xs-10 col-md-4 col-xs-offset-1'>
 					<div class='project-list__project-title'><h3 class='weight--heavy'>Disney Style&nbsp;</h3><h3>/ The Walt Disney Company</h3></div>
 					<h2>Coloring Lives with Disney</h2>
 					<p>Research, UX</p>
 				</div>
-				<div  class='col-xs-12 col-sm-7'>
+				<div  class='col-xs-12 col-md-7'>
 					<img class='project-list__project-image' src='images/disney-00-splash.png'>
 				</div>		
 			</div>
@@ -110,7 +117,7 @@
 	</div>
 
 	<footer>
-		<div class='wrapper container'>
+		<div class='wrapper container-fluid'>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-7'>
 					<h4>Hey there,</h4>

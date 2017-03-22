@@ -1,6 +1,7 @@
 .navbar--intro {
+	margin-bottom: 32px;
 	@include for-tablet-portrait-up{
-		margin-top: 200px;	
+		margin-top: 160px;	
 	}
 	@include for-phone-only {
 		margin-top: 120px;
@@ -8,12 +9,11 @@
 }
 
 .navbar__item {
+	letter-spacing: 1px;
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $accent-baseline,
-			$font-size: $size-nav-desktop,
-			$leading-bottom: 1,
-			$leading-top: 1
+			$font-size: $size-nav-desktop
 		);
 	}
 	@include for-phone-only {
@@ -26,39 +26,39 @@
 	
 }
 
-.name {
-	font-family: $font-accent;
-	color: $type-lightgrey;
-	font-weight: 500;
-	@include for-tablet-portrait-up {
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 1.5,
-			$leading-top: 1, 
-			$leading-bottom: 1
-		);
-	}
-	@include for-phone-only {
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 1.5,
-			$leading-top: 2,
-			$leading-bottom: 1
-		);
-	}
-}
+// .name {
+// 	font-family: $font-accent;
+// 	color: $type-lightgrey;
+// 	font-weight: 500;
+// 	@include for-tablet-portrait-up {
+// 		@include plumber(
+// 			$baseline: $accent-baseline,
+// 			$font-size: 1.5,
+// 			$leading-top: 1, 
+// 			$leading-bottom: 1
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		@include plumber(
+// 			$baseline: $accent-baseline,
+// 			$font-size: 1.5,
+// 			$leading-top: 2,
+// 			$leading-bottom: 1
+// 		);
+// 	}
+// }
 
 .navbar__item--active {
 	@extend .navbar__item;
 	color: $black;
-	font-weight: 600;
+	font-weight: 900;
 }
 .navbar__item--active:after {
 	content: '';
-	border-bottom: 3px solid $black;
+	border-bottom: 4px solid $black;
 	display: block;
 	@include for-tablet-portrait-up {
-		width: 120%;
+		width: 43%;
 	}
 	@include for-phone-only {
 		width: 50%;

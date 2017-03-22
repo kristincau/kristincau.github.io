@@ -3,13 +3,20 @@
 	padding: 0 !important;
 	border-radius: 2px;
 	overflow: hidden;
-	box-shadow: 4px 4px 16px rgba(0,0,0,.3);
+	// box-shadow: 4px 4px 16px rgba(0,0,0,.3);
+	background-color: $bg-project-grey;
 	@include transition(300ms);
 	@include for-desktop-up {
-		height: 332px;
+		height: 300px;
+	}
+	@include for-tablet-portrait-up {
+		
+	}
+	@include for-tablet-landscape-up {
+		
 	}
 	@include for-phone-only {
-		height: 416px;
+		height: 400px;
 		
 	}
 }
@@ -42,7 +49,8 @@
 }
 
 .project-list__project:hover {
-	box-shadow: 8px 8px 32px rgba(0,0,0,.2);
+	box-shadow: 4px 4px 16px rgba(0,0,0,.05);
+	margin-left: -1px;
 }
 
 .project-list__project div {
@@ -93,15 +101,24 @@
 
 .project-list__project-image {
 	width: 100%;
-	margin-left: 1px;
+	// margin-left: 1px;
 	height: auto;
 	// margin-left: -48px;
-	@include for-desktop-up {
-		-webkit-clip-path: polygon(35% 0, 0 90%, 100% 90%, 100% 0);
-	}
-	@include for-phone-only {
-		-webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
-	}
+	// @include for-desktop-up {
+	// 	-webkit-clip-path: polygon(35% 0, 0 90%, 100% 90%, 100% 0);
+	// }
+	// @include for-desktop-up {
+	// 	-webkit-clip-path: polygon(35% 0, 0 100%, 100% 90%, 100% 0);
+	// }
+	// @include for-tablet-landscape {
+	// 	-webkit-clip-path: polygon(35% 0, 0 100%, 100% 100%, 100% 0);
+	// }
+	// @include for-tablet-portrait {
+	// 	-webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+	// }
+	// @include for-phone-only {
+	// 	-webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+	// }
 	
 	overflow: hidden;
 	// background-image: url(../images/ab-splash.png);

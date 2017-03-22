@@ -1,11 +1,13 @@
 //Intro (Home) Headers
 .intro h1 {
-	font-weight: 700;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 10px;
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $accent-baseline,
-			$font-size: 3.5,
-			$leading-top: 8
+			$font-size: 2.25,
+			$leading-top: 6
 		);
 	}
 	@include for-phone-only {
@@ -18,37 +20,51 @@
 	
 }
 
-.intro h3 {
-	@include for-tablet-portrait-up {
-		@include plumber(	
-			$baseline: $sans-baseline,
-			$font-size: $size-h3,    
-		    $leading-top: 10
-		);
-	}
-	@include for-phone-only {
-		@include plumber(	
-			$baseline: $sans-baseline,
-			$font-size: $size-h3-mobile,    
-		    $leading-top: 10
-		);
-	}
+.intro h5 {
+	font-family: $font-serif;
+	color: $type-lightgrey;
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.125
+	);
 }
 
+.intro__container {
+	background-color: $bg-grey;
+	padding-top: 128px;
+	padding-bottom: 32px;
+}
+// .intro h3 {
+// 	@include for-tablet-portrait-up {
+// 		@include plumber(	
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3,    
+// 		    $leading-top: 10
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		@include plumber(	
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3-mobile,    
+// 		    $leading-top: 10
+// 		);
+// 	}
+// }
+
 .intro p {
-	font-family: $font-sans;
+	font-family: $font-accent;
 	font-weight: 300;
 	color: $type-grey;
 	@include for-tablet-portrait-up {
 		@include plumber(
-			$baseline: $sans-baseline,
+			$baseline: $accent-baseline,
 			$font-size: 1.5,
-			$leading-top: 3
+			$leading-top: 2
 		);	
 	}
 	@include for-phone-only {
 		@include plumber(
-			$baseline: $sans-baseline,
+			$baseline: $accent-baseline,
 			$font-size: 1.5,
 			$leading-top: 2
 		);
