@@ -1,6 +1,6 @@
 footer {
-	background-color: $light-orange;
-	padding-bottom: 32px;
+	@include gradient-bg();
+	padding: 32px 0;
 }
 
 footer h2{
@@ -14,7 +14,7 @@ footer h2{
 }
 
 footer h4{
-	color: $type-grey;
+	color: $black;
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $accent-baseline,
@@ -36,11 +36,10 @@ footer h4{
 }
 
 footer p {
-	font-family: $font-sans;
 	color: $type-grey;
 	@include for-tablet-portrait-up {
 		@include plumber(		
-			$baseline: $sans-baseline,
+			$baseline: $serif-baseline,
 			$grid-height: 0.5rem,
 	    	$line-height: 3,
 			$font-size: 2,
@@ -49,7 +48,7 @@ footer p {
 	}
 	@include for-phone-only {
 		@include plumber(		
-			$baseline: $sans-baseline,
+			$baseline: $serif-baseline,
 			$grid-height: 0.5rem,
 	    	$line-height: 4,
 			$font-size: 2.5,
@@ -60,11 +59,12 @@ footer p {
 
 footer a {
 	display: block;
+	font-weight: 700;
 	@include for-tablet-portrait-up {
 		@include plumber(		
 			$baseline: $accent-baseline,
 			$grid-height: 0.5rem,
-	    	$line-height: 3,
+	    	$line-height: 4,
 			$font-size: 2
 		);
 	}
@@ -82,28 +82,27 @@ footer a {
 	@include for-tablet-portrait-up {
 		@include plumber(		
 			$baseline: $accent-baseline,
-			$grid-height: 0.5rem,
-			$font-size: 2,
+			$font-size: 1,
 			$leading-top: 2
 		);		
 	}
 	@include for-phone-only {
 		@include plumber(		
 			$baseline: $accent-baseline,
-			$grid-height: 0.5rem,
-	    	$line-height: 4,
-	    	$leading-top: 2,
-			$font-size: $size-nav-mobile*2
+	    	$line-height: 2,
+	    	$leading-top: 1,
+			$font-size: $size-nav-mobile
 		);
 	}
 }
 
 footer .copyright {
 	font-weight: 100;
+	font-family: $font-accent;
 	@include plumber(		
-		$baseline: $sans-baseline,
+		$baseline: $accent-baseline,
 		$grid-height: 0.5rem,
-		$font-size: 1.8,
-		$leading-top: 6
+		$font-size: 1.5,
+		$leading-top: 8
 	);
 }

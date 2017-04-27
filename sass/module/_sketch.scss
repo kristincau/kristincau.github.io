@@ -6,13 +6,11 @@
 }
 
 header.sketch__header h1 {
-	font-weight: 900;
 	@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $accent-baseline,
-		$font-size: 3.5,
-		$line-height: 5,
-		$leading-top: 8
+		$baseline: $serif-baseline,
+		$font-size: 1.6,
+		$line-height: 3,
+		$leading-top: 2
 	);
 }
 
@@ -38,7 +36,6 @@ header.sketch__header p {
 
 .sketch__header img {
 	width: 100%;
-	margin: 32px 0;
 }
 
 .sketch__body img {

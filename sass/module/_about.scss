@@ -1,4 +1,8 @@
 //About page header
+header.about {
+	margin: 4rem auto;
+}
+
 header.about h3 {
 	@include for-phone-only {
 		display: none;
@@ -6,13 +10,11 @@ header.about h3 {
 }
 
 header.about h1 {
-	font-weight: 900;
 	@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $accent-baseline,
-		$font-size: 3.5,
-		$line-height: 5,
-		$leading-top: 8
+		$baseline: $serif-baseline,
+		$font-size: 1.6,
+		$line-height: 3,
+		$leading-top: 2
 	);
 }
 
@@ -30,14 +32,36 @@ header.about p {
 	);
 }
 
+header.about img {
+	width: 100%;
+}
+
 .about__link {
 	display: block;
-	@include plumber(		
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-    	$line-height: 3,
-		$font-size: 2
-	);
+	font-weight: 700;
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 4,
+			$font-size: 2
+		);
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,
+	    	$line-height: 4,
+			$font-size: $size-nav-mobile*2
+		);
+	}
+	// display: block;
+	// @include plumber(		
+	// 	$baseline: $accent-baseline,
+	// 	$grid-height: 0.5rem,
+ //    	$line-height: 3,
+	// 	$font-size: 2
+	// );
 }
 
 .about__body div:last-child {

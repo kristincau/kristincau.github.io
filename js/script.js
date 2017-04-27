@@ -1,5 +1,12 @@
 $(window).load(function() {
 
+  var $ = jQuery.noConflict()
+  $(window).scroll(function(){
+    var scroll = $(this).scrollTop()
+    $(".parallax").css({"background-position":"0px "+scroll/3+"px"})
+  }) 
+  // $(".parallax")
+
   var navdiff = $('#subnav').height()- ($('.project__body p').last().height()+$('.project__body h2').last().height());
   if (navdiff > 0 ) {
     navdiff = Math.ceil(navdiff/16)*16;

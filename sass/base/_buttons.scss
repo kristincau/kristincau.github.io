@@ -1,6 +1,9 @@
 .btn {
-	background-color: $dark-orange;
-	border-radius: 8px;
+	background-color: $white;
+	border-radius: 2px;
+	box-shadow: 4px 4px 16px rgba(0,0,0,.1);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	@include transition(200ms);
 	@include for-phone-only {
 		margin-bottom: 32px;
@@ -15,31 +18,29 @@
 
 .btn:hover {
 	opacity: 0.8;
+	box-shadow: 8px 8px 24px rgba(0,0,0,.12);
 }
 
 .btn h4 {
-	color: $white;
+	color: $black;	
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: 0.18rem;
 	@include plumber(
 		$grid-height: 0.5rem,
 		$baseline: $accent-baseline,
-		$font-size: 1.85,
+		$font-size: 1.65,
 		$line-height: 4,
 		$leading-top: 1
 	);
 }
 
 .btn p.tag {
-	font-family: $font-sans;
-	color: $orange-2!important;
-	text-transform: uppercase;
+	color: $type-lightgrey !important;
 	text-align: center;
-	letter-spacing: 1.5px;
 	font-weight: 100;
 	@include plumber(
 		$grid-height: 0.5rem,
-		$baseline: $sans-baseline,
+		$baseline: $serif-baseline,
 		$font-size: 1.7,
 		$line-height: 3,
 		$leading-bottom: 2

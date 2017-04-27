@@ -47,7 +47,7 @@
 	<nav class='navbar container'>
 		<div class='wrapper container'>
 			<div class='row'>
-				<span class='navbar__item col-xs-12 center-xs col-sm-9 last-sm right-sm name'>Kristin Au</span>		
+				<!-- <span class='navbar__item--name col-xs-12 center-xs col-sm-9 last-sm right-sm'>Kristin Au</span> -->		
 			  	<a class='navbar__item--active col-xs-4 center-xs col-sm-1 left-sm' href="../">Work</a>
 			  	<a class='navbar__item col-xs-4 center-xs col-sm-1 left-sm' href="../sketch">Sketch</a>
 			  	<a class='navbar__item col-xs-4 center-xs col-sm-1 left-sm' href="../about">About</a>
@@ -55,66 +55,49 @@
 		</div>
 	</nav>
 
-	<header class='wrapper container'>
-		<div class='row'>
-			<div class='col-xs-12 col-sm-7'>
-				<div class='header__image--tint-canopy'>
-					<img class='header__image--mobile' src='../images/canopy-00-splash.png'>
-				</div>
-				<div class='col-sm-5 header__text'>
-					<h3 class='weight--heavy'>Canopy&nbsp;</h3><h3>/ VenueNext</h3>
-					<h1>Canopy is a venue manager’s control center for the point of sale system, wayfinding, ticketing, loyalty and other third party services into a single platform.</h1>	
-				</div>
-
+	<header class='project wrapper container'>
+		<div class='row overflow'>
+			<div class='col-md-5'>
+				<h3>Canopy / VenueNext</h3>
+				<h1>Canopy is a venue manager’s control center for the point of sale system, wayfinding, ticketing, loyalty and other third party services into a single platform.</h1>	
 			</div>
-			<div class='col-xs-12 col-sm-5'>
-				<img class='header__image' src='../images/canopy-00-splash.png'>
+			<div class='col-xs-12 col-md-7 parallax parallax--canopy'>				
+				<!-- <img class='header__image' src='../images/canopy-00-splash.png'> -->
 			</div>
 		</div>
 	</header>
 
-	<div class='wrapper container'>
-		<div class='row'>
-			<div class='col-xs-6 col-sm-3'>
-				<h4 class='clr-md-org'>Tools</h4>
-				<ul>
-					<li>Illustrator</li>
-					<li>Sketch</li>
-					<li>Invision</li>
-				</ul>
-			</div>
-			<div class='col-xs-6 col-sm-4'>
-				<h4 class='clr-md-org'>Timeline</h4>
-				<ul>
-					<li>May 2016- present</li>
-				</ul>
-			</div>
-			<div class='col-xs-12 col-sm-5'>
-				<h4 class='clr-md-org'>Team</h4>
-				<ul>
-					<li>Blane Cordes (Full Stack Engineer)</li>
-					<li>Kyle Mitchell (Head of Deployment Engineering)</li>
-					<li>Matt Thompson (Director of Training Services)</li>
-					<li>Michael Sterling (Software Engineer)</li>
-					<li>Masha Antropova (Software Engineer)</li>
-					<li>Adam Gaynor (Software Engineer)</li>
-				</ul>
+	<div class='overview__container'>
+		<div class='wrapper container'>
+			<div class='row'>
+				<div class='col-xs-6 col-sm-3'>
+					<h4>Tools</h4>
+					<ul>
+						<li>Illustrator</li>
+						<li>Sketch</li>
+						<li>Invision</li>
+					</ul>
+				</div>
+				<div class='col-xs-6 col-sm-4'>
+					<h4>Timeline</h4>
+					<ul>
+						<li>May 2016- present</li>
+					</ul>
+				</div>
+				<div class='col-xs-12 col-sm-5'>
+					<h4>Team</h4>
+					<ul>
+						<li>Blane Cordes (Manger, Front End Web)</li>
+						<li>Kyle Mitchell (Head, Deployment Engineering)</li>
+						<li>Matt Thompson (Director,Training Services)</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 	
 	<div class='project wrapper container'>
-		<div class='row'>
-			<div class='project__subnav hidden-xs col-sm-3 right-sm'>
-				<div id='subnav'>
-					<a class='subnav__link' href='#section-1'>About the Project</a>
-					<a class='subnav__link' href='#section-2'>The Product</a>
-					<a class='subnav__link' href='#section-3'>The Big Picture</a>
-					<a class='subnav__link' href='#section-4'>The Magic of Tidying Up</a>
-					<a class='subnav__link' href='#section-5'>New Year, New Look</a>
-					<a class='subnav__link' href='#section-6'>Product in the Wild</a>
-				</div>
-			</div>
+		<div class='row'>	
 
 			<div class='project__body col-xs-12 col-sm-8'>
 				<h2 id='section-1'>About the Project</h2>
@@ -189,25 +172,34 @@
 				<h2 id='section-6'>Product in the Wild</h2>
 				<p>As a live product, Canopy releases must be done thoughtfully and carefully. To accommodate the full redesign, a considerable engineering effort of switching the product from Ruby on Rails to React is required. Initial releases focus on re-organizing the tool, which requires a back end re-architecture, while future releases will focus on visual renewals.</p>			
 			</div>
+
+			<div class='project__subnav hidden-xs col-sm-4 right-sm'>
+				<div id='subnav'>
+					<a class='subnav__link' href='#section-1'>1 <span class='anchor__tag'>/ Project</span></a>
+					<a class='subnav__link' href='#section-2'>2 <span class='anchor__tag'>/ Product</span></a>
+					<a class='subnav__link' href='#section-3'>3 <span class='anchor__tag'>/ Big Picture</span></a>
+					<a class='subnav__link' href='#section-4'>4 <span class='anchor__tag'>/ Tidying Up</span></a>
+					<a class='subnav__link' href='#section-5'>5 <span class='anchor__tag'>/ New Look</span></a>
+					<a class='subnav__link' href='#section-6'>6 <span class='anchor__tag'>/ In the Wild</span></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class='project__end wrapper container'>		
-		<div class='row'>
-			<h2 class='col-xs-12'>Thanks for checking out this project!</h2>
-		</div>
-		<div class='row'>
-			<p class='col-xs-12'>Want to see more? Check out my other projects:</p>
-		</div>
-		<div class='row'>
-			<a class='btn col-xs-12 col-sm-3' href='../appbuilder'><h4>App Builder</h4><p class='tag'>UX &amp; Visual Design</p></a>
-			<a class='btn col-xs-12 col-sm-3 col-sm-offset-1 col-sm-center' href=''><h4 >Disney Style</h4><p class='tag'>Research &amp; UX</p></a>
-			<a class='btn col-xs-12 col-sm-3 col-sm-offset-1 col-sm-right' href=''><h4>Fablab Studio</h4><p class='tag'>UX &amp; Illustration</p></a>
-		</div>
-	</div>
 	
 	<footer>
-		<div class='wrapper container'>
+		<div class='wrapper container'>		
+			<div class='row'>
+				<h2 class='col-xs-12'>Thanks for checking out this project!</h2>
+			</div>
+			<div class='row'>
+				<p class='col-xs-12'>Want to see more? Check out my other projects:</p>
+			</div>
+			<div class='row'>
+				<a class='btn col-xs-12 col-sm-3' href='../appbuilder'><h4>App Builder</h4><p class='tag'>UX &amp; Visual Design</p></a>
+				<a class='btn col-xs-12 col-sm-3 col-sm-offset-1 col-sm-center' href=''><h4 >Disney Style</h4><p class='tag'>Research &amp; UX</p></a>
+				<a class='btn col-xs-12 col-sm-3 col-sm-offset-1 col-sm-right' href=''><h4>Fablab Studio</h4><p class='tag'>UX &amp; Illustration</p></a>
+			</div>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-7'>
 					<h4>Hey there,</h4>
@@ -219,12 +211,12 @@
 					<div class='row'>
 						<div class='col-xs-6'>
 							<a href='mailto:me@kristinau.com'>me@kristinau.com</a>
-							<a href=''>LinkedIn</a>
-							<a href=''>Twitter</a>
+							<a href='https://www.linkedin.com/in/kristin-au-690a4765'>LinkedIn</a>
+							<a href='https://twitter.com/auaukau'>Twitter</a>
 						</div>
 						<div class='col-xs-6'>
-							<a href=''>Dribbble</a>
-							<a href=''>Instagram</a>
+							<a href='https://dribbble.com/auaukau'>Dribbble</a>
+							<a href='https://www.instagram.com/auaukau/'>Instagram</a>
 						</div>
 					</div>
 					<p class='copyright'>&copy; 2014-2017 All rights reserved. Work of Kristin Au.</p>

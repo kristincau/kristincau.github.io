@@ -1,3 +1,5 @@
+
+
 //Project Subnav
 .project__subnav {
 	@include for-tablet-portrait-up {
@@ -6,122 +8,55 @@
 	@include for-phone-only {
 		display: none !important;
 	}
+}
+
+.anchor__tag {
+	display: none;
+}
 
 
+.subnav__link:hover .anchor__tag {
+	display: inline-block;
 }
 
 .subnav__link {
 	display: block;
-	font-family: $font-sans;
+	font-family: $font-accent;
 	font-weight: 300;
 	text-transform: uppercase;
-	color: $type-lightgrey;
+	color: $type-light-grey;
 	@include plumber(
-		$baseline: $sans-baseline,
-		$font-size: .85
+		$baseline: $accent-baseline,
+		$font-size: 1
 	);
 	@include transition(50ms);
 }
 
 .subnav__link:hover {
-	color: $dark-orange;
+	// color: $type-med-grey;
 }
 
 .subnav__link--active {
-	font-weight: 400;
-	color: $dark-orange;
+	font-weight: 700;
+	color: $type-med-grey;
 }
 
-.project {
-	margin-bottom: 32px;
+// .project {
+// 	margin-bottom: 32px;
+// }
+
+
+.overview__container {
+	background-color: $bg-grey;
+	padding: 2rem 0;
 }
 
-//Project Header Image
-.header__image--tint-canopy {
-	position: relative;
-  	float: left;
-}
-
-.header__image--tint-canopy:after {
-	@include for-phone-only {
-	  	content: "";
-		display: block;
-		position: absolute;
-		width: 140% !important;
-		margin-left: -20%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(240,245,247, 0.8);
-	}
-	@include for-tablet-portrait-up {
-		display: none;
-	}
-}
-
-.header__image--tint-ab {
-	position: relative;
-  	float: left;
-}
-
-.header__image--tint-ab:after {
-	@include for-phone-only {
-	  	content: "";
-		display: block;
-		position: absolute;
-		width: 130% !important;
-		margin-left: -15%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(20,20,26, 0.6);
-	}
-	@include for-tablet-portrait-up {
-		display: none;
-	}
-}
-
-.header__image--mobile {
-	@include for-phone-only {
-		max-width: 130% !important;
-		// margin-bottom: -85%;
-		margin-left: -15%;
-		// z-index: 0;
-	}
-	@include for-tablet-portrait-up {
-		display: none;
-	}
-}
-
-.header__image {
-	@include for-tablet-portrait-up {
-		width: 800px;
-		height: 560px;
-		margin-left: -120px;
-		margin-bottom: 24px;
-		margin-top: 8px;
-	   -webkit-clip-path: polygon(280px 0, 0 100%, 100% 100%, 100% 0);	
-	}
-	@include for-phone-only {
-		display: none;	
-	}
-	
-}
-
-.header__text{
-	position: absolute;
-	margin-top: 32px;
-
-}
 
 .white-sm {
 	@include for-phone-only {
 		color: $white !important;
 	}
 }
-
 
 //Project Body
 .project__body h2 {
@@ -163,7 +98,7 @@
 .row__img {
 	margin-bottom: 2rem;
 	@include for-tablet-portrait-up {		
-		width: 121%;	
+		width: 140%;	
 	}
 	@include for-phone-only {		
 		width: 130%;

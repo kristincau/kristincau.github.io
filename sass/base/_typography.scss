@@ -33,26 +33,67 @@ a {
 }
 
 a:hover {
-	color: $type-grey;
+	color: $type-med-grey;
+}
+
+p a {
+	@extend p;
+	text-decoration: underline;
+	@include transition(200ms);
+}
+
+h1 a {
+	@extend h1;
+	text-decoration: underline;
+	@include transition(200ms);
+}
+
+p a:hover, h1 a:hover {
+	opacity: 0.6; 
 }
 
 h1 {
-	font-family: $font-accent;
-	font-weight: 600;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.5,
-	    $leading-top: 1,
-	    $leading-bottom: 2
-	);	
+	@include for-tablet-portrait-up {
+		font-family: $font-serif;
+		font-weight: 300;
+		color: $type-grey;
+		@include plumber(
+			$baseline: $serif-baseline,		
+			$grid-height: 0.5rem,
+			$font-size: 3.2,
+			$line-height: 6,
+			$leading-top: 5,
+			$leading-bottom: 16
+		);
+	}
+	@include for-phone-only {
+		z-index: 99;
+		@include plumber(
+			$baseline: $accent-baseline,		
+			$grid-height: 0.5rem,
+			$font-size: 3,
+			$line-height: 5,
+			$leading-top: 5,
+			$leading-bottom: 10
+		);
+	}
+	// font-family: $font-accent;
+	// font-weight: 600;
+	// @include plumber(
+	// 	$baseline: $accent-baseline,
+	// 	$font-size: 1.5,
+	//     $leading-top: 1,
+	//     $leading-bottom: 2
+	// );	
 }
 
 
 h2 {
-	font-family: $font-serif;
+	font-family: $font-accent;
+	font-weight: 700;
 	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.5
+		$baseline: $accent-baseline,
+		$font-size: 1.8
 	);	
 }
 
@@ -63,7 +104,7 @@ h3 {
 	display: inline-block;        
 	letter-spacing: 0.1rem;
 	font-weight: 900;
-	color: $black;
+	color: $type-grey;
 	@include plumber(
 		$baseline: $accent-baseline,
 		$font-size: $size-h3
@@ -74,18 +115,28 @@ h3 {
 h4 {
 	font-family: $font-accent;
 	text-transform: uppercase;
-	letter-spacing: 0.05rem;
-	font-weight: 800;
+	letter-spacing: 0.09rem;
+	font-weight: 900;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 0.875,
-		$leading-top: 1    	
+		$font-size: 0.8,
+		$leading-top: 1,    	
+		$leading-bottom:1
 	);	
 }
 
-.clr-md-org {
-	color: $med-orange;
+h5 {
+	font-family: $font-serif;
+	color: $type-grey;
+	@include plumber(
+		$baseline: $serif-baseline,
+		$font-size: 1.125
+	);
 }
+
+// .clr-md-org {
+// 	color: $med-orange;
+// }
 
 
 p {
@@ -97,11 +148,13 @@ p {
 }
 
 ul {
-	font-family: $font-sans;
-	color: $type-grey;
+	font-family: $font-serif;
+	color: $type-med-grey;
 	@include plumber(
-		$baseline: $sans-baseline,
-		$font-size: 1,
+		$grid-height: 0.5rem,
+		$baseline: $serif-baseline,
+		$font-size: 1.9,
+		$line-height: 3,
 		$leading-top: 0
 	);
 }
