@@ -3,7 +3,7 @@ $(window).load(function() {
   var $ = jQuery.noConflict()
   $(window).scroll(function(){
     var scroll = $(this).scrollTop()
-    $(".parallax").css({"background-position":"0px "+scroll/3+"px"})
+    $(".parallax").css({"background-position":"0px "+scroll/4+"px"})
   }) 
   // $(".parallax")
 

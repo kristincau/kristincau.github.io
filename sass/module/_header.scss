@@ -8,7 +8,7 @@
 		@include plumber(
 			$baseline: $accent-baseline,
 			$font-size: 2.25,
-			$leading-top: 6
+			$leading-top: 4
 		);
 	}
 	// @include for-phone-only {
@@ -23,10 +23,9 @@
 
 
 .intro__container {
-	background-color: $bg-grey;
+	@include reverse-gradient-bg();
 	padding-top: 6rem;
-	padding-bottom: 4rem;
-	margin-bottom: 4rem;
+	padding-bottom: 3rem;
 }
 
 
@@ -53,10 +52,20 @@
 
 //Standard project headers
 header.project h1 {
+	font-family: $font-serif;
+	font-weight: 300;
+	color: $type-grey;
 	@include for-tablet-portrait-up {
-		font-family: $font-serif;
-		font-weight: 300;
-		color: $type-grey;
+		@include plumber(
+			$baseline: $serif-baseline,		
+			$grid-height: 0.5rem,
+			$font-size: 3.2,
+			$line-height: 6,
+			$leading-top: 2,
+			$leading-bottom: 10
+		);
+	}
+	@include for-tablet-landscape-up {
 		@include plumber(
 			$baseline: $serif-baseline,		
 			$grid-height: 0.5rem,
@@ -66,6 +75,7 @@ header.project h1 {
 			$leading-bottom: 16
 		);
 	}
+	
 	@include for-phone-only {
 		z-index: 99;
 		@include plumber(
@@ -81,11 +91,18 @@ header.project h1 {
 }
 
 header.project h3 {
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		@include plumber(
 			$baseline: $sans-baseline,
 			$font-size: $size-h3,
 			$leading-top: 5
+		);
+	}
+	@include for-tablet-portrait-up {
+		@include plumber(
+			$baseline: $sans-baseline,
+			$font-size: $size-h3,
+			$leading-top: 3
 		);
 	}
 	@include for-phone-only {
@@ -107,7 +124,13 @@ header.project h3 {
 // }
 //Project Image
 .parallax {
-	background-size: 92%;
+	@include for-tablet-landscape-up {
+		background-size: 88%;	
+	}
+	@include for-tablet-portrait {
+		background-size: 100%;
+		height: 400px;
+	}
 	background-repeat: no-repeat;
 }
 
@@ -120,7 +143,13 @@ header.project h3 {
 }
 
 .row.overflow {
-	width: 128%;
+	@include for-tablet-landscape-up {
+		width: 128%;	
+	}
+	@include for-tablet-portrait {
+		width: 100%;
+	}
+	
 }
 
 

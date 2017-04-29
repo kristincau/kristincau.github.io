@@ -1,45 +1,48 @@
 
 
 //Project Subnav
-.project__subnav {
-	@include for-tablet-portrait-up {
-		padding-top: 48px;		
-	}
-	@include for-phone-only {
-		display: none !important;
-	}
-}
+// .project__subnav {
+// 	@include for-tablet-landscape {
+// 		padding-top: 48px;		
+// 	}
+// 	@include for-tablet-portrait {
+// 		display: none !important;
+// 	}
+// 	@include for-phone-only {
+// 		display: none !important;
+// 	}
+// }
 
-.anchor__tag {
-	display: none;
-}
+// .anchor__tag {
+// 	display: none;
+// }
 
 
-.subnav__link:hover .anchor__tag {
-	display: inline-block;
-}
+// .subnav__link:hover .anchor__tag {
+// 	display: inline-block;
+// }
 
-.subnav__link {
-	display: block;
-	font-family: $font-accent;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: $type-light-grey;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1
-	);
-	@include transition(50ms);
-}
+// .subnav__link {
+// 	display: block;
+// 	font-family: $font-accent;
+// 	font-weight: 300;
+// 	text-transform: uppercase;
+// 	color: $type-light-grey;
+// 	@include plumber(
+// 		$baseline: $accent-baseline,
+// 		$font-size: 1
+// 	);
+// 	@include transition(50ms);
+// }
 
-.subnav__link:hover {
-	// color: $type-med-grey;
-}
+// .subnav__link:hover {
+// 	// color: $type-med-grey;
+// }
 
-.subnav__link--active {
-	font-weight: 700;
-	color: $type-med-grey;
-}
+// .subnav__link--active {
+// 	font-weight: 700;
+// 	color: $type-med-grey;
+// }
 
 // .project {
 // 	margin-bottom: 32px;
@@ -48,15 +51,15 @@
 
 .overview__container {
 	background-color: $bg-grey;
-	padding: 2rem 0;
+	padding-bottom: 2rem;
 }
 
 
-.white-sm {
-	@include for-phone-only {
-		color: $white !important;
-	}
-}
+// .white-sm {
+// 	@include for-phone-only {
+// 		color: $white !important;
+// 	}
+// }
 
 //Project Body
 .project__body h2 {
@@ -68,78 +71,73 @@
 	);	
 }
 
-.project__body p {
-	font-family: $font-serif;
-	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.125,
-		$leading-bottom: 1
-	);
-}
+// .project__body p {
+// 	font-family: $font-serif;
+// 	@include plumber(
+// 		$baseline: $serif-baseline,
+// 		$font-size: 1,
+// 		$leading-bottom: 1
+// 	);
+// }
 
-.project__body ol li {
-	font-family: $font-serif;
-	font-weight: 600;
-	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.125
-	);
-}
 
 //Project Images
-.project__body img {
+.row__img img {
 	width: 100%;
 	height: auto;
-	margin-bottom: 32px;	
+	margin: 32px auto;	
 	border-radius: 2px;
 	// display: none;
 }
 
-.row__img {
-	margin-bottom: 2rem;
-	@include for-tablet-portrait-up {		
-		width: 140%;	
-	}
-	@include for-phone-only {		
-		width: 130%;
-		margin-left: -15%;
-	}
+// .row__img {
+// 	margin-bottom: 2rem;
+// 	@include for-tablet-portrait {
+// 		width: 120%;
+// 		margin-left: -10%;
+// 	}
+// 	@include for-tablet-landscape {		
+// 		width: 140%;	
+// 	}
+// 	@include for-phone-only {		
+// 		width: 130%;
+// 		margin-left: -15%;
+// 	}
 	
-}
+// }
 
 
 //Project End
-.project__end {
-	@include for-tablet-portrait-up {
-		margin-bottom: 64px;
-	}
-}
+// .project__end {
+// 	@include for-tablet-portrait-up {
+// 		margin-bottom: 64px;
+// 	}
+// }
 
-.project__end:before {
-    content: '';
-    width: 8.33% * 3;
-    border-bottom: solid 1px $med-orange;
-    display:block;
-    left: 0;
-    top: 50%;
-    z-index: 1;
-}
+// .project__end:before {
+//     content: '';
+//     width: 8.33% * 3;
+//     border-bottom: solid 1px $med-orange;
+//     display:block;
+//     left: 0;
+//     top: 50%;
+//     z-index: 1;
+// }
 
-.project__end h2 {
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.5,
-		$leading-top: 4
-	);	
-}
+// .project__end h2 {
+// 	@include plumber(
+// 		$baseline: $accent-baseline,
+// 		$font-size: 1.5,
+// 		$leading-top: 4
+// 	);	
+// }
 
-.project__end p {
-	font-family: $font-serif;
-	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.125,
-		$leading-bottom: 2
-	);	
-}
+// .project__end p {
+// 	font-family: $font-serif;
+// 	@include plumber(
+// 		$baseline: $serif-baseline,
+// 		$leading-bottom: 2
+// 	);	
+// }
 
 

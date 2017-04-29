@@ -1,6 +1,6 @@
 .project-list__project {
 	margin-bottom: 2rem;
-	padding: 0 !important;
+	// padding: 0 !important;
 	border-radius: 2px;
 	overflow: hidden;
 	// box-shadow: 4px 4px 16px rgba(0,0,0,.3);
@@ -117,12 +117,25 @@
 		$font-size: 1		
 	);
 }
-
+.icn--arw {
+	width: 2rem;
+	height: 2rem;
+}
 .project-list__project-image {
-	width: 120%;
-	margin-left: -4em;
-	margin-top: 2em;
-	height: auto;
+	@include for-tablet-portrait-up {
+		width: 168%;
+		margin-left: -12em;
+		margin-top: 2em;
+		margin-bottom: -6em;
+		height: auto;
+	}
+	@include for-tablet-landscape-up {
+		width: 120%;
+		margin-left: -4em;
+		margin-top: 2em;
+		height: auto;
+	}
+	
 	// margin-left: -48px;
 	// @include for-desktop-up {
 	// 	-webkit-clip-path: polygon(35% 0, 0 90%, 100% 90%, 100% 0);

@@ -1,7 +1,7 @@
 .btn {
 	background-color: $white;
 	border-radius: 2px;
-	box-shadow: 4px 4px 16px rgba(0,0,0,.1);
+	box-shadow: 4px 4px 16px rgba(0,0,0,.12);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	@include transition(200ms);
@@ -11,14 +11,13 @@
 }
 
 .btn:first-child {
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		margin-left: 24px;		
 	}	
 }
 
 .btn:hover {
-	opacity: 0.8;
-	box-shadow: 8px 8px 24px rgba(0,0,0,.12);
+	box-shadow: 8px 8px 24px rgba(0,0,0,.07);
 }
 
 .btn h4 {

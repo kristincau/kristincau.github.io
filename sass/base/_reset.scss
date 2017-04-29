@@ -6,8 +6,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit; }
 
 html {
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     font-size: 16px;
+  }
+  @include for-tablet-portrait-up {
+    font-size: 14px;
   }
   @include for-phone-only {
     font-size: 12px;
