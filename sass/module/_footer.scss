@@ -3,15 +3,20 @@ footer {
 	padding: 32px 0;
 }
 
-footer h2{
-	@include plumber(
-		$baseline: $accent-baseline,
-		$grid-height: 0.5rem,
-		$font-size: 3,
-		$leading-top: 5,	
-		$leading-bottom: 3	
-	);
-}
+// footer h2{
+// 	@include plumber(
+// 		$baseline: $accent-baseline,
+// 		$font-size: 1.8
+// 	);
+	// @include plumber(
+	// 	$baseline: $accent-baseline,
+	// 	$grid-height: 0.5rem,
+	// 	$font-size: 3,
+	// 	$line-height: 4,
+	// 	$leading-top: 5,	
+	// 	$leading-bottom: 3	
+	// );
+// }
 
 footer h4{
 	color: $black;
@@ -35,27 +40,27 @@ footer h4{
 	}
 }
 
-footer p {
-	color: $type-grey;
-	@include for-tablet-portrait-up {
-		@include plumber(		
-			$baseline: $serif-baseline,
-			$grid-height: 0.5rem,
-	    	$line-height: 3,
-			$font-size: 2,
-			$leading-top: 1
-		);
-	}
-	@include for-phone-only {
-		@include plumber(		
-			$baseline: $serif-baseline,
-			$grid-height: 0.5rem,
-	    	$line-height: 4,
-			$font-size: 2.5,
-			$leading-top: 1
-		);		
-	}
-}
+// footer p {
+// 	color: $type-grey;
+// 	@include for-tablet-portrait-up {
+// 		@include plumber(		
+// 			$baseline: $serif-baseline,
+// 			$grid-height: 0.5rem,
+// 	    	$line-height: 3,
+// 			$font-size: 2,
+// 			$leading-top: 1
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		@include plumber(		
+// 			$baseline: $serif-baseline,
+// 			$grid-height: 0.5rem,
+// 	    	$line-height: 4,
+// 			$font-size: 2.5,
+// 			$leading-top: 1
+// 		);		
+// 	}
+// }
 
 footer a {
 	display: block;

@@ -20,8 +20,7 @@
 	@include for-phone-only {
 		@include plumber(
 			$baseline: $accent-baseline,
-			$font-size: $size-nav-mobile,
-			$leading-bottom: 1
+			$font-size: $size-nav-mobile
 		);
 	}
 	
@@ -45,6 +44,7 @@
 .navbar {
 	width: 100%;
 	padding: 1rem 0;	
+	
 	
 }
 

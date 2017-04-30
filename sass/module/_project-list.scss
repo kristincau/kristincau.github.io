@@ -3,9 +3,8 @@
 	// padding: 0 !important;
 	border-radius: 2px;
 	overflow: hidden;
-	// box-shadow: 4px 4px 16px rgba(0,0,0,.3);
 	background-color: $white;
-	box-shadow: 4px 4px 16px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 8px rgba(0,0,0,.15);
 	@include transition(300ms);
 	@include for-desktop-up {
 		height: 360px;
@@ -51,7 +50,8 @@
 }
 
 .project-list__project:hover {
-	box-shadow: 8px 8px 24px rgba(0,0,0,.12);
+	box-shadow: 8px 8px 24px rgba(0,0,0,.1);
+	// box-shadow: 4px 4px 16px rgba(0,0,0,.2);
 }
 
 .icn--arw {

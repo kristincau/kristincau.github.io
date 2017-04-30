@@ -1,10 +1,11 @@
 $(window).load(function() {
-
-  var $ = jQuery.noConflict()
-  $(window).scroll(function(){
-    var scroll = $(this).scrollTop()
-    $(".parallax").css({"background-position":"0px "+scroll/4+"px"})
-  }) 
+  if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
+    var $ = jQuery.noConflict()
+    $(window).scroll(function(){
+      var scroll = $(this).scrollTop()
+      $(".parallax").css({"background-position":"0px "+scroll/4+"px"})
+    }) 
+  }
   // $(".parallax")
 
   var navdiff = $('#subnav').height()- ($('.project__body p').last().height()+$('.project__body h2').last().height());

@@ -553,9 +553,9 @@
 .last-xs {
   order: 1; }
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 24em) {
   .container {
-    width: 40rem; }
+    width: 48rem; }
 
   .col-sm {
     box-sizing: border-box;
@@ -1074,9 +1074,9 @@
 
   .last-sm {
     order: 1; } }
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 30em) {
   .container {
-    width: 42rem; }
+    width: 40rem; }
 
   .col-md {
     box-sizing: border-box;
@@ -1595,9 +1595,9 @@
 
   .last-md {
     order: 1; } }
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 45em) {
   .container {
-    width: 56rem; }
+    width: 42rem; }
 
   .col-lg {
     box-sizing: border-box;
@@ -2219,10 +2219,10 @@ h2 {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
-  margin-top: 0rem;
+  margin-top: 3rem;
   padding-top: 0.4294rem;
   padding-bottom: 0.5706rem;
-  margin-bottom: -1rem; }
+  margin-bottom: 0rem; }
 
 h3 {
   font-family: "Avenir", serif;
@@ -2265,7 +2265,7 @@ p, p a {
   color: #464646;
   font-size: 1.1rem;
   line-height: 2rem;
-  margin-top: -1rem;
+  margin-top: 0rem;
   padding-top: 0.5919rem;
   padding-bottom: 0.4081rem;
   margin-bottom: 0rem; }
@@ -2279,6 +2279,14 @@ ul {
   padding-top: 0.39755rem;
   padding-bottom: 0.10245rem;
   margin-bottom: 0rem; }
+  @media (max-width: 479px) {
+    ul {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: -0.5rem;
+      padding-top: 0.379rem;
+      padding-bottom: 0.121rem;
+      margin-bottom: 0rem; } }
 
 ol li {
   font-family: "PT Serif", sans-serif;
@@ -2286,6 +2294,14 @@ ol li {
   font-size: 1.1rem;
   line-height: 2rem;
   margin-top: 0rem;
+  padding-top: 0.5919rem;
+  padding-bottom: 0.4081rem;
+  margin-bottom: 0rem; }
+
+ol p, ol p a, p ol a {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-top: -1rem;
   padding-top: 0.5919rem;
   padding-bottom: 0.4081rem;
   margin-bottom: 0rem; }
@@ -2303,7 +2319,11 @@ ol li {
   transition: 200ms; }
   @media (max-width: 479px) {
     .btn {
-      margin-bottom: 32px; } }
+      margin-bottom: 1rem;
+      padding: 1rem 0; } }
+  @media (min-width: 480px) {
+    .btn {
+      margin: 1rem; } }
 
 @media (min-width: 720px) {
   .btn:first-child {
@@ -2316,11 +2336,11 @@ ol li {
   color: #212429;
   text-align: center;
   letter-spacing: 0.18rem;
-  font-size: 0.825rem;
+  font-size: 1rem;
   line-height: 2rem;
   margin-top: 0.5rem;
-  padding-top: 0.23848rem;
-  padding-bottom: 0.26153rem;
+  padding-top: 0.183rem;
+  padding-bottom: 0.317rem;
   margin-bottom: -0.5rem; }
 
 .btn p.tag, .btn p a.tag, p .btn a.tag {
@@ -2333,6 +2353,14 @@ ol li {
   padding-top: 0.43465rem;
   padding-bottom: 0.06535rem;
   margin-bottom: 1rem; }
+  @media (max-width: 479px) {
+    .btn p.tag, .btn p a.tag, p .btn a.tag {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: -0.5rem;
+      padding-top: 0.379rem;
+      padding-bottom: 0.121rem;
+      margin-bottom: 1rem; } }
 
 .navbar__item, .navbar__item--active, .navbar__item--name {
   letter-spacing: 1px; }
@@ -2351,7 +2379,7 @@ ol li {
       margin-top: -1rem;
       padding-top: 0.63006rem;
       padding-bottom: 0.36994rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 0rem; } }
 
 .navbar__item--active {
   color: #212429;
@@ -2501,6 +2529,10 @@ header.project h1, header.project h1 a, h1 header.project a {
     .parallax {
       background-size: 100%;
       height: 400px; } }
+  @media (max-width: 479px) {
+    .parallax {
+      background-size: 100%;
+      height: 400px; } }
 
 .parallax--canopy {
   background-image: url("../images/canopy-00-splash.png"); }
@@ -2520,7 +2552,7 @@ header.project h1, header.project h1 a, h1 header.project a {
   border-radius: 2px;
   overflow: hidden;
   background-color: #FFFFFF;
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -ms-transition: 300ms;
@@ -2558,7 +2590,7 @@ header.project h1, header.project h1 a, h1 header.project a {
   box-shadow: none !important; }
 
 .project-list__project:hover {
-  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.12); }
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1); }
 
 .icn--arw {
   -webkit-transition: 300ms;
@@ -2644,19 +2676,32 @@ header.project h1, header.project h1 a, h1 header.project a {
   background-color: #F8F9FA;
   padding-bottom: 2rem; }
 
-.project__body h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-top: 2rem;
-  padding-top: 0.5245rem;
-  padding-bottom: 0.4755rem;
-  margin-bottom: 1rem; }
+@media (max-width: 479px) {
+  .overview__container h4 {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    padding-top: 0.683rem;
+    padding-bottom: 0.317rem;
+    margin-bottom: 0rem; } }
+
+@media (min-width: 480px) {
+  .row__img {
+    margin: 2rem 0; } }
+
+.row__img .col-sm-12 {
+  padding: 0 !important; }
 
 .row__img img {
   width: 100%;
   height: auto;
-  margin: 32px auto;
   border-radius: 2px; }
+  @media (max-width: 479px) {
+    .row__img img {
+      margin: 1rem auto; } }
+  @media (min-width: 480px) {
+    .row__img img {
+      margin: 1rem 0; } }
 
 @media (max-width: 479px) {
   .sketch__header h3 {
@@ -2771,14 +2816,6 @@ footer {
   /* Standard syntax */
   padding: 32px 0; }
 
-footer h2 {
-  font-size: 1.5rem;
-  line-height: 1rem;
-  margin-top: 2.5rem;
-  padding-top: 0.0245rem;
-  padding-bottom: 0.4755rem;
-  margin-bottom: 1rem; }
-
 footer h4 {
   color: #212429; }
   @media (min-width: 480px) {
@@ -2797,25 +2834,6 @@ footer h4 {
       padding-top: 0.15923rem;
       padding-bottom: 0.34078rem;
       margin-bottom: 1rem; } }
-
-footer p, footer p a, p footer a {
-  color: #464646; }
-  @media (min-width: 480px) {
-    footer p, footer p a, p footer a {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-top: 0rem;
-      padding-top: 0.379rem;
-      padding-bottom: 0.121rem;
-      margin-bottom: 0rem; } }
-  @media (max-width: 479px) {
-    footer p, footer p a, p footer a {
-      font-size: 1.25rem;
-      line-height: 2rem;
-      margin-top: 0.5rem;
-      padding-top: 0.03625rem;
-      padding-bottom: 0.46375rem;
-      margin-bottom: -0.5rem; } }
 
 footer a {
   display: block;
