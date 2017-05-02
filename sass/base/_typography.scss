@@ -162,7 +162,7 @@ p {
 	color: $type-dark-grey;
 	@include plumber(
 		$baseline: $serif-baseline,
-		$font-size: 1.1,
+		$font-size: 1.125,
 		$line-height: 2,
 		$leading-top: 1
 	);
