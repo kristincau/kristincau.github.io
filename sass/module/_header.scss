@@ -2,11 +2,11 @@
 .intro h1 {
 	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-family: $font-accent;
+	// letter-spacing: 10px;
+	font-family: $font-serif;
 	@include for-tablet-portrait-up {
 		@include plumber(
-			$baseline: $accent-baseline,
+			$baseline: $serif-baseline,
 			$font-size: 2.25,
 			$leading-top: 4
 		);
