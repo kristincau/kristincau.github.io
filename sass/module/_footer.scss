@@ -1,5 +1,5 @@
 footer {
-	@include gradient-bg();
+	@include gradient-bg(180deg);
 	padding: 32px 0;
 }
 
