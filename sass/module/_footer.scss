@@ -18,6 +18,10 @@ footer {
 	// );
 // }
 
+footer p {
+	margin-bottom: 2rem;
+}
+
 footer h4{
 	color: $black;
 	@include for-tablet-portrait-up {
@@ -38,6 +42,10 @@ footer h4{
 			$leading-bottom: 3	
 		);
 	}
+}
+
+footer h3 {
+	color: $type-dark-grey;
 }
 
 // footer p {

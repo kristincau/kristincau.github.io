@@ -56,7 +56,7 @@ h1 {
 	@include for-tablet-portrait-up {
 		font-family: $font-serif;
 		font-weight: 300;
-		color: $type-grey;
+		color: $type-dark-grey;
 		@include plumber(
 			$baseline: $serif-baseline,		
 			$grid-height: 0.5rem,
@@ -122,7 +122,7 @@ h4 {
 	font-weight: 900;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 0.8,
+		$font-size: 0.85,
 		$leading-top: 3,    	
 		$leading-bottom:1
 	);	
@@ -146,7 +146,7 @@ h5 {
 
 p {
 	font-family: $font-serif;
-	color: $type-grey;
+	color: $type-dark-grey;
 	@include plumber(
 		$baseline: $serif-baseline,
 		$font-size: 1.1,
@@ -156,33 +156,35 @@ p {
 }
 
 ul {
-	font-family: $font-serif;
-	color: $type-med-grey;
-	@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $serif-baseline,
-		$font-size: 1.9,
-		$line-height: 3,
-		$leading-top: 0
-	);
-	@include for-phone-only {
-		@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $serif-baseline,
-		$font-size: 2,
-		$line-height: 3,
-		$leading-top: 0
-	);
-	}
+	@extend p;
+	// font-family: $font-serif;
+	// color: $type-med-grey;
+	// @include plumber(
+	// 	$grid-height: 0.5rem,
+	// 	$baseline: $serif-baseline,
+	// 	$font-size: 2,
+	// 	$line-height: 3,
+	// 	$leading-top: 0
+	// );
+	// @include for-phone-only {
+	// 	@include plumber(
+	// 	$grid-height: 0.5rem,
+	// 	$baseline: $serif-baseline,
+	// 	$font-size: 2,
+	// 	$line-height: 3,
+	// 	$leading-top: 0
+	// );
+	// }
 }
 
 ol li {
 	font-family: $font-serif;
 	font-weight: 600;
+	// @extend p;
 	@include plumber(
 		$baseline: $serif-baseline,
 		$font-size: 1.1,
-		$leading-top:1
+		$leading-top:2
 	);
 }
 

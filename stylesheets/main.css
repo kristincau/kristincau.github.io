@@ -6,8 +6,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 48px;
-  padding-left: 48px; }
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .row {
   box-sizing: border-box;
@@ -32,8 +32,8 @@
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -24px;
-  margin-left: -24px; }
+  margin-right: -1rem;
+  margin-left: -1rem; }
 
 .row.reverse {
   -webkit-box-direction: reverse;
@@ -62,8 +62,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: auto;
   -moz-flex-basis: auto;
   -ms-flex-preferred-size: auto;
@@ -80,8 +80,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 8.33333%;
   -moz-flex-basis: 8.33333%;
   -ms-flex-preferred-size: 8.33333%;
@@ -99,8 +99,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 16.66667%;
   -moz-flex-basis: 16.66667%;
   -ms-flex-preferred-size: 16.66667%;
@@ -118,8 +118,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 25%;
   -moz-flex-basis: 25%;
   -ms-flex-preferred-size: 25%;
@@ -137,8 +137,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 33.33333%;
   -moz-flex-basis: 33.33333%;
   -ms-flex-preferred-size: 33.33333%;
@@ -156,8 +156,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 41.66667%;
   -moz-flex-basis: 41.66667%;
   -ms-flex-preferred-size: 41.66667%;
@@ -175,8 +175,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 50%;
   -moz-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
@@ -194,8 +194,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 58.33333%;
   -moz-flex-basis: 58.33333%;
   -ms-flex-preferred-size: 58.33333%;
@@ -213,8 +213,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 66.66667%;
   -moz-flex-basis: 66.66667%;
   -ms-flex-preferred-size: 66.66667%;
@@ -232,8 +232,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 75%;
   -moz-flex-basis: 75%;
   -ms-flex-preferred-size: 75%;
@@ -251,8 +251,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 83.33333%;
   -moz-flex-basis: 83.33333%;
   -ms-flex-preferred-size: 83.33333%;
@@ -270,8 +270,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 91.66667%;
   -moz-flex-basis: 91.66667%;
   -ms-flex-preferred-size: 91.66667%;
@@ -289,8 +289,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   -webkit-flex-basis: 100%;
   -moz-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -308,8 +308,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 8.33333%; }
 
 .col-xs-offset-2 {
@@ -323,8 +323,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 16.66667%; }
 
 .col-xs-offset-3 {
@@ -338,8 +338,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 25%; }
 
 .col-xs-offset-4 {
@@ -353,8 +353,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 33.33333%; }
 
 .col-xs-offset-5 {
@@ -368,8 +368,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 41.66667%; }
 
 .col-xs-offset-6 {
@@ -383,8 +383,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 50%; }
 
 .col-xs-offset-7 {
@@ -398,8 +398,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 58.33333%; }
 
 .col-xs-offset-8 {
@@ -413,8 +413,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 66.66667%; }
 
 .col-xs-offset-9 {
@@ -428,8 +428,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 75%; }
 
 .col-xs-offset-10 {
@@ -443,8 +443,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 83.33333%; }
 
 .col-xs-offset-11 {
@@ -458,8 +458,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 91.66667%; }
 
 .col-xs-offset-12 {
@@ -473,8 +473,8 @@
   -moz-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-left: 100%; }
 
 .col-xs {
@@ -568,8 +568,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     -ms-flex-preferred-size: auto;
@@ -586,8 +586,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 8.33333%;
     -moz-flex-basis: 8.33333%;
     -ms-flex-preferred-size: 8.33333%;
@@ -605,8 +605,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 16.66667%;
     -moz-flex-basis: 16.66667%;
     -ms-flex-preferred-size: 16.66667%;
@@ -624,8 +624,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 25%;
     -moz-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -643,8 +643,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 33.33333%;
     -moz-flex-basis: 33.33333%;
     -ms-flex-preferred-size: 33.33333%;
@@ -662,8 +662,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 41.66667%;
     -moz-flex-basis: 41.66667%;
     -ms-flex-preferred-size: 41.66667%;
@@ -681,8 +681,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 50%;
     -moz-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -700,8 +700,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 58.33333%;
     -moz-flex-basis: 58.33333%;
     -ms-flex-preferred-size: 58.33333%;
@@ -719,8 +719,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 66.66667%;
     -moz-flex-basis: 66.66667%;
     -ms-flex-preferred-size: 66.66667%;
@@ -738,8 +738,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 75%;
     -moz-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -757,8 +757,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 83.33333%;
     -moz-flex-basis: 83.33333%;
     -ms-flex-preferred-size: 83.33333%;
@@ -776,8 +776,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 91.66667%;
     -moz-flex-basis: 91.66667%;
     -ms-flex-preferred-size: 91.66667%;
@@ -795,8 +795,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -814,8 +814,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 8.33333%; }
 
   .col-sm-offset-2 {
@@ -829,8 +829,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 16.66667%; }
 
   .col-sm-offset-3 {
@@ -844,8 +844,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 25%; }
 
   .col-sm-offset-4 {
@@ -859,8 +859,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 33.33333%; }
 
   .col-sm-offset-5 {
@@ -874,8 +874,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 41.66667%; }
 
   .col-sm-offset-6 {
@@ -889,8 +889,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 50%; }
 
   .col-sm-offset-7 {
@@ -904,8 +904,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 58.33333%; }
 
   .col-sm-offset-8 {
@@ -919,8 +919,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 66.66667%; }
 
   .col-sm-offset-9 {
@@ -934,8 +934,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 75%; }
 
   .col-sm-offset-10 {
@@ -949,8 +949,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 83.33333%; }
 
   .col-sm-offset-11 {
@@ -964,8 +964,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 91.66667%; }
 
   .col-sm-offset-12 {
@@ -979,8 +979,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 100%; }
 
   .col-sm {
@@ -1089,8 +1089,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     -ms-flex-preferred-size: auto;
@@ -1107,8 +1107,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 8.33333%;
     -moz-flex-basis: 8.33333%;
     -ms-flex-preferred-size: 8.33333%;
@@ -1126,8 +1126,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 16.66667%;
     -moz-flex-basis: 16.66667%;
     -ms-flex-preferred-size: 16.66667%;
@@ -1145,8 +1145,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 25%;
     -moz-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -1164,8 +1164,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 33.33333%;
     -moz-flex-basis: 33.33333%;
     -ms-flex-preferred-size: 33.33333%;
@@ -1183,8 +1183,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 41.66667%;
     -moz-flex-basis: 41.66667%;
     -ms-flex-preferred-size: 41.66667%;
@@ -1202,8 +1202,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 50%;
     -moz-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -1221,8 +1221,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 58.33333%;
     -moz-flex-basis: 58.33333%;
     -ms-flex-preferred-size: 58.33333%;
@@ -1240,8 +1240,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 66.66667%;
     -moz-flex-basis: 66.66667%;
     -ms-flex-preferred-size: 66.66667%;
@@ -1259,8 +1259,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 75%;
     -moz-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -1278,8 +1278,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 83.33333%;
     -moz-flex-basis: 83.33333%;
     -ms-flex-preferred-size: 83.33333%;
@@ -1297,8 +1297,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 91.66667%;
     -moz-flex-basis: 91.66667%;
     -ms-flex-preferred-size: 91.66667%;
@@ -1316,8 +1316,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -1335,8 +1335,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 8.33333%; }
 
   .col-md-offset-2 {
@@ -1350,8 +1350,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 16.66667%; }
 
   .col-md-offset-3 {
@@ -1365,8 +1365,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 25%; }
 
   .col-md-offset-4 {
@@ -1380,8 +1380,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 33.33333%; }
 
   .col-md-offset-5 {
@@ -1395,8 +1395,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 41.66667%; }
 
   .col-md-offset-6 {
@@ -1410,8 +1410,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 50%; }
 
   .col-md-offset-7 {
@@ -1425,8 +1425,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 58.33333%; }
 
   .col-md-offset-8 {
@@ -1440,8 +1440,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 66.66667%; }
 
   .col-md-offset-9 {
@@ -1455,8 +1455,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 75%; }
 
   .col-md-offset-10 {
@@ -1470,8 +1470,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 83.33333%; }
 
   .col-md-offset-11 {
@@ -1485,8 +1485,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 91.66667%; }
 
   .col-md-offset-12 {
@@ -1500,8 +1500,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 100%; }
 
   .col-md {
@@ -1610,8 +1610,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     -ms-flex-preferred-size: auto;
@@ -1628,8 +1628,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 8.33333%;
     -moz-flex-basis: 8.33333%;
     -ms-flex-preferred-size: 8.33333%;
@@ -1647,8 +1647,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 16.66667%;
     -moz-flex-basis: 16.66667%;
     -ms-flex-preferred-size: 16.66667%;
@@ -1666,8 +1666,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 25%;
     -moz-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -1685,8 +1685,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 33.33333%;
     -moz-flex-basis: 33.33333%;
     -ms-flex-preferred-size: 33.33333%;
@@ -1704,8 +1704,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 41.66667%;
     -moz-flex-basis: 41.66667%;
     -ms-flex-preferred-size: 41.66667%;
@@ -1723,8 +1723,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 50%;
     -moz-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -1742,8 +1742,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 58.33333%;
     -moz-flex-basis: 58.33333%;
     -ms-flex-preferred-size: 58.33333%;
@@ -1761,8 +1761,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 66.66667%;
     -moz-flex-basis: 66.66667%;
     -ms-flex-preferred-size: 66.66667%;
@@ -1780,8 +1780,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 75%;
     -moz-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -1799,8 +1799,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 83.33333%;
     -moz-flex-basis: 83.33333%;
     -ms-flex-preferred-size: 83.33333%;
@@ -1818,8 +1818,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 91.66667%;
     -moz-flex-basis: 91.66667%;
     -ms-flex-preferred-size: 91.66667%;
@@ -1837,8 +1837,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -1856,8 +1856,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 8.33333%; }
 
   .col-lg-offset-2 {
@@ -1871,8 +1871,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 16.66667%; }
 
   .col-lg-offset-3 {
@@ -1886,8 +1886,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 25%; }
 
   .col-lg-offset-4 {
@@ -1901,8 +1901,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 33.33333%; }
 
   .col-lg-offset-5 {
@@ -1916,8 +1916,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 41.66667%; }
 
   .col-lg-offset-6 {
@@ -1931,8 +1931,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 50%; }
 
   .col-lg-offset-7 {
@@ -1946,8 +1946,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 58.33333%; }
 
   .col-lg-offset-8 {
@@ -1961,8 +1961,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 66.66667%; }
 
   .col-lg-offset-9 {
@@ -1976,8 +1976,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 75%; }
 
   .col-lg-offset-10 {
@@ -1991,8 +1991,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 83.33333%; }
 
   .col-lg-offset-11 {
@@ -2006,8 +2006,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 91.66667%; }
 
   .col-lg-offset-12 {
@@ -2021,8 +2021,8 @@
     -moz-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 100%; }
 
   .col-lg {
@@ -2116,7 +2116,7 @@
 
   .last-lg {
     order: 1; } }
-html, body, div, span, applet, object, iframe, h1, h1 a, h2, h3, h4, h5, h6, p, p a, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h1 a, h2, h3, h4, h5, h6, p, p a, ul, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2152,7 +2152,7 @@ body {
 ul {
   list-style: none; }
 
-h1, h1 a, h2, h3, h4, h5, h6, p, p a, nav, ul {
+h1, h1 a, h2, h3, h4, h5, h6, p, p a, ul, nav, ul {
   color: #212429; }
 
 a {
@@ -2174,7 +2174,7 @@ a {
 a:hover {
   color: #57595A; }
 
-p a {
+p a, ul a {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2190,14 +2190,14 @@ h1 a {
   -o-transition: 100ms;
   transition: 100ms; }
 
-p a:hover, h1 a:hover {
+p a:hover, ul a:hover, h1 a:hover {
   opacity: 0.6; }
 
 @media (min-width: 480px) {
   h1, h1 a {
     font-family: "PT Serif", sans-serif;
     font-weight: 300;
-    color: #585C66;
+    color: #3F464D;
     font-size: 1.6rem;
     line-height: 3rem;
     margin-top: 2rem;
@@ -2231,11 +2231,11 @@ h3 {
   letter-spacing: 0.1rem;
   font-weight: 900;
   color: #BFC1C4;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 2rem;
   margin-top: -1rem;
-  padding-top: 0.7464rem;
-  padding-bottom: 0.2536rem;
+  padding-top: 0.7147rem;
+  padding-bottom: 0.2853rem;
   margin-bottom: 0rem; }
 
 h4 {
@@ -2243,11 +2243,11 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.09rem;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 2rem;
   margin-top: 2rem;
-  padding-top: 0.7464rem;
-  padding-bottom: 0.2536rem;
+  padding-top: 0.73055rem;
+  padding-bottom: 0.26945rem;
   margin-bottom: 1rem; }
 
 h5 {
@@ -2260,45 +2260,27 @@ h5 {
   padding-bottom: 0.4452rem;
   margin-bottom: 5rem; }
 
-p, p a {
+p, p a, ul {
   font-family: "PT Serif", sans-serif;
-  color: #585C66;
+  color: #3F464D;
   font-size: 1.1rem;
   line-height: 2rem;
   margin-top: 0rem;
   padding-top: 0.5919rem;
   padding-bottom: 0.4081rem;
   margin-bottom: 0rem; }
-
-ul {
-  font-family: "PT Serif", sans-serif;
-  color: #57595A;
-  font-size: 0.95rem;
-  line-height: 1.5rem;
-  margin-top: -0.5rem;
-  padding-top: 0.39755rem;
-  padding-bottom: 0.10245rem;
-  margin-bottom: 0rem; }
-  @media (max-width: 479px) {
-    ul {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-top: -0.5rem;
-      padding-top: 0.379rem;
-      padding-bottom: 0.121rem;
-      margin-bottom: 0rem; } }
 
 ol li {
   font-family: "PT Serif", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 2rem;
-  margin-top: 0rem;
+  margin-top: 1rem;
   padding-top: 0.5919rem;
   padding-bottom: 0.4081rem;
   margin-bottom: 0rem; }
 
-ol p, ol p a, p ol a {
+ol p, ol p a, p ol a, ol ul {
   font-size: 1.1rem;
   line-height: 2rem;
   margin-top: -1rem;
@@ -2343,7 +2325,7 @@ ol p, ol p a, p ol a {
   padding-bottom: 0.317rem;
   margin-bottom: -0.5rem; }
 
-.btn p.tag, .btn p a.tag, p .btn a.tag {
+.btn p.tag, .btn p a.tag, p .btn a.tag, .btn ul.tag {
   color: #979DA8 !important;
   text-align: center;
   font-weight: 100;
@@ -2354,7 +2336,7 @@ ol p, ol p a, p ol a {
   padding-bottom: 0.06535rem;
   margin-bottom: 1rem; }
   @media (max-width: 479px) {
-    .btn p.tag, .btn p a.tag, p .btn a.tag {
+    .btn p.tag, .btn p a.tag, p .btn a.tag, .btn ul.tag {
       font-size: 1rem;
       line-height: 1.5rem;
       margin-top: -0.5rem;
@@ -2417,28 +2399,26 @@ ol p, ol p a, p ol a {
   border-bottom: none; }
 
 .intro h1, .intro h1 a, h1 .intro a {
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #212429;
-  font-family: "Avenir", serif; }
+  font-weight: 400;
+  font-family: "PT Serif", sans-serif;
+  color: #3F464D; }
   @media (min-width: 480px) {
     .intro h1, .intro h1 a, h1 .intro a {
-      letter-spacing: 10px;
-      font-size: 2.25rem;
+      font-size: 3rem;
       line-height: 2rem;
       margin-top: 0rem;
-      padding-top: 0.28675rem;
-      padding-bottom: 0.71325rem;
+      padding-top: 0.887rem;
+      padding-bottom: 0.113rem;
       margin-bottom: -1rem; } }
   @media (max-width: 479px) {
     .intro h1, .intro h1 a, h1 .intro a {
       letter-spacing: 0.25rem;
       font-size: 1.5rem;
       line-height: 2rem;
-      margin-top: 4rem;
-      padding-top: 0.5245rem;
-      padding-bottom: 0.4755rem;
-      margin-bottom: 0rem; } }
+      margin-top: 5rem;
+      padding-top: 0.4435rem;
+      padding-bottom: 0.5565rem;
+      margin-bottom: -1rem; } }
 
 .intro__container {
   background: #F8F9FA;
@@ -2451,19 +2431,20 @@ ol p, ol p a, p ol a {
   background: linear-gradient(0deg, #FFFFFF, #E8F0F4);
   /* Standard syntax */ }
 
-.intro p, .intro p a, p .intro a {
+.intro p, .intro p a, p .intro a, .intro ul, .intro h5 {
   font-family: "PT Serif", sans-serif;
-  color: #585C66; }
+  color: #585C66;
+  font-weight: 300; }
   @media (min-width: 480px) {
-    .intro p, .intro p a, p .intro a {
-      font-size: 1.2rem;
+    .intro p, .intro p a, p .intro a, .intro ul, .intro h5 {
+      font-size: 1.75rem;
       line-height: 2rem;
-      margin-top: 1rem;
-      padding-top: 0.5548rem;
-      padding-bottom: 0.4452rem;
-      margin-bottom: 8rem; } }
+      margin-top: 2rem;
+      padding-top: 0.35075rem;
+      padding-bottom: 0.64925rem;
+      margin-bottom: 5rem; } }
   @media (max-width: 479px) {
-    .intro p, .intro p a, p .intro a {
+    .intro p, .intro p a, p .intro a, .intro ul, .intro h5 {
       font-size: 1.25rem;
       line-height: 2rem;
       margin-top: -1rem;
@@ -2474,7 +2455,7 @@ ol p, ol p a, p ol a {
 header.project h1, header.project h1 a, h1 header.project a {
   font-family: "PT Serif", sans-serif;
   font-weight: 300;
-  color: #585C66; }
+  color: #3F464D; }
   @media (min-width: 480px) {
     header.project h1, header.project h1 a, h1 header.project a {
       font-size: 1.6rem;
@@ -2503,19 +2484,19 @@ header.project h1, header.project h1 a, h1 header.project a {
 
 @media (min-width: 720px) {
   header.project h3 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 2rem;
     margin-top: 7rem;
-    padding-top: 0.8664rem;
-    padding-bottom: 0.1336rem;
+    padding-top: 0.8497rem;
+    padding-bottom: 0.1503rem;
     margin-bottom: 0rem; } }
 @media (min-width: 480px) and (max-width: 719px) {
   header.project h3 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 2rem;
     margin-top: 2rem;
-    padding-top: 0.8664rem;
-    padding-bottom: 0.1336rem;
+    padding-top: 0.8497rem;
+    padding-bottom: 0.1503rem;
     margin-bottom: 0rem; } }
 @media (max-width: 479px) {
   header.project h3 {
@@ -2656,11 +2637,11 @@ header.project h1, header.project h1 a, h1 header.project a {
   color: #585C66; }
   @media (min-width: 480px) {
     .project-list__project h3 {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       line-height: 2rem;
       margin-top: 3rem;
-      padding-top: 0.8664rem;
-      padding-bottom: 0.1336rem;
+      padding-top: 0.8497rem;
+      padding-bottom: 0.1503rem;
       margin-bottom: 0rem; } }
   @media (max-width: 479px) {
     .project-list__project h3 {
@@ -2671,7 +2652,7 @@ header.project h1, header.project h1 a, h1 header.project a {
       padding-bottom: 0.167rem;
       margin-bottom: 0rem; } }
 
-.project-list__project p, .project-list__project p a, p .project-list__project a {
+.project-list__project p, .project-list__project p a, p .project-list__project a, .project-list__project ul {
   font-family: "Nimbus Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 200;
@@ -2753,7 +2734,7 @@ header.sketch__header h1, header.sketch__header h1 a, h1 header.sketch__header a
   padding-bottom: 0.0936rem;
   margin-bottom: 0rem; }
 
-header.sketch__header p, header.sketch__header p a, p header.sketch__header a {
+header.sketch__header p, header.sketch__header p a, p header.sketch__header a, header.sketch__header ul {
   font-family: "Nimbus Sans", sans-serif;
   font-weight: 300;
   color: #585C66;
@@ -2805,7 +2786,7 @@ header.about h1, header.about h1 a, h1 header.about a {
   padding-bottom: 0.0936rem;
   margin-bottom: 0rem; }
 
-header.about p, header.about p a, p header.about a {
+header.about p, header.about p a, p header.about a, header.about ul {
   font-family: "Nimbus Sans", sans-serif;
   font-weight: 300;
   color: #585C66;
@@ -2854,6 +2835,9 @@ footer {
   /* Standard syntax */
   padding: 32px 0; }
 
+footer p, footer p a, p footer a, footer ul {
+  margin-bottom: 2rem; }
+
 footer h4 {
   color: #212429; }
   @media (min-width: 480px) {
@@ -2872,6 +2856,9 @@ footer h4 {
       padding-top: 0.15923rem;
       padding-bottom: 0.34078rem;
       margin-bottom: 1rem; } }
+
+footer h3 {
+  color: #3F464D; }
 
 footer a {
   display: block;

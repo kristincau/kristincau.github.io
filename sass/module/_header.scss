@@ -1,26 +1,25 @@
 //Intro (Home) Headers
 .intro h1 {
-	font-weight: 900;
-	text-transform: uppercase;
+	font-weight: 400;
+	// text-transform: uppercase;
 	// letter-spacing: 10px;
 	font-family: $font-serif;
-	color: $black;
+	color: $type-dark-grey;
 	// font-family: $font-accent;
 	@include for-tablet-portrait-up {
 		@include plumber(
-
 			$baseline: $serif-baseline,
-			$font-size: 2.25,
-			$leading-top: 4
-			$baseline: $accent-baseline,
-			$font-size: 2.25
+			$font-size: 3
+			// $leading-top: 3
+			// $baseline: $accent-baseline,
 			// $leading-top: 4
 		);
 	}
 	@include for-phone-only {
 		letter-spacing: 0.25rem;
 		@include plumber(
-			$baseline: $accent-baseline,
+			$baseline: $serif-baseline,
+			// $baseline: $accent-baseline,
 			$font-size: 1.5,
 			$line-height: 2,
 			$leading-top: 5
@@ -43,15 +42,16 @@
 }
 
 
-.intro p {
+.intro p, .intro h5 {
 	font-family: $font-serif;
 	color: $type-grey;
+	font-weight: 300;
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $serif-baseline,
-			$font-size: 1.2,
+			$font-size: 1.75,
 			$leading-top: 2,
-			$leading-bottom: 8
+			$leading-bottom: 6
 		);
 	}
 	@include for-phone-only {
@@ -67,7 +67,7 @@
 header.project h1 {
 	font-family: $font-serif;
 	font-weight: 300;
-	color: $type-grey;
+	color: $type-dark-grey;
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $serif-baseline,		
