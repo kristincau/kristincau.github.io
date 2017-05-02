@@ -2483,6 +2483,14 @@ header.project h3 {
   .row.overflow {
     width: 100%; } }
 
+.project__bg {
+  height: 80%;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms; }
+
 .project--canopy {
   background-color: #E77300; }
 
@@ -2549,6 +2557,9 @@ header.project h3 {
 
 .project-list__project:hover .link {
   color: #585C66; }
+
+.project-list__project:hover .project__bg {
+  height: 100%; }
 
 .icn--arw {
   -webkit-transition: 300ms;

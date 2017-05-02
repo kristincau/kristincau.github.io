@@ -5,6 +5,10 @@
 // body {height:100%; padding:0; margin:0; width:100%;}
 // body {display:flex; flex-direction:column;}
 // .project-list__bg {flex-grow:1;}
+.project__bg {
+	height: 80%;
+	@include transition(200ms);
+}
 
 .project--canopy { background-color: $color-canopy; }
 .project--ab { background-color: $color-ab; }
@@ -114,6 +118,10 @@
 .project-list__project:hover .link {
 	color: $type-grey;
 }
+
+.project-list__project:hover .project__bg {
+	height: 100%;
+} 
 
 
 
