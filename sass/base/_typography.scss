@@ -21,11 +21,11 @@ h1, h2, h3, h4, h5, h6, p, nav, ul {
 }
 
 a {
-	font-family: $font-accent;
+	font-family: $font-sans;
 	font-weight: 500;
 	color: $type-lightgrey;
 	@include plumber(
-		$baseline: $accent-baseline,
+		$baseline: $sans-baseline,
 		$font-size: 1.1,
 		$leading-top: 1
 	);
@@ -42,6 +42,7 @@ p a {
 	@include transition(100ms);
 }
 
+
 h1 a {
 	@extend h1;
 	text-decoration: underline;
@@ -53,12 +54,13 @@ p a:hover, h1 a:hover {
 }
 
 h1 {
+	color: $type-title-blue;
 	@include for-tablet-portrait-up {
-		font-family: $font-serif;
-		font-weight: 300;
-		color: $type-dark-grey;
+		font-family: $font-accent;
+		// font-weight: 300;
+		// color: $type-dark-grey;
 		@include plumber(
-			$baseline: $serif-baseline,		
+			$baseline: $accent-baseline,		
 			$grid-height: 0.5rem,
 			$font-size: 3.2,
 			$line-height: 6,
@@ -89,53 +91,64 @@ h1 {
 
 
 h2 {
+	color: $type-title-blue;
 	font-family: $font-accent;
-	font-weight: 700;
+	font-weight: 600;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 1.8,
-		$leading-top: 6,
-		$leading-bottom: 2,
+		$font-size: 2.625,
+		$leading-top: 8,
+		$leading-bottom: 3,
 		$line-height: 2
 	);	
 }
 
 
 h3 {
-	font-family: $font-accent;
+	font-family: $font-sans;
 	text-transform: uppercase;
 	display: inline-block;        
 	letter-spacing: 0.1rem;
 	font-weight: 900;
-	color: $type-light-grey;
+	color: $yellow-text;
 	@include plumber(
-		$baseline: $accent-baseline,
+		$baseline: $sans-baseline,
 		$font-size: $size-h3
 	);
+}
+
+h3.tag {
+	font-family: $font-accent;
+	font-style: italic;
+	color: $yellow-text;
+	text-transform: none;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$font-size: 1.1
+	);
+	margin: 0 4px 0 6px;
 }
 
 
 h4 {
 	font-family: $font-accent;
-	text-transform: uppercase;
-	letter-spacing: 0.09rem;
 	font-weight: 900;
 	@include plumber(
 		$baseline: $accent-baseline,
-		$font-size: 0.85,
+		$font-size: 2.65,
 		$leading-top: 3,    	
-		$leading-bottom:1
+		$leading-bottom:2
 	);	
 }
 
 h5 {
-	font-family: $font-serif;
-	color: $type-grey;
+	font-family: $font-accent;
+	font-weight: 700;
 	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.2,
-		$leading-top: 4,
-		$leading-bottom: 5
+		$baseline: $accent-baseline,
+		$font-size: 1.75,
+		$leading-top: 6,
+		$leading-bottom: 4
 	);
 }
 

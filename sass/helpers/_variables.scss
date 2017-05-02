@@ -1,13 +1,13 @@
 //Baselines
-$sans-baseline: 0.333;
+$sans-baseline: 0.183;
 $serif-baseline: 0.129;
-$accent-baseline: 0.183;
+$accent-baseline: 0.186;
 
 //Font stacks
-$font-accent: 'Avenir', serif;
+$font-accent: 'Cormorant Garamond', serif;
 // $font-serif: 'Merriweather', 'PT Serif', sans-serif;
 $font-serif: 'PT Serif', sans-serif;
-$font-sans: 'Nimbus Sans', sans-serif;
+$font-sans: 'Avenir', sans-serif;
 
 //Loaded Fonts Stack
 $font-accent-loaded: 'Avenir', serif;
@@ -22,11 +22,26 @@ $type-dark-grey: #3F464D;
 $type-med-grey: #57595A;
 $type-lightgrey: #979DA8;
 $white: #FFFFFF;
+$type-title-blue: #0B1426;
+
+//Yellows
+$yellow-bold: #E9D18F;
+$yellow-text: #AEA488;
+
+//Blues
+$blue-light: #E4EEF4;
+$blue-shadow: #193655;
+$blue-box: #AEC3D9;
+$blue-bg: #EBF4FA;
+$blue-bg-light: #F0F6FA;
+$blue-bg-med: #D1E2EE;
+$blue-bg-dark: #7EA2C2;
+
 
 //Misc
 $bg-grey: #F8F9FA;
 $bg-project-grey: #EEF2F5;
-$bg-gradient-grey: #E8F0F4;
+$bg-gradient-grey: #EBF4FA;
 
 //Accent Colors
 $light-orange: #FFF4EF;
@@ -35,9 +50,9 @@ $med-orange: #E6A18A;
 $dark-orange: #E96B40;
 
 //Project Colors
-$color-canopy: #FAFCFC;
-$color-ab: #1F1F28;
-$color-disney: #F8CD0E;
+$color-canopy: #E77300;
+$color-ab: #52DEB2;
+$color-dstyle: #CE5592;
 $color-fablab: #3E70E6;
 
 //Font Sizes

@@ -1,36 +1,60 @@
 //Intro (Home) Headers
+// .intro__box {
+// 	background-color: $blue-box;
+// 	background-position: 50px 50px;
+// 	width: 32rem;
+// 	height: 25rem;
+// 	margin-left: -7rem;
+// 	margin-top: 2rem;
+// 	position: absolute;
+// 	z-index: -1
+
+// }
+
 .intro h1 {
-	font-weight: 400;
+	font-weight: 700;
 	// text-transform: uppercase;
 	// letter-spacing: 10px;
-	font-family: $font-serif;
-	color: $type-dark-grey;
+	
+	
 	// font-family: $font-accent;
 	@include for-tablet-portrait-up {
 		@include plumber(
-			$baseline: $serif-baseline,
-			$font-size: 3
+			$baseline: $accent-baseline,
+			$font-size: 3.5,
+			$line-height: 4
 			// $leading-top: 3
 			// $baseline: $accent-baseline,
 			// $leading-top: 4
 		);
 	}
-	@include for-phone-only {
-		letter-spacing: 0.25rem;
-		@include plumber(
-			$baseline: $serif-baseline,
-			// $baseline: $accent-baseline,
-			$font-size: 1.5,
-			$line-height: 2,
-			$leading-top: 5
-		);
-	}
+	// @include for-phone-only {
+	// 	letter-spacing: 0.25rem;
+	// 	@include plumber(
+	// 		$baseline: $serif-baseline,
+	// 		// $baseline: $accent-baseline,
+	// 		$font-size: 1.5,
+	// 		$line-height: 2,
+	// 		$leading-top: 5
+	// 	);
+	// }
 	
 }
 
+.intro h2 {
+	margin-top: 16rem;
+}
 
-.intro__container {
-	@include gradient-bg(0deg);
+.intro h1:before, .intro h2:before{
+	width: 4rem;
+	content: "";
+	display: block;
+	border-bottom: 6px solid $yellow-bold;
+	margin-bottom: 2rem;
+}
+
+// .intro__container {
+// 	@include gradient-bg(0deg);
 	// padding-top: 6rem;
 	// @include for-tablet-portrait-up {	
 	// 	padding-bottom: 3rem;
@@ -39,95 +63,104 @@
 	// 	padding-bottom: 2rem;
 	// }
 	
-}
+// }
 
 
-.intro p, .intro h5 {
-	font-family: $font-serif;
-	color: $type-grey;
-	font-weight: 300;
-	@include for-tablet-portrait-up {
-		@include plumber(
-			$baseline: $serif-baseline,
-			$font-size: 1.75,
-			$leading-top: 2,
-			$leading-bottom: 6
-		);
-	}
-	@include for-phone-only {
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 1.25,
-			$leading-bottom: 6		
-		);
-	}
-}
+// .intro p, .intro h5 {
+// 	font-family: $font-serif;
+// 	color: $type-grey;
+// 	font-weight: 300;
+// 	@include for-tablet-portrait-up {
+// 		@include plumber(
+// 			$baseline: $serif-baseline,
+// 			$font-size: 1.75,
+// 			$leading-top: 2,
+// 			$leading-bottom: 6
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		@include plumber(
+// 			$baseline: $accent-baseline,
+// 			$font-size: 1.25,
+// 			$leading-bottom: 6		
+// 		);
+// 	}
+// }
 
 //Standard project headers
 header.project h1 {
-	font-family: $font-serif;
-	font-weight: 300;
+	font-family: $font-accent;
+	font-weight: 400;
 	color: $type-dark-grey;
 	@include for-tablet-portrait-up {
 		@include plumber(
-			$baseline: $serif-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3.2,
-			$line-height: 6,
-			$leading-top: 2,
-			$leading-bottom: 10
-		);
-	}
-	@include for-tablet-landscape-up {
-		@include plumber(
-			$baseline: $serif-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3.2,
-			$line-height: 6,
-			$leading-top: 5,
-			$leading-bottom: 24
-		);
-	}
-	
-	@include for-phone-only {
-		z-index: 99;
-		@include plumber(
 			$baseline: $accent-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3,
-			$line-height: 5,
-			$leading-top: 5,
-			$leading-bottom: 10
+			// $grid-height: 0.5rem,
+			$font-size: 2.25,
+			$line-height: 3,
+			$leading-top: 2
+			// $leading-bottom: 10
 		);
 	}
+	// @include for-tablet-landscape-up {
+	// 	@include plumber(
+	// 		$baseline: $serif-baseline,		
+	// 		$grid-height: 0.5rem,
+	// 		$font-size: 3.2,
+	// 		$line-height: 6,
+	// 		$leading-top: 5,
+	// 		$leading-bottom: 24
+	// 	);
+	// }
 	
+	// @include for-phone-only {
+	// 	z-index: 99;
+	// 	@include plumber(
+	// 		$baseline: $accent-baseline,		
+	// 		$grid-height: 0.5rem,
+	// 		$font-size: 3,
+	// 		$line-height: 5,
+	// 		$leading-top: 5,
+	// 		$leading-bottom: 10
+	// 	);
+	// }
+	
+}
+
+header.project {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
 header.project h3 {
-	@include for-tablet-landscape-up {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: $size-h3,
-			$leading-top: 8
-		);
-	}
-	@include for-tablet-portrait {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: $size-h3,
-			$leading-top: 3
-		);
-	}
-	@include for-phone-only {
-		z-index: 99;
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: 1,
-			$leading-top: 3
-		);
-	}
-
+	margin-top: 4rem
 }
+
+// header.project h3 {
+// 	@include for-tablet-landscape-up {
+// 		@include plumber(
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3,
+// 			$leading-top: 8
+// 		);
+// 	}
+// 	@include for-tablet-portrait {
+// 		@include plumber(
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3,
+// 			$leading-top: 3
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		z-index: 99;
+// 		@include plumber(
+// 			$baseline: $sans-baseline,
+// 			$font-size: 1,
+// 			$leading-top: 3
+// 		);
+// 	}
+
+// }
 
 .header__image {
 	width: 100%;
@@ -165,7 +198,7 @@ header.project h3 {
 
 .row.overflow {
 	@include for-tablet-landscape-up {
-		width: 128%;	
+		width: 116%;	
 	}
 	@include for-tablet-portrait {
 		width: 100%;

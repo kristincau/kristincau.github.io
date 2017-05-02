@@ -2,18 +2,47 @@
 // 	@include gradient-bg(180deg);
 // }
 
+// body {height:100%; padding:0; margin:0; width:100%;}
+// body {display:flex; flex-direction:column;}
+// .project-list__bg {flex-grow:1;}
+
+.project--canopy { background-color: $color-canopy; }
+.project--ab { background-color: $color-ab; }
+.project--dstyle { background-color: $color-dstyle; }
+
+.project-list__bg {	
+	// position: absolute;
+	// height: 140rem;
+	margin-top: -2rem;
+	// z-index: -2;
+	width: 100%;
+	@include gradient-bg(-55deg, $white, $blue-bg);
+	clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
+}
+
+
+// .bg--2 {
+// 	@include gradient-bg(-15deg, rgba($white,.5), $blue-bg-med);
+// 	clip-path: polygon(0% 100%, 100% 100%, 100% 3%, 0% 13%);
+// }
+
+// .bg--3 {
+// 	@include gradient-bg(-15deg, rgba($white,.5), $blue-bg-light);
+// 	clip-path: polygon(0% 100%, 100% 100%, 100% 6%, 0% 13%);
+// }
+
 .project-list__project {
 	margin: 0;
 	margin-bottom: 4rem;
 	// padding: 0 !important;
-	border-radius: 2px;
+	border-radius: 4px;
 	overflow: hidden;
-	// background-color: rgba($white,0.5);
-	@include gradient-bg(-90deg);
-	box-shadow: 2px 2px 8px rgba(0,0,0,.15);
+	background-color: #FDFFFF;
+	// @include gradient-bg(-90deg);
+	box-shadow: 4px 4px 16px rgba($blue-shadow,.12);
 	@include transition(300ms);
 	@include for-desktop-up {
-		height: 360px;
+		height: 320px;
 	}
 	@include for-tablet-portrait-up {
 		
@@ -27,38 +56,66 @@
 	}
 }
 
-.project-list__project--pending {
-	box-shadow: none;
-	position: relative;
-	background-color: #EBEDF0;
-	height: 280px;
-}
+// .project-list__project--pending {
+// 	box-shadow: none;
+// 	position: relative;
+// 	background-color: #EBEDF0;
+// 	height: 280px;
+// }
 
-.project-list__project--pending:after {
-	background-color: rgba(255,255,255,.8);
-	width: 100%;
-	height: 100%;
-	content: "Coming Soon";
-	text-align: left;
-	position: absolute;
-	font-family: $font-accent;
-	font-size: 1.75rem;
+// .project-list__project--pending:after {
+// 	background-color: rgba(255,255,255,.8);
+// 	width: 100%;
+// 	height: 100%;
+// 	content: "Coming Soon";
+// 	text-align: left;
+// 	position: absolute;
+// 	font-family: $font-accent;
+// 	font-size: 1.75rem;
+// 	color: $type-light-grey;
+// 	letter-spacing: 0.4rem; 
+// 	font-weight: 900;
+// 	padding: 8rem 0 0 6rem;
+// 	text-transform: uppercase;
+// }
+
+
+// .project-list__project--pending:hover {
+// 	box-shadow: none !important;
+// }
+
+.link {
+	@include transition(150ms);
+	font-family: $font-sans;
+	display: block;
+	font-weight: 700;
 	color: $type-light-grey;
-	letter-spacing: 0.4rem; 
-	font-weight: 900;
-	padding: 8rem 0 0 6rem;
-	text-transform: uppercase;
-}
-
-
-.project-list__project--pending:hover {
-	box-shadow: none !important;
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $sans-baseline,
+			$font-size: 1.1
+		);
+	}
+	// @include for-phone-only {
+	// 	@include plumber(		
+	// 		$baseline: $sans-baseline,
+	// 		$grid-height: 0.5rem,
+	//     	$line-height: 4,
+	// 		$font-size: $size-nav-mobile*2
+	// 	);
+	// }
 }
 
 .project-list__project:hover {
-	box-shadow: 8px 8px 24px rgba(0,0,0,.1);
+	box-shadow: 12px 12px 24px rgba($blue-shadow,.06);
 	// box-shadow: 4px 4px 16px rgba(0,0,0,.2);
 }
+
+.project-list__project:hover .link {
+	color: $type-grey;
+}
+
+
 
 .icn--arw {
 	@include transition(300ms);
@@ -73,65 +130,66 @@
 }
 
 .project-list__project h2 {
-	font-family: $font-serif;
-	color: $type-grey;
-	font-weight: 300;
+	// font-family: $font-serif;
+	// color: $type-grey;
+	font-weight: 400;
 	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.5,
+		$baseline: $accent-baseline,
+		$font-size: 2.625,
 		$leading-top: 2,
-		$leading-bottom: 2
+		$leading-bottom: 2,
+		$line-height: 3
 	);
-	@include for-phone-only {
-		@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.5,
-		$line-height: 2,
-		$leading-top: 2,
-		$leading-bottom: 2
-	);
-	}
+	// @include for-phone-only {
+	// 	@include plumber(
+	// 	$baseline: $serif-baseline,
+	// 	$font-size: 1.5,
+	// 	$line-height: 2,
+	// 	$leading-top: 2,
+	// 	$leading-bottom: 2
+	// );
+	// }
 }
 
-.project-list__project h2:before {
-	@include for-tablet-portrait-up {
-		width: 48px;
-		content: "";
-		display: block;
-		border-bottom: 1px solid $type-med-grey;
-		margin-bottom: 2rem;
-	}
-}
+// .project-list__project h2:before {
+// 	@include for-tablet-portrait-up {
+// 		width: 48px;
+// 		content: "";
+// 		display: block;
+// 		border-bottom: 1px solid $type-med-grey;
+// 		margin-bottom: 2rem;
+// 	}
+// }
 
-.project-list__project h3 {
-	color: $type-grey;
-	@include for-tablet-portrait-up {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: $size-h3,
-			$leading-top: 4
-		);
-	}
-	@include for-phone-only {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: $size-h3-mobile,
-			$leading-top: 4
-		);
-	}
-}
+// .project-list__project h3 {
+// 	color: $type-grey;
+// 	@include for-tablet-portrait-up {
+// 		@include plumber(
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3,
+// 			$leading-top: 4
+// 		);
+// 	}
+// 	@include for-phone-only {
+// 		@include plumber(
+// 			$baseline: $sans-baseline,
+// 			$font-size: $size-h3-mobile,
+// 			$leading-top: 4
+// 		);
+// 	}
+// }
 
-.project-list__project p {
-	font-family: $font-sans;
-	text-transform: uppercase;
-	font-weight: 200;
-	letter-spacing: 0.75px;
-	color: $type-grey;
-	@include plumber(
-		$baseline: $sans-baseline,
-		$font-size: 1		
-	);
-}
+// .project-list__project p {
+// 	font-family: $font-sans;
+// 	text-transform: uppercase;
+// 	font-weight: 200;
+// 	letter-spacing: 0.75px;
+// 	color: $type-grey;
+// 	@include plumber(
+// 		$baseline: $sans-baseline,
+// 		$font-size: 1		
+// 	);
+// }
 .icn--arw {
 	width: 2rem;
 	height: 2rem;
@@ -142,21 +200,22 @@
 .project-list__project-image {
 	height: auto;
 	@include for-tablet-portrait-up {
-		width: 168%;
-		margin-left: -12em;
-		margin-top: 2em;
-		margin-bottom: -6em;
+		// width: 168%;
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 2rem;
+		margin-bottom: -5rem
 		
 	}
-	@include for-tablet-landscape-up {
-		width: 120%;
-		margin-left: -4em;
-		margin-top: 2em;
-	}
-	@include for-phone-only {
-		width: 120%;
-		margin-left: -10%;
-	}
+	// @include for-tablet-landscape-up {
+	// 	width: 120%;
+	// 	margin-left: -4em;
+	// 	margin-top: 2em;
+	// }
+	// @include for-phone-only {
+	// 	width: 120%;
+	// 	margin-left: -10%;
+	// }
 	// margin-left: -48px;
 	// @include for-desktop-up {
 	// 	-webkit-clip-path: polygon(35% 0, 0 90%, 100% 90%, 100% 0);

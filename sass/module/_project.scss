@@ -1,6 +1,6 @@
 .overview__container {
-	background-color: $bg-grey;
-	padding-bottom: 3rem;
+	background-color: $blue-bg-light;
+	padding: 3rem 0;
 }
 
 //Project Body
@@ -12,6 +12,11 @@
 // 		$leading-bottom: 1
 // 	);	
 // }
+
+.project h3 {
+	// margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
 
 .overview__container h4 {
 	@include for-phone-only {
