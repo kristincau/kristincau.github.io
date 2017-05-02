@@ -94,8 +94,8 @@ h2 {
 	@include plumber(
 		$baseline: $accent-baseline,
 		$font-size: 1.8,
-		$leading-top: 3,
-		$leading-bottom: 1,
+		$leading-top: 6,
+		$leading-bottom: 2,
 		$line-height: 2
 	);	
 }
@@ -133,7 +133,9 @@ h5 {
 	color: $type-grey;
 	@include plumber(
 		$baseline: $serif-baseline,
-		$font-size: 1.125
+		$font-size: 1.2,
+		$leading-top: 4,
+		$leading-bottom: 5
 	);
 }
 

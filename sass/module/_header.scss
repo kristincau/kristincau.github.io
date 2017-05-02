@@ -4,48 +4,61 @@
 	text-transform: uppercase;
 	// letter-spacing: 10px;
 	font-family: $font-serif;
+	color: $black;
+	// font-family: $font-accent;
 	@include for-tablet-portrait-up {
 		@include plumber(
+
 			$baseline: $serif-baseline,
 			$font-size: 2.25,
 			$leading-top: 4
+			$baseline: $accent-baseline,
+			$font-size: 2.25
+			// $leading-top: 4
 		);
 	}
-	// @include for-phone-only {
-	// 	@include plumber(
-	// 		$baseline: $accent-baseline,
-	// 		$font-size: 2,
-	// 		$leading-top: 8
-	// 	);
-	// }
+	@include for-phone-only {
+		letter-spacing: 0.25rem;
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 1.5,
+			$line-height: 2,
+			$leading-top: 5
+		);
+	}
 	
 }
 
 
 .intro__container {
-	@include reverse-gradient-bg();
-	padding-top: 6rem;
-	padding-bottom: 3rem;
+	@include gradient-bg(0deg);
+	// padding-top: 6rem;
+	// @include for-tablet-portrait-up {	
+	// 	padding-bottom: 3rem;
+	// }
+	// @include for-phone-only {
+	// 	padding-bottom: 2rem;
+	// }
+	
 }
 
 
 .intro p {
-	font-family: $font-accent;
-	font-weight: 300;
+	font-family: $font-serif;
 	color: $type-grey;
 	@include for-tablet-portrait-up {
 		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 1.5,
+			$baseline: $serif-baseline,
+			$font-size: 1.2,
 			$leading-top: 2,
-			$leading-bottom: 4
-		);	
+			$leading-bottom: 8
+		);
 	}
 	@include for-phone-only {
 		@include plumber(
 			$baseline: $accent-baseline,
-			$font-size: 1.5,
-			$leading-top: 2
+			$font-size: 1.25,
+			$leading-bottom: 6		
 		);
 	}
 }
@@ -72,7 +85,7 @@ header.project h1 {
 			$font-size: 3.2,
 			$line-height: 6,
 			$leading-top: 5,
-			$leading-bottom: 16
+			$leading-bottom: 24
 		);
 	}
 	
@@ -95,10 +108,10 @@ header.project h3 {
 		@include plumber(
 			$baseline: $sans-baseline,
 			$font-size: $size-h3,
-			$leading-top: 5
+			$leading-top: 8
 		);
 	}
-	@include for-tablet-portrait-up {
+	@include for-tablet-portrait {
 		@include plumber(
 			$baseline: $sans-baseline,
 			$font-size: $size-h3,
@@ -116,6 +129,10 @@ header.project h3 {
 
 }
 
+.header__image {
+	width: 100%;
+	height: auto
+}
 
 // .header__text{
 // 	position: absolute;

@@ -2197,7 +2197,7 @@ p a:hover, h1 a:hover {
   h1, h1 a {
     font-family: "PT Serif", sans-serif;
     font-weight: 300;
-    color: #464646;
+    color: #585C66;
     font-size: 1.6rem;
     line-height: 3rem;
     margin-top: 2rem;
@@ -2219,10 +2219,10 @@ h2 {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding-top: 0.4294rem;
   padding-bottom: 0.5706rem;
-  margin-bottom: 0rem; }
+  margin-bottom: 1rem; }
 
 h3 {
   font-family: "Avenir", serif;
@@ -2231,11 +2231,11 @@ h3 {
   letter-spacing: 0.1rem;
   font-weight: 900;
   color: #BFC1C4;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 2rem;
   margin-top: -1rem;
-  padding-top: 0.76225rem;
-  padding-bottom: 0.23775rem;
+  padding-top: 0.7464rem;
+  padding-bottom: 0.2536rem;
   margin-bottom: 0rem; }
 
 h4 {
@@ -2252,17 +2252,17 @@ h4 {
 
 h5 {
   font-family: "PT Serif", sans-serif;
-  color: #464646;
-  font-size: 1.125rem;
+  color: #585C66;
+  font-size: 1.2rem;
   line-height: 2rem;
-  margin-top: -1rem;
-  padding-top: 0.58262rem;
-  padding-bottom: 0.41738rem;
-  margin-bottom: 0rem; }
+  margin-top: 3rem;
+  padding-top: 0.5548rem;
+  padding-bottom: 0.4452rem;
+  margin-bottom: 5rem; }
 
 p, p a {
   font-family: "PT Serif", sans-serif;
-  color: #464646;
+  color: #585C66;
   font-size: 1.1rem;
   line-height: 2rem;
   margin-top: 0rem;
@@ -2392,7 +2392,7 @@ ol p, ol p a, p ol a {
 
 .navbar {
   width: 100%;
-  padding: 1rem 0; }
+  padding: 1.5rem 0; }
 
 .headhesive {
   position: fixed;
@@ -2419,55 +2419,62 @@ ol p, ol p a, p ol a {
 .intro h1, .intro h1 a, h1 .intro a {
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  color: #212429;
   font-family: "Avenir", serif; }
   @media (min-width: 480px) {
     .intro h1, .intro h1 a, h1 .intro a {
+      letter-spacing: 10px;
       font-size: 2.25rem;
       line-height: 2rem;
-      margin-top: 4rem;
+      margin-top: 0rem;
       padding-top: 0.28675rem;
       padding-bottom: 0.71325rem;
       margin-bottom: -1rem; } }
-
-.intro__container {
-  background: #F8F9FA;
-  background: -webkit-linear-gradient(#EBEDF0, #FFFFFF);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#EBEDF0, #FFFFFF);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#EBEDF0, #FFFFFF);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#EBEDF0, #FFFFFF);
-  /* Standard syntax */
-  padding-top: 6rem;
-  padding-bottom: 3rem; }
-
-.intro p, .intro p a, p .intro a {
-  font-family: "Avenir", serif;
-  font-weight: 300;
-  color: #464646; }
-  @media (min-width: 480px) {
-    .intro p, .intro p a, p .intro a {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-top: 1rem;
-      padding-top: 0.5245rem;
-      padding-bottom: 0.4755rem;
-      margin-bottom: 4rem; } }
   @media (max-width: 479px) {
-    .intro p, .intro p a, p .intro a {
+    .intro h1, .intro h1 a, h1 .intro a {
+      letter-spacing: 0.25rem;
       font-size: 1.5rem;
       line-height: 2rem;
-      margin-top: 1rem;
+      margin-top: 4rem;
       padding-top: 0.5245rem;
       padding-bottom: 0.4755rem;
       margin-bottom: 0rem; } }
 
+.intro__container {
+  background: #F8F9FA;
+  background: -webkit-linear-gradient(0deg, #FFFFFF, #E8F0F4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(0deg, #FFFFFF, #E8F0F4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, #FFFFFF, #E8F0F4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #FFFFFF, #E8F0F4);
+  /* Standard syntax */ }
+
+.intro p, .intro p a, p .intro a {
+  font-family: "PT Serif", sans-serif;
+  color: #585C66; }
+  @media (min-width: 480px) {
+    .intro p, .intro p a, p .intro a {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-top: 1rem;
+      padding-top: 0.5548rem;
+      padding-bottom: 0.4452rem;
+      margin-bottom: 8rem; } }
+  @media (max-width: 479px) {
+    .intro p, .intro p a, p .intro a {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin-top: -1rem;
+      padding-top: 0.60375rem;
+      padding-bottom: 0.39625rem;
+      margin-bottom: 6rem; } }
+
 header.project h1, header.project h1 a, h1 header.project a {
   font-family: "PT Serif", sans-serif;
   font-weight: 300;
-  color: #464646; }
+  color: #585C66; }
   @media (min-width: 480px) {
     header.project h1, header.project h1 a, h1 header.project a {
       font-size: 1.6rem;
@@ -2483,7 +2490,7 @@ header.project h1, header.project h1 a, h1 header.project a {
       margin-top: 2rem;
       padding-top: 0.4064rem;
       padding-bottom: 0.0936rem;
-      margin-bottom: 8rem; } }
+      margin-bottom: 12rem; } }
   @media (max-width: 479px) {
     header.project h1, header.project h1 a, h1 header.project a {
       z-index: 99;
@@ -2496,19 +2503,19 @@ header.project h1, header.project h1 a, h1 header.project a {
 
 @media (min-width: 720px) {
   header.project h3 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 2rem;
-    margin-top: 4rem;
-    padding-top: 0.87475rem;
-    padding-bottom: 0.12525rem;
+    margin-top: 7rem;
+    padding-top: 0.8664rem;
+    padding-bottom: 0.1336rem;
     margin-bottom: 0rem; } }
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 719px) {
   header.project h3 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 2rem;
     margin-top: 2rem;
-    padding-top: 0.87475rem;
-    padding-bottom: 0.12525rem;
+    padding-top: 0.8664rem;
+    padding-bottom: 0.1336rem;
     margin-bottom: 0rem; } }
 @media (max-width: 479px) {
   header.project h3 {
@@ -2519,6 +2526,10 @@ header.project h1, header.project h1 a, h1 header.project a {
     padding-top: 0.833rem;
     padding-bottom: 0.167rem;
     margin-bottom: 0rem; } }
+
+.header__image {
+  width: 100%;
+  height: auto; }
 
 .parallax {
   background-repeat: no-repeat; }
@@ -2548,10 +2559,19 @@ header.project h1, header.project h1 a, h1 header.project a {
     width: 100%; } }
 
 .project-list__project {
-  margin-bottom: 2rem;
+  margin: 0;
+  margin-bottom: 4rem;
   border-radius: 2px;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background: #F8F9FA;
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #E8F0F4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #FFFFFF, #E8F0F4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #FFFFFF, #E8F0F4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #FFFFFF, #E8F0F4);
+  /* Standard syntax */
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
@@ -2607,6 +2627,7 @@ header.project h1, header.project h1 a, h1 header.project a {
 
 .project-list__project h2 {
   font-family: "PT Serif", sans-serif;
+  color: #585C66;
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2614,37 +2635,48 @@ header.project h1, header.project h1 a, h1 header.project a {
   padding-top: 0.4435rem;
   padding-bottom: 0.5565rem;
   margin-bottom: 1rem; }
-
-.project-list__project h2:before {
-  width: 48px;
-  content: "";
-  display: block;
-  border-bottom: 1px solid #464646;
-  margin-bottom: 2rem; }
+  @media (max-width: 479px) {
+    .project-list__project h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 2rem;
+      padding-top: 0.4435rem;
+      padding-bottom: 0.5565rem;
+      margin-bottom: 1rem; } }
 
 @media (min-width: 480px) {
-  .project-list__project h3 {
-    font-size: 0.75rem;
-    line-height: 2rem;
-    margin-top: 3rem;
-    padding-top: 0.87475rem;
-    padding-bottom: 0.12525rem;
-    margin-bottom: 0rem; } }
-@media (max-width: 479px) {
-  .project-list__project h3 {
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-top: 3rem;
-    padding-top: 0.833rem;
-    padding-bottom: 0.167rem;
-    margin-bottom: 0rem; } }
+  .project-list__project h2:before {
+    width: 48px;
+    content: "";
+    display: block;
+    border-bottom: 1px solid #57595A;
+    margin-bottom: 2rem; } }
+
+.project-list__project h3 {
+  color: #585C66; }
+  @media (min-width: 480px) {
+    .project-list__project h3 {
+      font-size: 0.8rem;
+      line-height: 2rem;
+      margin-top: 3rem;
+      padding-top: 0.8664rem;
+      padding-bottom: 0.1336rem;
+      margin-bottom: 0rem; } }
+  @media (max-width: 479px) {
+    .project-list__project h3 {
+      font-size: 1rem;
+      line-height: 2rem;
+      margin-top: 3rem;
+      padding-top: 0.833rem;
+      padding-bottom: 0.167rem;
+      margin-bottom: 0rem; } }
 
 .project-list__project p, .project-list__project p a, p .project-list__project a {
   font-family: "Nimbus Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 0.75px;
-  color: #464646;
+  color: #585C66;
   font-size: 1rem;
   line-height: 2rem;
   margin-top: -1rem;
@@ -2655,26 +2687,32 @@ header.project h1, header.project h1 a, h1 header.project a {
 .icn--arw {
   width: 2rem;
   height: 2rem; }
+  @media (max-width: 479px) {
+    .icn--arw {
+      display: none; } }
 
 .project-list__project-image {
+  height: auto;
   overflow: hidden; }
   @media (min-width: 480px) {
     .project-list__project-image {
       width: 168%;
       margin-left: -12em;
       margin-top: 2em;
-      margin-bottom: -6em;
-      height: auto; } }
+      margin-bottom: -6em; } }
   @media (min-width: 720px) {
     .project-list__project-image {
       width: 120%;
       margin-left: -4em;
-      margin-top: 2em;
-      height: auto; } }
+      margin-top: 2em; } }
+  @media (max-width: 479px) {
+    .project-list__project-image {
+      width: 120%;
+      margin-left: -10%; } }
 
 .overview__container {
   background-color: #F8F9FA;
-  padding-bottom: 2rem; }
+  padding-bottom: 3rem; }
 
 @media (max-width: 479px) {
   .overview__container h4 {
@@ -2718,7 +2756,7 @@ header.sketch__header h1, header.sketch__header h1 a, h1 header.sketch__header a
 header.sketch__header p, header.sketch__header p a, p header.sketch__header a {
   font-family: "Nimbus Sans", sans-serif;
   font-weight: 300;
-  color: #464646;
+  color: #585C66;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1rem;
@@ -2770,7 +2808,7 @@ header.about h1, header.about h1 a, h1 header.about a {
 header.about p, header.about p a, p header.about a {
   font-family: "Nimbus Sans", sans-serif;
   font-weight: 300;
-  color: #464646;
+  color: #585C66;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1rem;
@@ -2806,13 +2844,13 @@ header.about img {
 
 footer {
   background: #F8F9FA;
-  background: -webkit-linear-gradient(#FFFFFF, #EBEDF0);
+  background: -webkit-linear-gradient(180deg, #FFFFFF, #E8F0F4);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#FFFFFF, #EBEDF0);
+  background: -o-linear-gradient(180deg, #FFFFFF, #E8F0F4);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#FFFFFF, #EBEDF0);
+  background: -moz-linear-gradient(180deg, #FFFFFF, #E8F0F4);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#FFFFFF, #EBEDF0);
+  background: linear-gradient(180deg, #FFFFFF, #E8F0F4);
   /* Standard syntax */
   padding: 32px 0; }
 
