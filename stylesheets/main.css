@@ -2848,6 +2848,9 @@ p, p a, ul {
   padding-bottom: 0.41738rem;
   margin-bottom: 0rem; }
 
+i {
+  font-style: italic; }
+
 ol li {
   font-family: "PT Serif", sans-serif;
   font-weight: 700;
@@ -3007,7 +3010,7 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
   background-color: #15E7A5; }
 
 .project--dstyle {
-  background-color: #FF5FAF; }
+  background-color: #FF6EB7; }
 
 .project-list__bg {
   width: 100%;

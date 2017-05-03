@@ -222,6 +222,10 @@ p {
 	);
 }
 
+i {
+	font-style: italic;
+}
+
 ul {
 	@extend p;
 }
