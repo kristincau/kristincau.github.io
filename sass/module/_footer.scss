@@ -1,77 +1,23 @@
 footer.project {
 	@include gradient-bg(-75deg, $white, $blue-bg);
-	clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);	
+	@include for-tablet-portrait-up {
+		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);	
+	}
+	@include for-phone-only {
+		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);	
+	}
 }
 footer {
 	padding: 2rem 0;
 }
 
-// footer h2{
-// 	@include plumber(
-// 		$baseline: $accent-baseline,
-// 		$font-size: 1.8
-// 	);
-	// @include plumber(
-	// 	$baseline: $accent-baseline,
-	// 	$grid-height: 0.5rem,
-	// 	$font-size: 3,
-	// 	$line-height: 4,
-	// 	$leading-top: 5,	
-	// 	$leading-bottom: 3	
-	// );
-// }
+h2.footer {
+	margin-top: 8rem;
+}
 
 footer p {
 	margin-bottom: 2rem;
 }
-
-// footer h4{
-// 	color: $black;
-// 	@include for-tablet-portrait-up {
-// 		@include plumber(
-// 			$baseline: $accent-baseline,
-// 			$grid-height: 0.5rem,
-// 			$font-size: $size-h4-2x,
-// 			$leading-top: 5,	
-// 			$leading-bottom: 3	
-// 		);
-// 	}
-// 	@include for-phone-only {
-// 		@include plumber(
-// 			$baseline: $accent-baseline,
-// 			$grid-height: 0.5rem,
-// 			$font-size: $size-h4-2x-mobile,
-// 			$leading-top: 5,	
-// 			$leading-bottom: 3	
-// 		);
-// 	}
-// }
-
-// footer h3 {
-// 	color: $type-dark-grey;
-// }
-
-// footer p {
-// 	color: $type-grey;
-// 	@include for-tablet-portrait-up {
-// 		@include plumber(		
-// 			$baseline: $serif-baseline,
-// 			$grid-height: 0.5rem,
-// 	    	$line-height: 3,
-// 			$font-size: 2,
-// 			$leading-top: 1
-// 		);
-// 	}
-// 	@include for-phone-only {
-// 		@include plumber(		
-// 			$baseline: $serif-baseline,
-// 			$grid-height: 0.5rem,
-// 	    	$line-height: 4,
-// 			$font-size: 2.5,
-// 			$leading-top: 1
-// 		);		
-// 	}
-// }
 
 footer a {
 	display: block;
@@ -114,9 +60,28 @@ footer a {
 footer .copyright {
 	font-weight: 100;
 	font-family: $font-sans;
-	@include plumber(		
-		$baseline: $accent-baseline,
-		$font-size: 0.8,
-		$leading-top: 5
-	);
+	@include for-tablet-landscape-up {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$font-size: 0.8,
+			$leading-top: 5,
+			$line-height: 1
+		);
+	}
+	@include for-tablet-portrait {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$font-size: 0.8,
+			$leading-top: 3,
+			$line-height: 1
+		);
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $accent-baseline,
+			$font-size: 1,
+			$leading-top: 3,
+			$line-height: 1
+		);
+	}
 }

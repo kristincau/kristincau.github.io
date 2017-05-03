@@ -1,48 +1,31 @@
-//Intro (Home) Headers
-// .intro__box {
-// 	background-color: $blue-box;
-// 	background-position: 50px 50px;
-// 	width: 32rem;
-// 	height: 25rem;
-// 	margin-left: -7rem;
-// 	margin-top: 2rem;
-// 	position: absolute;
-// 	z-index: -1
-
-// }
-
 .intro h1 {
-	font-weight: 700;
-	// text-transform: uppercase;
-	// letter-spacing: 10px;
-	
-	
-	// font-family: $font-accent;
+	font-family: $font-accent;
+	font-weight: 700;	
 	@include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $accent-baseline,
 			$font-size: 3.5,
 			$line-height: 4
-			// $leading-top: 3
-			// $baseline: $accent-baseline,
-			// $leading-top: 4
+
 		);
 	}
-	// @include for-phone-only {
-	// 	letter-spacing: 0.25rem;
-	// 	@include plumber(
-	// 		$baseline: $serif-baseline,
-	// 		// $baseline: $accent-baseline,
-	// 		$font-size: 1.5,
-	// 		$line-height: 2,
-	// 		$leading-top: 5
-	// 	);
-	// }
-	
+	@include for-phone-only {
+		@include plumber(
+			$baseline: $accent-baseline,
+			$font-size: 2.75,
+			$line-height: 4
+
+		);
+	}
 }
 
 .intro h2 {
-	margin-top: 16rem;
+	@include for-tablet-portrait-up {
+		margin-top: 16rem;
+	}
+	@include for-phone-only {
+		margin-top: 12rem;
+	}
 }
 
 .intro h1:before, .intro h2:before{
@@ -53,46 +36,12 @@
 	margin-bottom: 2rem;
 }
 
-// .intro__container {
-// 	@include gradient-bg(0deg);
-	// padding-top: 6rem;
-	// @include for-tablet-portrait-up {	
-	// 	padding-bottom: 3rem;
-	// }
-	// @include for-phone-only {
-	// 	padding-bottom: 2rem;
-	// }
-	
-// }
-
-
-// .intro p, .intro h5 {
-// 	font-family: $font-serif;
-// 	color: $type-grey;
-// 	font-weight: 300;
-// 	@include for-tablet-portrait-up {
-// 		@include plumber(
-// 			$baseline: $serif-baseline,
-// 			$font-size: 1.75,
-// 			$leading-top: 2,
-// 			$leading-bottom: 6
-// 		);
-// 	}
-// 	@include for-phone-only {
-// 		@include plumber(
-// 			$baseline: $accent-baseline,
-// 			$font-size: 1.25,
-// 			$leading-bottom: 6		
-// 		);
-// 	}
-// }
-
 //Standard project headers
 header.project h1 {
 	font-family: $font-accent;
 	font-weight: 400;
 	color: $type-dark-grey;
-	@include for-tablet-portrait-up {
+	// @include for-tablet-portrait-up {
 		@include plumber(
 			$baseline: $accent-baseline,		
 			// $grid-height: 0.5rem,
@@ -101,101 +50,59 @@ header.project h1 {
 			$leading-top: 2
 			// $leading-bottom: 10
 		);
-	}
-	// @include for-tablet-landscape-up {
-	// 	@include plumber(
-	// 		$baseline: $serif-baseline,		
-	// 		$grid-height: 0.5rem,
-	// 		$font-size: 3.2,
-	// 		$line-height: 6,
-	// 		$leading-top: 5,
-	// 		$leading-bottom: 24
-	// 	);
 	// }
-	
-	// @include for-phone-only {
-	// 	z-index: 99;
-	// 	@include plumber(
-	// 		$baseline: $accent-baseline,		
-	// 		$grid-height: 0.5rem,
-	// 		$font-size: 3,
-	// 		$line-height: 5,
-	// 		$leading-top: 5,
-	// 		$leading-bottom: 10
-	// 	);
-	// }
-	
 }
 
 header.project {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	@include for-desktop-up {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+	@include for-tablet-landscape {
+		margin-bottom: 2rem;
+	}
+	@include for-tablet-portrait {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	@include for-phone-only {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+header.project h1 {
+	@include for-tablet-landscape {
+		margin-bottom: 2rem;
+	}
+	@include for-tablet-portrait {
+		margin-bottom: 3rem;
+	}
+	@include for-phone-only {
+		margin-bottom: 4rem;
+	}
 }
 
 header.project h3 {
-	margin-top: 4rem
-}
-
-// header.project h3 {
-// 	@include for-tablet-landscape-up {
-// 		@include plumber(
-// 			$baseline: $sans-baseline,
-// 			$font-size: $size-h3,
-// 			$leading-top: 8
-// 		);
-// 	}
-// 	@include for-tablet-portrait {
-// 		@include plumber(
-// 			$baseline: $sans-baseline,
-// 			$font-size: $size-h3,
-// 			$leading-top: 3
-// 		);
-// 	}
-// 	@include for-phone-only {
-// 		z-index: 99;
-// 		@include plumber(
-// 			$baseline: $sans-baseline,
-// 			$font-size: 1,
-// 			$leading-top: 3
-// 		);
-// 	}
-
-// }
-
-.header__image {
-	width: 100%;
-	height: auto
-}
-
-// .header__text{
-// 	position: absolute;
-// 	margin-top: 32px;
-
-// }
-//Project Image
-.parallax {
 	@include for-tablet-landscape-up {
-		background-size: 88%;	
+		margin-top: 4rem
 	}
 	@include for-tablet-portrait {
-		background-size: 100%;
-		height: 400px;
+		margin-top: 2rem;
 	}
-	@include for-phone-only {
-		background-size: 100%;
-		height: 400px;
+}
+
+
+.header__image {	
+	width: 100%;
+	height: auto;
+	@include for-tablet-portrait {
+		margin-top: 4.5rem;
 	}
-	background-repeat: no-repeat;
 }
 
-.parallax--canopy {
-	background-image: url("../images/canopy-00-splash.png");
-}
 
-.parallax--ab {
-	background-image: url("../images/ab-00-splash.png");
-}
-
+//Project Image
 .row.overflow {
 	@include for-tablet-landscape-up {
 		width: 116%;	
@@ -203,24 +110,5 @@ header.project h3 {
 	@include for-tablet-portrait {
 		width: 100%;
 	}
-	// @include for-phone-only {
-	// 	width: 100%;
-	// }
-	
+
 }
-
-
-// .header__image {
-// 	@include for-tablet-portrait-up {
-// 		width: 140%;
-// 		// height: 560px;
-// 		// margin-left: -120px;
-// 		// margin-bottom: 24px;
-// 		margin-top: 3rem;
-// 	   // -webkit-clip-path: polygon(280px 0, 0 100%, 100% 100%, 100% 0);	
-// 	}
-// 	@include for-phone-only {
-// 		display: none;	
-// 	}
-	
-// }

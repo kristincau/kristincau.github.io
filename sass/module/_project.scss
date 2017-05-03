@@ -1,30 +1,29 @@
 .overview__container {
 	background-color: $blue-bg-light;
-	padding: 3rem 0;
+	@include for-tablet-landscape-up {
+		padding: 3rem 0;	
+	}
+	@include for-tablet-portrait {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
+	@include for-phone-only {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
 }
 
-//Project Body
-// .project__body h2 {
-// 	@include plumber(
-// 		$baseline: $accent-baseline,
-// 		$font-size: 1.8,
-// 		$leading-top: 3,
-// 		$leading-bottom: 1
-// 	);	
-// }
 
 .project h3 {
-	// margin-top: 0.5rem;
 	margin-bottom: 1rem;
 }
 
-.overview__container h4 {
+.overview__container h3 {
+	@include for-tablet-portrait {
+		margin-top: 1rem;	
+	}
 	@include for-phone-only {
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 1,
-			$leading-top: 2
-		);		
+		margin-top: 1rem;	
 	}
 }
 
@@ -39,6 +38,7 @@
 .row__img .col-sm-12 {
 	padding: 0 !important;
 }
+
 //Project Images
 .row__img img {
 	width: 100%;

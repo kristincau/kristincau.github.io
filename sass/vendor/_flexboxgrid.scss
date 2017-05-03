@@ -12,9 +12,10 @@ $outer-margin: 2rem !default;
 // Syntax:
 // name SIZErem,
 $breakpoints:
-  sm 24em 48rem,
-  md 30em 40rem,
-  lg 45em 42rem, !default;
+  xs 20rem 18rem,
+  sm 30rem 28rem,
+  md 48rem 44rem,
+  lg 60rem 48rem, !default;
 $flexboxgrid-phone-max-width: 540px !default;
 $flexboxgrid-tablet-max-width: 720px !default;
 $flexboxgrid-desktop-max-width: 960px !default;
