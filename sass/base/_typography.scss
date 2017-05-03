@@ -1,13 +1,3 @@
-// .text { font-family: $font-primary; }
-// .link, .project-description, .error--404, .text--copyright, .caption, .input, .project-text__type { font-family: $font-link; }
-// .intro__easteregg, .intro__position, .text-header--project, .text--intro { font-family: $font-accent; }
-// .project-text__title, .project-title, .text-header, .error--title { font-family: $font-project; }
-
-// .fonts-loaded .text { font-family: $font-primary-loaded; }
-// .fonts-loaded .link, .fonts-loaded .project-description, .fonts-loaded .error--404, .fonts-loaded .text--copyright, .fonts-loaded .caption, .fonts-loaded .input, .fonts-loaded .project-text__type { font-family: $font-link-loaded; }
-// .fonts-loaded .intro__easteregg, .fonts-loaded .intro__position, .fonts-loaded .text-header--project, .fonts-loaded .text--intro { font-family: $font-accent-loaded; }
-// .fonts-loaded .project-text__title, .fonts-loaded .project-title, .fonts-loaded .text-header, .fonts-loaded .error--title { font-family: $font-project-loaded; }
-
 @include plumber-set-defaults(
     $grid-height: 1rem,
     $line-height: 2,
@@ -23,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, nav, ul {
 a {
 	font-family: $font-sans;
 	font-weight: 500;
-	color: $type-lightgrey;
+	color: $type-grey-light;
 	@include plumber(
 		$baseline: $sans-baseline,
 		$font-size: 1.1,
@@ -33,7 +23,7 @@ a {
 }
 
 a:hover {
-	color: $type-med-grey;
+	color: $blue-link;
 }
 
 p a {
@@ -55,40 +45,50 @@ p a:hover, h1 a:hover {
 
 h1 {
 	color: $type-title-blue;
-	@include for-tablet-landscape-up {
-		font-family: $font-accent;
-		// font-weight: 300;
-		// color: $type-dark-grey;
+	font-family: $font-accent;
+	font-weight: 400;
+	color: $type-default;
 		@include plumber(
-			$baseline: $accent-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3.2,
-			$line-height: 6,
-			$leading-top: 5,
-			$leading-bottom: 16
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,		
+			$font-size: 4.5,
+			$line-height: 7,
+			$leading-top: 4
 		);
-	}
-	@include for-tablet-portrait {
-		@include plumber(
-			$baseline: $accent-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3,
-			$line-height: 5,
-			$leading-top: 5,
-			$leading-bottom: 10
-		);
-	}
-	@include for-phone-only {
-		z-index: 99;
-		@include plumber(
-			$baseline: $accent-baseline,		
-			$grid-height: 0.5rem,
-			$font-size: 3,
-			$line-height: 5,
-			$leading-top: 5,
-			$leading-bottom: 10
-		);
-	}	
+	// @include for-tablet-landscape-up {
+	// 	font-family: $font-accent;
+	// 	// font-weight: 300;
+	// 	// color: $type-dark-grey;
+	// 	@include plumber(
+	// 		$baseline: $accent-baseline,		
+	// 		$grid-height: 0.5rem,
+	// 		$font-size: 3.2,
+	// 		$line-height: 6,
+	// 		$leading-top: 5,
+	// 		$leading-bottom: 16
+	// 	);
+	// }
+	// @include for-tablet-portrait {
+	// 	@include plumber(
+	// 		$baseline: $accent-baseline,		
+	// 		$grid-height: 0.5rem,
+	// 		$font-size: 3,
+	// 		$line-height: 5,
+	// 		$leading-top: 5,
+	// 		$leading-bottom: 10
+	// 	);
+	// }
+	// @include for-phone-only {
+	// 	z-index: 99;
+	// 	@include plumber(
+	// 		$baseline: $accent-baseline,		
+	// 		$grid-height: 0.5rem,
+	// 		$font-size: 3,
+	// 		$line-height: 5,
+	// 		$leading-top: 5,
+	// 		$leading-bottom: 10
+	// 	);
+	// }	
 }
 
 
@@ -211,14 +211,9 @@ h5 {
 	);
 }
 
-// .clr-md-org {
-// 	color: $med-orange;
-// }
-
-
 p {
 	font-family: $font-serif;
-	color: $type-dark-grey;
+	color: $type-default;
 	@include plumber(
 		$baseline: $serif-baseline,
 		$font-size: 1.125,
@@ -229,30 +224,11 @@ p {
 
 ul {
 	@extend p;
-	// font-family: $font-serif;
-	// color: $type-med-grey;
-	// @include plumber(
-	// 	$grid-height: 0.5rem,
-	// 	$baseline: $serif-baseline,
-	// 	$font-size: 2,
-	// 	$line-height: 3,
-	// 	$leading-top: 0
-	// );
-	// @include for-phone-only {
-	// 	@include plumber(
-	// 	$grid-height: 0.5rem,
-	// 	$baseline: $serif-baseline,
-	// 	$font-size: 2,
-	// 	$line-height: 3,
-	// 	$leading-top: 0
-	// );
-	// }
 }
 
 ol li {
 	font-family: $font-serif;
-	font-weight: 600;
-	// @extend p;
+	font-weight: 700;
 	@include plumber(
 		$baseline: $serif-baseline,
 		$font-size: 1.1,

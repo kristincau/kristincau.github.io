@@ -5,27 +5,9 @@
 	}
 }
 
-header.sketch__header h1 {
-	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.6,
-		$line-height: 3,
-		$leading-top: 2
-	);
-}
-
-header.sketch__header p {
-	font-family: $font-sans;
-	font-weight: 300;
-	color: $type-grey;
-	@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $sans-baseline,
-		$font-size: 3,
-		$line-height: 4,
-		$leading-top: 2,
-		$leading-bottom: 16
-	);
+.sketch__header {
+	margin-top: 6rem;
+	margin-bottom: 4rem;
 }
 
 .sketch__body {
@@ -34,14 +16,19 @@ header.sketch__header p {
 	}
 }
 
-.sketch__header img {
-	width: 100%;
-}
 
 .sketch__body img {
+	@include for-tablet-landscape {
+		width: 100%;
+		margin: 2rem 0;
+	}
+	@include for-tablet-portrait {
+		width: 100%;
+		margin: 2rem 0;
+	}
 	@include for-phone-only {
 		width: 100%;
-		margin: 32px 0;
+		margin: 2rem 0;
 	}
 }
 
@@ -52,14 +39,14 @@ header.sketch__header p {
 }
 
 .ht-420 img {
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		height: 420px;
 		width: auto;
 	}
 }
 
 .ht-320 img {
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		height: 320px;
 		width: auto;
 	}

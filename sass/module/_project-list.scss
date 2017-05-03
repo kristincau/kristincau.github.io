@@ -8,11 +8,11 @@
 	width: 100%;
 	@include gradient-bg(-55deg, $white, $blue-bg);
 	@include for-tablet-portrait-up {
-		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
+		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%));
 		margin-top: -2rem;
 	}
 	@include for-phone-only {
-		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
+		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%));
 	}
 }
 
@@ -34,7 +34,7 @@
 	font-family: $font-sans;
 	display: block;
 	font-weight: 700;
-	color: $type-light-grey;
+	color: $type-grey-light;
 	@include for-tablet-portrait-up {
 		@include plumber(		
 			$baseline: $sans-baseline,
@@ -45,7 +45,7 @@
 }
 
 .project-list__project:hover { box-shadow: 12px 12px 24px rgba($blue-shadow,.06); }
-.project-list__project:hover .link { color: $type-grey; }
+.project-list__project:hover .link { color: $blue-link; }
 .project-list__project:hover .project__bg { height: 100%; } 
 
 

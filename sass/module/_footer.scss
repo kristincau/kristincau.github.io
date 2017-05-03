@@ -1,10 +1,10 @@
-footer.project {
+footer.project, footer.sketch {
 	@include gradient-bg(-75deg, $white, $blue-bg);
 	@include for-tablet-portrait-up {
-		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);	
+		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%));	
 	}
 	@include for-phone-only {
-		clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);	
+		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%));	
 	}
 }
 footer {
@@ -19,23 +19,21 @@ footer p {
 	margin-bottom: 2rem;
 }
 
-footer a {
+footer a, .about__link {
 	display: block;
 	font-weight: 700;
 	@include for-tablet-portrait-up {
 		@include plumber(		
-			$baseline: $accent-baseline,
-			$grid-height: 0.5rem,
-	    	$line-height: 4,
-			$font-size: 2
+			$baseline: $sans-baseline,
+	    	$line-height: 2,
+			$font-size: 1
 		);
 	}
 	@include for-phone-only {
 		@include plumber(		
-			$baseline: $accent-baseline,
-			$grid-height: 0.5rem,
-	    	$line-height: 4,
-			$font-size: $size-nav-mobile*2
+			$baseline: $sans-baseline,
+	    	$line-height: 2,
+			$font-size: 1.167
 		);
 	}
 }
@@ -49,10 +47,10 @@ footer a {
 	}
 	@include for-phone-only {
 		@include plumber(		
-			$baseline: $accent-baseline,
+			$baseline: $sans-baseline,
 	    	$line-height: 2,
 	    	$leading-top: 1,
-			$font-size: $size-nav-mobile
+			$font-size: 1.167
 		);
 	}
 }

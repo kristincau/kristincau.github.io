@@ -5,7 +5,6 @@ $accent-baseline: 0.186;
 
 //Font stacks
 $font-accent: 'Cormorant Garamond', serif;
-// $font-serif: 'Merriweather', 'PT Serif', sans-serif;
 $font-serif: 'PT Serif', sans-serif;
 $font-sans: 'Avenir', sans-serif;
 
@@ -16,13 +15,11 @@ $font-sans-loaded: 'Nimbus Sans', sans-serif;
 
 //Typography Colors
 $black: #212429;
-$type-light-grey: #BFC1C4;
-$type-grey: #585C66;
-$type-dark-grey: #3F464D;
-$type-med-grey: #57595A;
-$type-lightgrey: #979DA8;
 $white: #FFFFFF;
+$type-default: #3F464D;
 $type-title-blue: #0B1426;
+$type-grey-light: #979DA8;
+
 
 //Yellows
 $yellow-bold: #E9D18F;
@@ -34,31 +31,10 @@ $blue-shadow: #193655;
 $blue-box: #AEC3D9;
 $blue-bg: #EBF4FA;
 $blue-bg-light: #F0F6FA;
-$blue-bg-med: #D1E2EE;
-$blue-bg-dark: #7EA2C2;
-
-
-//Misc
-$bg-grey: #F8F9FA;
-$bg-project-grey: #EEF2F5;
-$bg-gradient-grey: #EBF4FA;
-
-//Accent Colors
-$light-orange: #FFF4EF;
-$orange-2: #EED1B2;
-$med-orange: #E6A18A;
-$dark-orange: #E96B40;
+$blue-link: #1A8DAF;
 
 //Project Colors
 $color-canopy: #E77300;
 $color-ab: #52DEB2;
 $color-dstyle: #CE5592;
-$color-fablab: #3E70E6;
 
-//Font Sizes
-$size-h3-mobile: 1;
-$size-h3: 0.9;
-$size-h4-2x: 1.75;
-$size-h4-2x-mobile: 2.15;
-$size-nav-desktop: 1;
-$size-nav-mobile: 1.167;
