@@ -54,7 +54,7 @@
 		<div class='row overflow'>
 			<div class='col-sm-12 col-md-5 col-lg-5'>
 				<h3>App Builder</h3><h3 class='tag'>for</h3><h3>VenueNext</h3>
-				<h1>With App Builder, venue managers can display custom UI in their application based on the time and the location of their end user. </h1>
+				<h1>App Builder lets venue managers customize their app’s UI based on the time and the place of their end user.</h1>
 			</div>
 			<div class='col-sm-12 col-lg-7'>
 				<img class='header__image' src='../images/ab-00-splash.png'>			
@@ -95,17 +95,14 @@
 	<div class='project wrapper container-fluid'>
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
-				<h2 id='section-1'>Project &amp; Process</h2>
+				<h2 id='section-1'>The Project</h2>
+				<h3>Project &amp; Process</h3>	
 				<p>VenueNext integrates services like wayfinding, POS and ticketing to transform how guests experience a venue, from arenas and concert halls to hotels and hospitals.</p>
-				<p>I was tasked to rethink the pre-existing, but soon to be obsolete, App Builder web tool. App Builder harnesses the flexibility of the VenueNext internal mobile front-end framework to control the UI of an application based on time and location. I gained firsthand experience of customer pain points and use cases, designed the flow, learned and documented the front-end framework, conducted user testing, outlined the feature set, and built the visual system.</p>
+				<p>I was hired to design the pre-existing, but soon to be obsolete, App Builder web tool. By harnessing the internal front-end mobile framework, App Builder could control the UI of an application based on the time and location. I was thorough in trying to understand the system, learning and documenting the front-end framework (kickstarting documentation culture and practice at my company). I started the project with research, gaining firsthand experience of customer pain points. My research helped me to define user groups and use cases, from which I outlined a preliminary feature set. I used storyboards, guerilla user testing to gather feedback and iterate on the experience flow. With a more solidified product, I drafted plans for scaling the product, and then defined and implemented a visual system.</p>
 
 				<h2 id='section-2'>The Product</h2>
-			</div>
-		</div>
-
-		<div class='row'>	
-			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
-				<p>App Builder let Venues customize their app’s UI based on the time and the location of a user. Clients can choose from a library of pre-made UI building blocks, called widgets, to put in their application. Each widget comes with specific types of customizations such as text  display, color, or image. Once happy with their changes, a client can preview their changes on a mobile device, or choose to publish their changes to their users. </p>
+				<h3>Our Solution</h3>	
+				<p>For each of its apps, App Builder keeps track of a series Looks. A Look is a UI instance that corresponds to a specific time and/or location. In each Look, a venue manager can choose from a library of pre-made UI building blocks, called widgets, to put in their application. Each widget comes with unique customization options like text display or color. Venue managers can also delete and rearrange widgets. Once happy with their changes, a client can preview on a mobile device, save, or publish their Look.</p>
 			</div>
 		</div>
 
@@ -127,14 +124,12 @@
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
 				<h2 id='section-3'>The Big Picture</h2>
 					<h3>Research</h3>	
-					<p>As an enterprise tool, this web app targets internal VenueNext Employees and external Venue Managers. </p>
-					<p>Our front end framework made possible UI changes in applications without a new release. A non-engineering VenueNext employee who understood JSON would be able to make color, text, layout, and even function edits to an app. </p>
-					<p>Due to the niche target of this product, I conducted research by first hand learning the front end framework, maintaining our mobile front-end, and working with the client services team to understand what type of changes were requested and how the company responded. Based on learnings, App Builder was designed with these goals in mind:</p>
+					<p>App Builder is used both internally by VenueNext employees and externally by venue managers. To understand the full picture, I temporarily took on various roles: learning the front end framework, maintaining our mobile front-end, and working with the client services team to understand their pain points. Based on learnings, App Builder was designed with these goals in mind:</p>
 					<ol>
 						<li>Make clients responsible for their own apps</li>
-						<p>Each client has their own set of visual needs. Clients should feel ownership over their applications and be able to make changes on their own.</p>
+						<p>Each client has their own set of visual needs. Clients should feel ownership of their applications and be able to make changes on their own. </p>
 						<li>Eliminate human error with automation</li>
-						<p>Manually editing the front-end is prone to human error and inefficiency. Changes are not tracked making error correction difficult. </p>
+						<p>Manually editing the front-end was prone to human error and inefficiency. Changes are not tracked making error correction difficult.</p>
 						<li>Reduce the burden on VenueNext employees</li>
 						<p> With a growing number of clients, VenueNext does not have the resources to manage every client’s app UI.</p>
 						<li>Provide an interface to hand off new features to clients</li>
@@ -142,7 +137,8 @@
 					</ol>
 
 				<h2 id='section-4'>Blue Sky</h2>
-				<p>I worked together with the lead engineer to define product requirements on a specialized team. Nonetheless, we had little insight on company priorities, overarching timelines, and stakeholder goals. We iterated through high level product flows, hand sketches, low fidelity wireframes, high fidelity wireframes and visual designs. </p>
+				<h3>Product Definition &amp; Storyboarding</h3>	
+				<p>I worked together with a specialized team of engineers to define product requirements. As we had little insight on company priorities, overarching timelines, and stakeholder goals, we designed blue sky. We iterated through high level product flows, hand sketches, low fidelity wireframes, high fidelity wireframes and visual designs, conducting guerilla user testing to gather feedback for iterations.</p>
 			</div>
 		</div>
 		
@@ -164,7 +160,7 @@
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
 				<p>Our goal was to build a visual representation of our front end framework. The task at hand could be equated to building a tool that outputs HTML/CSS based off some visual composition. Realizing that this type of project was both a technical overcommitment and our clients didn’t necessarily have need for such a robust tool, we knew we needed to prioritize our releases.</p>
-				<p>We decided our first release would allow limited customization of our most basic widgets and show a real-time rendering of the mobile UI on desktop. While the complexity of our framework set constraints and put requirements on the design, the team believed that defining a single visual system would help set a precedent for the tool.</p>
+				<p>We decided our first release would allow limited customization of our most basic widgets with real-time rendering of the mobile UI. While the complexity of the framework set constraints and put requirements on the design, the team believed that defining a single visual system would help set some precedence.</p>
 			</div>
 		</div>
 
@@ -179,10 +175,10 @@
 
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
-				<h2 id='section-5'>Reorienting the Product</h2>
-				<h3>User Testing</h3>	
-				<p>After 9 months of working on the tool, the company shifted from an agency approach to a product-as-a-platform approach that was more scalable and sustainable. Equipped with a new product team, the company had a renewed and immediate focus on App Builder. </p>
-				<p>The team needed to make serious adjustments and simplifications to meet a new, earlier release date. We had to cut the tool down to the bare bones: what does it need to just be useful? We removed the real-time rendering, replacing it with representational UI, and removed widgets, replacing it with widget templates. While the idea of widget templates existed in the original product design, it was now put at the forefront. </p>
+				<h2 id='section-5'>Product Reorientation</h2>
+				<h3>Product Roadmapping</h3>	
+				<p>After 9 months of working on the tool, the company shifted from an agency approach to a product-as-a-platform approach that was more scalable and sustainable. Equipped with a new product team, the company had a renewed and immediate focus on App Builder.</p>
+				<p>The team needed to make serious adjustments and simplifications to meet an earlier release date. We had to cut the tool down to the bare bones: what does it need to just be useful? We removed the real-time rendering, replacing it with representational UI, and removed widgets, replacing it with widget templates. Widget templates were essentially sets of widgets with a very constrained set of customizable options. While the idea of widget templates existed in the original product design, it was now put at the forefront.</p>
 			</div>
 		</div>
 		
@@ -196,8 +192,8 @@
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>				
 				<h2 id='section-6'>Making Sense of Visuals</h2>
 				<h3>Visual Design</h3>	
-				<p>Since VenueNext lacked both a strong brand voice and an established visual system, the design of this enterprise tool began on a blank slate. Working in parallel on Canopy[link here], I aligned the two visual systems to establish brand consistency. </p>  
-				<p>Given the complexity of the tool, it was important to make the visuals clean and simple. I decided to use a dark UI over a light UI to give the app the “sandbox feeling” that is often associated web tools for customization.</p>
+				<p>Since VenueNext lacked both a strong brand voice and an established visual system, the design of this enterprise tool began on a blank slate. Working in parallel with another enterprise tool, <a href='../canopy'>Canopy</a>, I aligned the two visual systems to establish brand consistency. </p>  
+				<p>Given the complexity of the tool, it was important to make the visuals clean and simple. I decided to use a dark UI over a light UI to give the app the “sandbox feeling” that is often associated with customization focused web tools.</p>
 			</div>
 		</div>
 
@@ -212,7 +208,7 @@
 
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
-				<p>To resolve the dichotomy of actions that can be performed for App Builder versus actions that can be performed for the mobile app, I devised a color hierarchy. In the example of buttons, while primary and secondary buttons have similar styling, blue indicate actions performed on App Builder, while green indicated actions performed on the venue’s app. </p>
+				<p>To resolve the dichotomy between actions that can be performed for App Builder versus actions that can be performed for the mobile app, I devised a color hierarchy. In the example of buttons, while primary and secondary buttons have similar styling, blue indicate actions performed on App Builder, while green indicated actions performed on the venue’s app.</p>
 			</div>
 		</div>
 
@@ -224,7 +220,7 @@
 
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>
-				<p>For a visual affirmation of brand consistency, I designed a set of line icons. By using a similar motif, I could establish a relationship between the different types of widgets, which was an unfamiliar concept to our users.</p>
+				<p>For a visual affirmation of brand consistency, I designed a set of line icons. By using a similar motif, I could establish a relationship between different widgets, a concept unfamiliar to our users.</p>
 			</div>
 		</div>
 		
@@ -237,7 +233,8 @@
 		<div class='row'>	
 			<div class='project__body col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'>	
 				<h2 id='section-7'>It's a Marathon, Not a Race</h2>
-				<p>With a beta release to a single client, the development of App Builder is still in progress. Monthly releases of the tool will be released in order of customer need. </p>
+				<h3>Release &amp; Maintenance</h3>	
+				<p>A beta version of App Builder has been released to a few customers. As we onboard our customers and gather data about how they are using the tool, we will continue to iterate and improve the product. We plan for monthly releases of features based on customer need.</p>
 			</div>
 		</div>
 
@@ -257,7 +254,7 @@
 				</div>
 			</div>
 			<a href='/dstyle'>
-				<div class='row project-list__project project-list__project middle-md'>
+				<div class='row project-list__project middle-md'>
 					<div class='col-sm-12 last-sm first-md col-md-6 project__bg project--dstyle'>
 						<img class='project-list__project-image' src='../images/ab-00-splash.png'>
 					</div>	
