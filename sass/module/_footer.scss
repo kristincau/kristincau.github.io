@@ -19,7 +19,27 @@ footer p {
 	margin-bottom: 2rem;
 }
 
-footer a, .about__link {
+footer a {
+	display: block;
+	font-weight: 700;
+	@include for-tablet-portrait-up {
+		@include plumber(		
+			$baseline: $sans-baseline,
+	    	$line-height: 1,
+			$font-size: 1,
+			$leading-top: 1
+		);
+	}
+	@include for-phone-only {
+		@include plumber(		
+			$baseline: $sans-baseline,
+	    	$line-height: 2,
+			$font-size: 1.167
+		);
+	}
+}
+
+.about__link {
 	display: block;
 	font-weight: 700;
 	@include for-tablet-portrait-up {

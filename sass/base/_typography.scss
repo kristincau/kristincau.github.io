@@ -203,6 +203,7 @@ h4 {
 h5 {
 	font-family: $font-accent;
 	font-weight: 700;
+	color: $type-title-blue;
 	@include plumber(
 		$baseline: $accent-baseline,
 		$font-size: 1.75,

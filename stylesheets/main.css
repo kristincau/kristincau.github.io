@@ -2831,6 +2831,7 @@ h4 {
 h5 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
+  color: #0B1426;
   font-size: 1.75rem;
   line-height: 2rem;
   margin-top: 6rem;
@@ -3287,11 +3288,31 @@ h2.footer {
 footer p, footer p a, p footer a, footer ul {
   margin-bottom: 2rem; }
 
-footer a, .about__link {
+footer a {
   display: block;
   font-weight: 700; }
   @media (min-width: 480px) {
-    footer a, .about__link {
+    footer a {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-top: 1rem;
+      padding-top: 0.183rem;
+      padding-bottom: 0.817rem;
+      margin-bottom: -1rem; } }
+  @media (max-width: 479px) {
+    footer a {
+      font-size: 1.167rem;
+      line-height: 2rem;
+      margin-top: -1rem;
+      padding-top: 0.63006rem;
+      padding-bottom: 0.36994rem;
+      margin-bottom: 0rem; } }
+
+.about__link {
+  display: block;
+  font-weight: 700; }
+  @media (min-width: 480px) {
+    .about__link {
       font-size: 1rem;
       line-height: 2rem;
       margin-top: -1rem;
@@ -3299,7 +3320,7 @@ footer a, .about__link {
       padding-bottom: 0.317rem;
       margin-bottom: 0rem; } }
   @media (max-width: 479px) {
-    footer a, .about__link {
+    .about__link {
       font-size: 1.167rem;
       line-height: 2rem;
       margin-top: -1rem;
