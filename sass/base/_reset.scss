@@ -17,9 +17,11 @@ html {
   }
 }
 
-
 h1, h2, h3, h4,h5, h6 {
 	font-style: none; }
+
+::-moz-selection { background: $blue-link; color: $white}
+::selection { background: $blue-link; color: $white}
 
 // *:focus {
 //     outline: 0 !important;
