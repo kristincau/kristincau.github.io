@@ -1,6 +1,10 @@
+$(window).load(function() {
+  $("#comparison").twentytwenty();
+});
+
 $(document).ready(function() {
 
-  $("#comparison").twentytwenty();
+  
   var header = new Headhesive('.navbar');
 
   $(".gif").hover(
