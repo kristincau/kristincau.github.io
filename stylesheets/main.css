@@ -2903,7 +2903,8 @@ ol p, ol p a, p ol a, ol ul {
 
 .navbar {
   width: 100%;
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #E4EEF4; }
 
 .headhesive {
