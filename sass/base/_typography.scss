@@ -55,47 +55,13 @@ h1 {
 			$line-height: 7,
 			$leading-top: 4
 		);
-	// @include for-tablet-landscape-up {
-	// 	font-family: $font-accent;
-	// 	// font-weight: 300;
-	// 	// color: $type-dark-grey;
-	// 	@include plumber(
-	// 		$baseline: $accent-baseline,		
-	// 		$grid-height: 0.5rem,
-	// 		$font-size: 3.2,
-	// 		$line-height: 6,
-	// 		$leading-top: 5,
-	// 		$leading-bottom: 16
-	// 	);
-	// }
-	// @include for-tablet-portrait {
-	// 	@include plumber(
-	// 		$baseline: $accent-baseline,		
-	// 		$grid-height: 0.5rem,
-	// 		$font-size: 3,
-	// 		$line-height: 5,
-	// 		$leading-top: 5,
-	// 		$leading-bottom: 10
-	// 	);
-	// }
-	// @include for-phone-only {
-	// 	z-index: 99;
-	// 	@include plumber(
-	// 		$baseline: $accent-baseline,		
-	// 		$grid-height: 0.5rem,
-	// 		$font-size: 3,
-	// 		$line-height: 5,
-	// 		$leading-top: 5,
-	// 		$leading-bottom: 10
-	// 	);
-	// }	
 }
 
 
 h2 {
 	color: $type-title-blue;
 	font-family: $font-accent;
-	font-weight: 600;
+	font-weight: 400;
 	@include for-tablet-landscape-up {
 		@include plumber(
 			$baseline: $accent-baseline,
@@ -173,7 +139,7 @@ h3.tag {
 
 h4 {
 	font-family: $font-accent;
-	font-weight: 900;
+	font-weight: 400;
 	@include for-tablet-landscape-up {
 		@include plumber(
 			$baseline: $accent-baseline,
@@ -202,7 +168,7 @@ h4 {
 
 h5 {
 	font-family: $font-accent;
-	font-weight: 700;
+	font-weight: 400;
 	color: $type-title-blue;
 	@include plumber(
 		$baseline: $accent-baseline,
