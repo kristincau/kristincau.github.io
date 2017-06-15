@@ -2637,7 +2637,7 @@
 
   .last-lg {
     order: 1; } }
-html, body, div, span, applet, object, iframe, h1, h1 a, h2, h3, h4, h5, h6, p, p a, ul, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, h2, h3, h4, h5, h6, p, p a, p .link, ul, blockquote, pre, a, .link, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2654,7 +2654,7 @@ html, body, div, span, applet, object, iframe, h1, h1 a, h2, h3, h4, h5, h6, p, 
   html {
     font-size: 12px; } }
 
-h1, h1 a, h2, h3, h4, h5, h6 {
+h1, h1 a, h1 .link, h2, h3, h4, h5, h6 {
   font-style: none; }
 
 ::-moz-selection {
@@ -2665,7 +2665,7 @@ h1, h1 a, h2, h3, h4, h5, h6 {
   background: #1A8DAF;
   color: #FFFFFF; }
 
-a {
+a, .link {
   text-decoration: none;
   color: inherit; }
 
@@ -2681,10 +2681,10 @@ body {
 ul {
   list-style: none; }
 
-h1, h1 a, h2, h3, h4, h5, h6, p, p a, ul, nav, ul {
+h1, h1 a, h1 .link, h2, h3, h4, h5, h6, p, p a, p .link, ul, nav, ul {
   color: #212429; }
 
-a {
+a, .link {
   font-family: "Avenir", sans-serif;
   font-weight: 500;
   color: #979DA8;
@@ -2700,10 +2700,10 @@ a {
   -o-transition: 100ms;
   transition: 100ms; }
 
-a:hover {
+a:hover, .link:hover, p.home a:hover, p a.home a:hover, p .home.link a:hover, ul.home a:hover, p.home .link:hover, p a.home .link:hover, p .home.link .link:hover, ul.home .link:hover {
   color: #1A8DAF; }
 
-p a, ul a {
+p a, p .link a, ul a, p .link, ul .link {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2711,7 +2711,7 @@ p a, ul a {
   -o-transition: 100ms;
   transition: 100ms; }
 
-h1 a {
+h1 a, h1 .link a, h1 .link {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2719,11 +2719,8 @@ h1 a {
   -o-transition: 100ms;
   transition: 100ms; }
 
-p a:hover, ul a:hover, h1 a:hover {
-  opacity: 0.6; }
-
-h1, h1 a {
-  color: #0B1426;
+h1, h1 a, h1 .link {
+  color: #3F464D;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   color: #3F464D;
@@ -2735,16 +2732,16 @@ h1, h1 a {
   margin-bottom: -0.5rem; }
 
 h2 {
-  color: #0B1426;
+  color: #3F464D;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400; }
   @media (min-width: 768px) {
     h2 {
-      font-size: 2.625rem;
+      font-size: 2.25rem;
       line-height: 3rem;
       margin-top: 7rem;
-      padding-top: 0.67575rem;
-      padding-bottom: 0.32425rem;
+      padding-top: 0.7935rem;
+      padding-bottom: 0.2065rem;
       margin-bottom: 2rem; } }
   @media (min-width: 480px) and (max-width: 767px) {
     h2 {
@@ -2847,7 +2844,7 @@ h5 {
   padding-bottom: 0.5495rem;
   margin-bottom: 3rem; }
 
-p, p a, ul {
+p, p a, p .link, ul {
   font-family: "PT Serif", sans-serif;
   color: #3F464D;
   font-size: 1.125rem;
@@ -2870,7 +2867,7 @@ ol li {
   padding-bottom: 0.4081rem;
   margin-bottom: 0rem; }
 
-ol p, ol p a, p ol a, ol ul {
+ol p, ol p a, p ol a, ol p .link, p ol .link, ol ul {
   font-size: 1.1rem;
   line-height: 2rem;
   margin-top: -1rem;
@@ -2903,9 +2900,8 @@ ol p, ol p a, p ol a, ol ul {
 
 .navbar {
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #E4EEF4; }
+  padding-top: 1.2rem;
+  padding-bottom: 0.6rem; }
 
 .headhesive {
   position: fixed;
@@ -2929,11 +2925,14 @@ ol p, ol p a, p ol a, ol ul {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: none; }
 
-h1.intro, h1 a.intro {
+header.home {
+  padding-bottom: 2rem; }
+
+h1.intro, h1 a.intro, h1 .intro.link {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400; }
   @media (min-width: 480px) {
-    h1.intro, h1 a.intro {
+    h1.intro, h1 a.intro, h1 .intro.link {
       font-size: 3.5rem;
       line-height: 4rem;
       margin-top: -1rem;
@@ -2941,7 +2940,7 @@ h1.intro, h1 a.intro {
       padding-bottom: 0.099rem;
       margin-bottom: 0rem; } }
   @media (max-width: 479px) {
-    h1.intro, h1 a.intro {
+    h1.intro, h1 a.intro, h1 .intro.link {
       font-size: 2.75rem;
       line-height: 4rem;
       margin-top: 0rem;
@@ -2956,7 +2955,7 @@ h1.intro, h1 a.intro {
   h2.intro {
     margin-top: 12rem; } }
 
-h1.intro:before, h1 a.intro:before, h2.intro:before {
+h1.intro:before, h1 a.intro:before, h1 .intro.link:before, h2.intro:before {
   width: 4rem;
   content: "";
   display: block;
@@ -2980,13 +2979,13 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
     margin-bottom: 2rem; } }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  header.project h1, header.project h1 a, h1 header.project a {
+  header.project h1, header.project h1 a, h1 header.project a, header.project h1 .link, h1 header.project .link {
     margin-bottom: 2rem; } }
 @media (min-width: 480px) and (max-width: 767px) {
-  header.project h1, header.project h1 a, h1 header.project a {
+  header.project h1, header.project h1 a, h1 header.project a, header.project h1 .link, h1 header.project .link {
     margin-bottom: 3rem; } }
 @media (max-width: 479px) {
-  header.project h1, header.project h1 a, h1 header.project a {
+  header.project h1, header.project h1 a, h1 header.project a, header.project h1 .link, h1 header.project .link {
     margin-bottom: 4rem; } }
 
 @media (min-width: 768px) {
@@ -3012,50 +3011,26 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
 
 .project-list__project div {
   padding: 0; }
-
-.project--canopy {
-  background-color: #FD7E00; }
-
-.project--ab {
-  background-color: #15E7A5; }
-
-.project--dstyle {
-  background-color: #FF6EB7; }
-
-.project-list__bg {
-  width: 100%;
-  background: #EBF4FA;
-  background: -webkit-linear-gradient(-55deg, #FFFFFF, #EBF4FA);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-55deg, #FFFFFF, #EBF4FA);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-55deg, #FFFFFF, #EBF4FA);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-55deg, #FFFFFF, #EBF4FA);
-  /* Standard syntax */ }
-  @media (min-width: 480px) {
-    .project-list__bg {
-      -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
-      -moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
-      -ms-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
-      -o-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 10%);
-      margin-top: -2rem; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .project-list__project div {
+      margin-left: 8.3%; } }
   @media (max-width: 479px) {
-    .project-list__bg {
-      -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
-      -moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
-      -ms-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
-      -o-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%);
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 5%); } }
+    .project-list__project div {
+      margin-left: 8.3%; } }
+
+.project-list {
+  background-color: #F8FBFD;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .project-list__project {
   margin: 0;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-radius: 4px;
   overflow: hidden;
   background-color: #FDFFFF;
-  box-shadow: 4px 4px 16px rgba(25, 54, 85, 0.12);
+  box-shadow: 2px 2px 24px rgba(25, 54, 85, 0.14);
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -ms-transition: 300ms;
@@ -3064,44 +3039,34 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
   @media (min-width: 960px) {
     .project-list__project {
       height: 320px; } }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) and (max-width: 959px) {
     .project-list__project {
-      height: 360px; } }
+      height: 320px; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .project-list__project {
+      height: 480px; } }
   @media (max-width: 479px) {
     .project-list__project {
       height: 480px; } }
 
 .link {
+  font-weight: 700;
   -webkit-transition: 150ms;
   -moz-transition: 150ms;
   -ms-transition: 150ms;
   -o-transition: 150ms;
-  transition: 150ms;
-  font-family: "Avenir", sans-serif;
-  display: block;
-  font-weight: 700;
-  color: #979DA8; }
-  @media (min-width: 480px) {
-    .link {
-      font-size: 1.1rem;
-      line-height: 2rem;
-      margin-top: -1rem;
-      padding-top: 0.6513rem;
-      padding-bottom: 0.3487rem;
-      margin-bottom: 0rem; } }
+  transition: 150ms; }
 
 .project-list__project:hover {
-  box-shadow: 12px 12px 24px rgba(25, 54, 85, 0.06); }
+  margin-left: 2rem;
+  margin-right: -2rem; }
 
 .project-list__project:hover .link {
   color: #1A8DAF; }
 
-.project-list__project:hover .project__bg {
-  height: 100%; }
-
 .project-list__project h2 {
   font-weight: 400;
-  margin-top: 0rem; }
+  margin-top: 1rem; }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .project-list__project h3 {
@@ -3111,7 +3076,7 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
     margin-top: 3rem; } }
 
 @media (max-width: 479px) {
-  .project-list__project p, .project-list__project p a, p .project-list__project a, .project-list__project ul {
+  .project-list__project p, .project-list__project p a, p .project-list__project a, .project-list__project p .link, p .project-list__project .link, .project-list__project ul {
     margin-bottom: 2rem; } }
 
 .project__bg {
@@ -3123,41 +3088,31 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
   @media (min-width: 768px) {
     .project__bg {
       height: 80%; } }
-  @media (min-width: 480px) and (max-width: 767px) {
-    .project__bg {
-      height: 100%; } }
 
 .project-list__project-image {
-  height: auto;
-  overflow: hidden;
-  width: 80%;
-  margin-left: 10%; }
+  overflow: hidden; }
   @media (min-width: 768px) {
     .project-list__project-image {
-      margin-top: 2rem; } }
+      margin-left: 10%;
+      height: 100%;
+      width: auto; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .project-list__project-image {
-      margin-top: 5rem; } }
+      margin-left: -8.3%;
+      width: 100%; } }
   @media (max-width: 479px) {
     .project-list__project-image {
-      margin-top: 2rem; } }
+      width: 100%;
+      margin-left: -8.3%; } }
 
-.overview__container:before, .overview__container:after {
+.overview__container .row {
   border-bottom: 1px solid #E4EEF4;
-  content: '';
-  width: 90%;
-  margin-left: 5%;
-  display: block; }
-
-.overview__container:before {
-  margin-bottom: 3rem; }
-
-.overview__container:after {
-  margin-top: 3rem; }
+  border-top: 1px solid #E4EEF4;
+  padding: 4rem 0; }
 
 @media (min-width: 768px) {
   .overview__container {
-    padding: 3rem 0; } }
+    padding: 1rem 0; } }
 @media (min-width: 480px) and (max-width: 767px) {
   .overview__container {
     padding-top: 1rem;
@@ -3194,6 +3149,40 @@ h1.intro:before, h1 a.intro:before, h2.intro:before {
   @media (min-width: 480px) {
     .row__img img {
       margin: 1rem 0; } }
+
+h1.home, h1 a.home, h1 .home.link {
+  color: #3F464D;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: #3F464D;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-top: 3.5rem;
+  padding-top: 0.465rem;
+  padding-bottom: 0.035rem;
+  margin-bottom: 1.5rem; }
+
+p.home, p a.home, p .home.link, ul.home, p.home a, p a.home a, p .home.link a, ul.home a, p.home .link, p a.home .link, p .home.link .link, ul.home .link {
+  font-family: "Cormorant Garamond", serif;
+  color: #3F464D;
+  font-size: 1.625rem;
+  line-height: 2.25rem;
+  margin-top: 1.5rem;
+  padding-top: 0.11475rem;
+  padding-bottom: 0.13525rem;
+  margin-bottom: 1.25rem; }
+
+p.home a, p a.home a, p .home.link a, ul.home a, p.home .link, p a.home .link, p .home.link .link, ul.home .link {
+  text-decoration: underline;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms; }
+
+b.highlight {
+  color: #0690C6;
+  font-weight: 900; }
 
 @media (max-width: 479px) {
   .sketch__header h3 {
@@ -3241,29 +3230,18 @@ header.about {
   header.about h3 {
     display: none; } }
 
-header.about h1, header.about h1 a, h1 header.about a {
+header.about h1, header.about h1 a, h1 header.about a, header.about h1 .link, h1 header.about .link {
   margin-top: -1rem; }
-
-header.about p, header.about p a, p header.about a, header.about ul {
-  font-family: "Avenir", sans-serif;
-  font-weight: 300;
-  color: #3F464D;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-top: 1rem;
-  padding-top: 0.0245rem;
-  padding-bottom: 0.4755rem;
-  margin-bottom: 7.5rem; }
 
 header.about img {
   width: 100%; }
-  @media (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 480px) {
     header.about img {
-      -webkit-clip-path: circle(42.5% at 50% 42.5%);
-      -moz-clip-path: circle(42.5% at 50% 42.5%);
-      -ms-clip-path: circle(42.5% at 50% 42.5%);
-      -o-clip-path: circle(42.5% at 50% 42.5%);
-      clip-path: circle(42.5% at 50% 42.5%);
+      -webkit-clip-path: circle(42% at 50% 42%);
+      -moz-clip-path: circle(42% at 50% 42%);
+      -ms-clip-path: circle(42% at 50% 42%);
+      -o-clip-path: circle(42% at 50% 42%);
+      clip-path: circle(42% at 50% 42%);
       margin-bottom: -20%; } }
   @media (max-width: 479px) {
     header.about img {
@@ -3274,109 +3252,22 @@ header.about img {
       clip-path: circle(42.5% at 50% 42.5%);
       margin: 0 auto -15% 80%; } }
 
-footer.project, footer.sketch {
-  background: #EBF4FA;
-  background: -webkit-linear-gradient(-75deg, #FFFFFF, #EBF4FA);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-75deg, #FFFFFF, #EBF4FA);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-75deg, #FFFFFF, #EBF4FA);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-75deg, #FFFFFF, #EBF4FA);
-  /* Standard syntax */ }
-  @media (min-width: 480px) {
-    footer.project, footer.sketch {
-      -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);
-      -moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);
-      -ms-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);
-      -o-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%);
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%); } }
-  @media (max-width: 479px) {
-    footer.project, footer.sketch {
-      -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);
-      -moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);
-      -ms-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);
-      -o-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%);
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%); } }
-
 footer {
   padding: 2rem 0; }
 
-h2.footer {
-  margin-top: 8rem; }
+footer.project {
+  background-color: #F8FBFD;
+  margin-top: 4rem; }
 
-footer p, footer p a, p footer a, footer ul {
-  margin-bottom: 2rem; }
-
-footer a {
+footer a.link--social, footer .link--social.link {
   display: block;
   font-weight: 700; }
-  @media (min-width: 480px) {
-    footer a {
-      font-size: 1rem;
-      line-height: 1rem;
-      margin-top: 1rem;
-      padding-top: 0.183rem;
-      padding-bottom: 0.817rem;
-      margin-bottom: -1rem; } }
-  @media (max-width: 479px) {
-    footer a {
-      font-size: 1.167rem;
-      line-height: 2rem;
-      margin-top: -1rem;
-      padding-top: 0.63006rem;
-      padding-bottom: 0.36994rem;
-      margin-bottom: 0rem; } }
-
-.about__link {
-  display: block;
-  font-weight: 700; }
-  @media (min-width: 480px) {
-    .about__link {
-      font-size: 1rem;
-      line-height: 2rem;
-      margin-top: -1rem;
-      padding-top: 0.683rem;
-      padding-bottom: 0.317rem;
-      margin-bottom: 0rem; } }
-  @media (max-width: 479px) {
-    .about__link {
-      font-size: 1.167rem;
-      line-height: 2rem;
-      margin-top: -1rem;
-      padding-top: 0.63006rem;
-      padding-bottom: 0.36994rem;
-      margin-bottom: 0rem; } }
-
-@media (min-width: 480px) {
-  .footer__biolink {
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-top: -1rem;
-    padding-top: 0.683rem;
-    padding-bottom: 0.317rem;
-    margin-bottom: 0rem; } }
-@media (max-width: 479px) {
-  .footer__biolink {
-    font-size: 1.167rem;
-    line-height: 2rem;
-    margin-top: 0rem;
-    padding-top: 0.63006rem;
-    padding-bottom: 0.36994rem;
-    margin-bottom: 0rem; } }
 
 footer .copyright {
   font-weight: 100;
-  font-family: "Avenir", sans-serif; }
-  @media (min-width: 768px) {
-    footer .copyright {
-      font-size: 0.8rem;
-      line-height: 1rem;
-      margin-top: 5rem;
-      padding-top: 0.2488rem;
-      padding-bottom: 0.7512rem;
-      margin-bottom: -1rem; } }
-  @media (min-width: 480px) and (max-width: 767px) {
+  font-family: "Avenir", sans-serif;
+  color: #979DA8; }
+  @media (min-width: 480px) {
     footer .copyright {
       font-size: 0.8rem;
       line-height: 1rem;

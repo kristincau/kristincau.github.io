@@ -1,0 +1,38 @@
+h1.home {
+	color: $type-default;
+	font-family: $font-accent;
+	font-weight: 400;
+	color: $type-default;
+		@include plumber(
+			$baseline: $accent-baseline,
+			$grid-height: 0.5rem,		
+			$font-size: 5,
+			$line-height: 7,
+			$leading-top: 8,
+			$leading-bottom: 3				
+		);
+}
+
+p.home {
+	font-family: $font-accent;
+	color: $type-default;
+	@include plumber(
+		$baseline: $accent-baseline,
+		$grid-height: 0.25rem,
+		$font-size: 6.5,
+		$line-height: 9,
+		$leading-top: 6,
+		$leading-bottom: 6
+	);
+}
+
+p.home a {
+	@extend p.home;
+	text-decoration: underline;
+	@include transition(100ms);
+}
+
+b.highlight {
+	color: #0690C6;
+	font-weight: 900;
+}

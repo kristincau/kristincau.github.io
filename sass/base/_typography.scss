@@ -22,7 +22,7 @@ a {
 	@include transition(100ms);
 }
 
-a:hover {
+a:hover, p.home a:hover {
 	color: $blue-link;
 }
 
@@ -39,12 +39,8 @@ h1 a {
 	@include transition(100ms);
 }
 
-p a:hover, h1 a:hover {
-	opacity: 0.6; 
-}
-
 h1 {
-	color: $type-title-blue;
+	color: $type-default;
 	font-family: $font-accent;
 	font-weight: 400;
 	color: $type-default;
@@ -59,13 +55,13 @@ h1 {
 
 
 h2 {
-	color: $type-title-blue;
+	color: $type-default;
 	font-family: $font-accent;
 	font-weight: 400;
 	@include for-tablet-landscape-up {
 		@include plumber(
 			$baseline: $accent-baseline,
-			$font-size: 2.625,
+			$font-size: 2.25,
 			$leading-top: 8,
 			$leading-bottom: 2,
 			$line-height: 3

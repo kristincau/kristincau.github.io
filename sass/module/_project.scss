@@ -1,19 +1,12 @@
-.overview__container:before, .overview__container:after {
+.overview__container .row {
 	border-bottom: 1px solid $blue-light; 
-	content: '';
-	width: 90%;
-	margin-left: 5%;
-	display: block;
+	border-top: 1px solid $blue-light; 
+	padding: 4rem 0;
 }
-.overview__container:before {
-	margin-bottom: 3rem;
-}
-.overview__container:after {
-	margin-top: 3rem;
-}
+
 .overview__container {
 	@include for-tablet-landscape-up {
-		padding: 3rem 0;	
+		padding: 1rem 0;	
 	}
 	@include for-tablet-portrait {
 		padding-top: 1rem;

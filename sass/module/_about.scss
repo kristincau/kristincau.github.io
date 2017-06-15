@@ -13,24 +13,24 @@ header.about h1 {
 	margin-top: -1rem;
 }
 
-header.about p {
-	font-family: $font-sans;
-	font-weight: 300;
-	color: $type-default;
-	@include plumber(
-		$grid-height: 0.5rem,
-		$baseline: $sans-baseline,
-		$font-size: 3,
-		$line-height: 4,
-		$leading-top: 2,
-		$leading-bottom: 16
-	);
-}
+// header.about p {
+// 	font-family: $font-sans;
+// 	font-weight: 300;
+// 	color: $type-default;
+// 	@include plumber(
+// 		$grid-height: 0.5rem,
+// 		$baseline: $sans-baseline,
+// 		$font-size: 3,
+// 		$line-height: 4,
+// 		$leading-top: 2,
+// 		$leading-bottom: 16
+// 	);
+// }
 
 header.about img {
 	width: 100%;
-	@include for-tablet-portrait {
-		@include clip-path(circle(42.5% at 50% 42.5%));
+	@include for-tablet-portrait-up {
+		@include clip-path(circle(42% at 50% 42%));
 		margin-bottom: -20%;
 	}
 	@include for-phone-only {

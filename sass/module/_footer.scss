@@ -1,92 +1,23 @@
-footer.project, footer.sketch {
-	@include gradient-bg(-75deg, $white, $blue-bg);
-	@include for-tablet-portrait-up {
-		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 12%));	
-	}
-	@include for-phone-only {
-		@include clip-path(polygon(0% 100%, 100% 100%, 100% 0%, 0% 8%));	
-	}
-}
 footer {
 	padding: 2rem 0;
 }
 
-h2.footer {
-	margin-top: 8rem;
+footer.project {
+	background-color: #F8FBFD;
+	margin-top: 4rem;
 }
 
-footer p {
-	margin-bottom: 2rem;
-}
 
-footer a {
+footer a.link--social {
 	display: block;
 	font-weight: 700;
-	@include for-tablet-portrait-up {
-		@include plumber(		
-			$baseline: $sans-baseline,
-	    	$line-height: 1,
-			$font-size: 1,
-			$leading-top: 1
-		);
-	}
-	@include for-phone-only {
-		@include plumber(		
-			$baseline: $sans-baseline,
-	    	$line-height: 2,
-			$font-size: 1.167
-		);
-	}
-}
-
-.about__link {
-	display: block;
-	font-weight: 700;
-	@include for-tablet-portrait-up {
-		@include plumber(		
-			$baseline: $sans-baseline,
-	    	$line-height: 2,
-			$font-size: 1
-		);
-	}
-	@include for-phone-only {
-		@include plumber(		
-			$baseline: $sans-baseline,
-	    	$line-height: 2,
-			$font-size: 1.167
-		);
-	}
-}
-
-.footer__biolink {
-	@include for-tablet-portrait-up {
-		@include plumber(		
-			$baseline: $sans-baseline,
-			$font-size: 1
-		);		
-	}
-	@include for-phone-only {
-		@include plumber(		
-			$baseline: $sans-baseline,
-	    	$line-height: 2,
-	    	$leading-top: 1,
-			$font-size: 1.167
-		);
-	}
 }
 
 footer .copyright {
 	font-weight: 100;
 	font-family: $font-sans;
-	@include for-tablet-landscape-up {
-		@include plumber(		
-			$baseline: $accent-baseline,
-			$font-size: 0.8,
-			$leading-top: 5,
-			$line-height: 1
-		);
-	}
-	@include for-tablet-portrait {
+	color: $type-grey-light;
+	@include for-tablet-portrait-up {
 		@include plumber(		
 			$baseline: $accent-baseline,
 			$font-size: 0.8,
