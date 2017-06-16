@@ -11,6 +11,7 @@ footer.project {
 footer a.link--social {
 	display: block;
 	font-weight: 700;
+	line-height: 1rem;
 }
 
 footer .copyright {
@@ -21,7 +22,7 @@ footer .copyright {
 		@include plumber(		
 			$baseline: $accent-baseline,
 			$font-size: 0.8,
-			$leading-top: 3,
+			$leading-top: 2,
 			$line-height: 1
 		);
 	}
@@ -29,7 +30,7 @@ footer .copyright {
 		@include plumber(		
 			$baseline: $accent-baseline,
 			$font-size: 1,
-			$leading-top: 3,
+			$leading-top: 2,
 			$line-height: 1
 		);
 	}

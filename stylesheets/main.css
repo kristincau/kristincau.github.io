@@ -3261,7 +3261,8 @@ footer.project {
 
 footer a.link--social, footer .link--social.link {
   display: block;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1rem; }
 
 footer .copyright {
   font-weight: 100;
@@ -3271,7 +3272,7 @@ footer .copyright {
     footer .copyright {
       font-size: 0.8rem;
       line-height: 1rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
       padding-top: 0.2488rem;
       padding-bottom: 0.7512rem;
       margin-bottom: -1rem; } }
