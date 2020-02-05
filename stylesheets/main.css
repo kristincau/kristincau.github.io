@@ -2641,7 +2641,7 @@
 
   .last-lg {
     order: 1; } }
-html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, .overview__container p, blockquote, pre, a, .link, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, p.caption, .overview__container p, blockquote, pre, a, .link, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2685,7 +2685,7 @@ body {
 ul {
   list-style: none; }
 
-h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, .overview__container p, nav, ul {
+h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, p.caption, .overview__container p, nav, ul {
   color: #000000; }
 
 a, .link {
@@ -2707,7 +2707,7 @@ a, .link {
 a:hover, .link:hover, p.home a:hover, p a.home a:hover, p .home.link a:hover, ul li.home a:hover, ol li.home a:hover, p.home .link:hover, p a.home .link:hover, p .home.link .link:hover, ul li.home .link:hover, ol li.home .link:hover {
   color: #0E5DE9; }
 
-p a, p .link a, ul li a, ol li a, .overview__container p a, p .link, ul li .link, ol li .link {
+p a, p .link a, ul li a, ol li a, p.caption a, .overview__container p a, p .link, ul li .link, ol li .link {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2777,7 +2777,7 @@ h3, .overview__container h3 {
   padding-bottom: 0.94625rem;
   margin-bottom: 0rem; }
 
-p, p a, p .link, ul li, ol li, .overview__container p {
+p, p a, p .link, ul li, ol li, p.caption, .overview__container p {
   font-family: "SF Pro Text", "San Francisco Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
   font-size: 1.3rem;
@@ -2936,6 +2936,9 @@ header .intro h1 a, h1 header .intro a, header .intro h1 .link, h1 header .intro
     .project-list__project {
       height: 480px; } }
 
+.project-list__project .description {
+  padding: 25px; }
+
 .link {
   font-weight: 700;
   -webkit-transition: 150ms;
@@ -2971,7 +2974,8 @@ header .intro h1 a, h1 header .intro a, header .intro h1 .link, h1 header .intro
   -moz-transition: 200ms;
   -ms-transition: 200ms;
   -o-transition: 200ms;
-  transition: 200ms; }
+  transition: 200ms;
+  text-align: center; }
   @media (min-width: 768px) {
     .project__bg {
       height: 80%; } }
@@ -2980,12 +2984,11 @@ header .intro h1 a, h1 header .intro a, header .intro h1 .link, h1 header .intro
   overflow: hidden; }
   @media (min-width: 768px) {
     .project-list__project-image {
-      margin-left: 10%;
-      height: 100%;
+      height: 110%;
+      margin-top: -5%;
       width: auto; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .project-list__project-image {
-      margin-left: -8.3%;
       width: 100%; } }
   @media (max-width: 479px) {
     .project-list__project-image {
@@ -3007,6 +3010,16 @@ header.project h3 {
 .project__body h3.in-body {
   margin-top: 25px;
   margin-bottom: 10px; }
+
+p.caption, p a.caption, p .caption.link, ul li.caption, ol li.caption {
+  text-align: center;
+  color: #95999E;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: 0rem;
+  padding-top: 0.643rem;
+  padding-bottom: 0.357rem;
+  margin-bottom: 0rem; }
 
 .overview__container .row {
   border-bottom: 1px solid #E4EEF4;
@@ -3097,13 +3110,13 @@ header.project h3 {
 
 @media (min-width: 480px) {
   .row__img, .row__img--inbody {
-    margin-top: 10px;
-    margin-bottom: 10px; } }
+    margin-top: 25px;
+    margin-bottom: 25px; } }
 
 @media (min-width: 480px) {
   .row__img--inbody {
-    margin-top: 10px;
-    margin-bottom: 25px; } }
+    margin-top: 25px;
+    margin-bottom: 50px; } }
 
 .row__img .col-sm-12, .row__img--inbody .col-sm-12 {
   padding: 0 !important; }
