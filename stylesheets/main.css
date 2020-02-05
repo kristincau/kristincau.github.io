@@ -8,6 +8,10 @@
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px; }
+  @media (max-width: 479px) {
+    .container-fluid {
+      padding-right: 25px;
+      padding-left: 25px; } }
 
 .row {
   box-sizing: border-box;
@@ -2637,7 +2641,7 @@
 
   .last-lg {
     order: 1; } }
-html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul, ol li, .overview__container p, blockquote, pre, a, .link, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, .overview__container p, blockquote, pre, a, .link, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2654,7 +2658,7 @@ html, body, div, span, applet, object, iframe, h1, h1 a, h1 .link, h2, h3, .over
   html {
     font-size: 12px; } }
 
-h1, h1 a, h1 .link, h2, h3, .overview__container h3, h4, h5, h6 {
+h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6 {
   font-style: none; }
 
 ::-moz-selection {
@@ -2681,7 +2685,7 @@ body {
 ul {
   list-style: none; }
 
-h1, h1 a, h1 .link, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul, ol li, .overview__container p, nav, ul {
+h1, h1 a, h1 .link, header .intro h1, h2, h3, .overview__container h3, h4, h5, h6, p, p a, p .link, ul li, ol li, .overview__container p, nav, ul {
   color: #000000; }
 
 a, .link {
@@ -2700,10 +2704,10 @@ a, .link {
   -o-transition: 100ms;
   transition: 100ms; }
 
-a:hover, .link:hover, p.home a:hover, p a.home a:hover, p .home.link a:hover, ul.home a:hover, ol li.home a:hover, p.home .link:hover, p a.home .link:hover, p .home.link .link:hover, ul.home .link:hover, ol li.home .link:hover {
+a:hover, .link:hover, p.home a:hover, p a.home a:hover, p .home.link a:hover, ul li.home a:hover, ol li.home a:hover, p.home .link:hover, p a.home .link:hover, p .home.link .link:hover, ul li.home .link:hover, ol li.home .link:hover {
   color: #0E5DE9; }
 
-p a, p .link a, ul a, ol li a, .overview__container p a, p .link, ul .link, ol li .link {
+p a, p .link a, ul li a, ol li a, .overview__container p a, p .link, ul li .link, ol li .link {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2711,7 +2715,7 @@ p a, p .link a, ul a, ol li a, .overview__container p a, p .link, ul .link, ol l
   -o-transition: 100ms;
   transition: 100ms; }
 
-h1 a, h1 .link a, h1 .link {
+h1 a, h1 .link a, header .intro h1 a, h1 .link, header .intro h1 .link {
   text-decoration: underline;
   -webkit-transition: 100ms;
   -moz-transition: 100ms;
@@ -2719,7 +2723,7 @@ h1 a, h1 .link a, h1 .link {
   -o-transition: 100ms;
   transition: 100ms; }
 
-h1, h1 a, h1 .link {
+h1, h1 a, h1 .link, header .intro h1 {
   color: #000000;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -2747,51 +2751,33 @@ h2 {
     h2 {
       font-size: 2.25rem;
       line-height: 3rem;
-      margin-top: 5rem;
+      margin-top: -1rem;
       padding-top: 0.71025rem;
       padding-bottom: 0.28975rem;
-      margin-bottom: 2rem; } }
+      margin-bottom: 1rem; } }
   @media (max-width: 479px) {
     h2 {
       font-size: 2.25rem;
       line-height: 3rem;
-      margin-top: 3rem;
+      margin-top: -1rem;
       padding-top: 0.71025rem;
       padding-bottom: 0.28975rem;
-      margin-bottom: 2rem; } }
+      margin-bottom: 1rem; } }
 
 h3, .overview__container h3 {
   color: #95999E;
   font-family: "SF Pro Text", "San Francisco Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   display: inline-block;
-  font-weight: 600; }
-  @media (min-width: 768px) {
-    h3, .overview__container h3 {
-      font-size: 1.2rem;
-      line-height: 1rem;
-      margin-top: 0rem;
-      padding-top: 0.0716rem;
-      padding-bottom: 0.9284rem;
-      margin-bottom: 0rem; } }
-  @media (min-width: 480px) and (max-width: 767px) {
-    h3, .overview__container h3 {
-      font-size: 1rem;
-      line-height: 1rem;
-      margin-top: 0rem;
-      padding-top: 0.143rem;
-      padding-bottom: 0.857rem;
-      margin-bottom: 0rem; } }
-  @media (max-width: 479px) {
-    h3, .overview__container h3 {
-      font-size: 1rem;
-      line-height: 1rem;
-      margin-top: 0rem;
-      padding-top: 0.143rem;
-      padding-bottom: 0.857rem;
-      margin-bottom: 0rem; } }
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  margin-top: 0rem;
+  padding-top: 0.05375rem;
+  padding-bottom: 0.94625rem;
+  margin-bottom: 0rem; }
 
-p, p a, p .link, ul, ol li, .overview__container p {
+p, p a, p .link, ul li, ol li, .overview__container p {
   font-family: "SF Pro Text", "San Francisco Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
   font-size: 1.3rem;
@@ -2806,6 +2792,9 @@ i {
 
 b {
   font-weight: 700; }
+
+ul li {
+  list-style-type: circle; }
 
 ol li {
   font-size: 1.4rem;
@@ -2840,8 +2829,8 @@ ol li {
 
 .navbar {
   width: 100%;
-  padding-top: 1.2rem;
-  padding-bottom: 0.6rem; }
+  padding-top: 1rem;
+  padding-bottom: 0.3rem; }
 
 .headhesive {
   position: fixed;
@@ -2890,6 +2879,14 @@ ol li {
 @media (max-width: 479px) {
   header.project h1, header.project h1 a, h1 header.project a, header.project h1 .link, h1 header.project .link {
     margin-bottom: 4rem; } }
+
+header .intro h1 a, h1 header .intro a, header .intro h1 .link, h1 header .intro .link, header .intro h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: -1rem;
+  padding-top: 0.596rem;
+  padding-bottom: 0.404rem;
+  margin-bottom: 0rem; }
 
 .header__image {
   width: 100%;
@@ -2966,7 +2963,7 @@ ol li {
     margin-top: 3rem; } }
 
 @media (max-width: 479px) {
-  .project-list__project p, .project-list__project p a, p .project-list__project a, .project-list__project p .link, p .project-list__project .link, .project-list__project ul, .project-list__project ol li, ol .project-list__project li {
+  .project-list__project p, .project-list__project p a, p .project-list__project a, .project-list__project p .link, p .project-list__project .link, .project-list__project ul li, ul .project-list__project li, .project-list__project ol li, ol .project-list__project li {
     margin-bottom: 2rem; } }
 
 .project__bg {
@@ -2997,14 +2994,30 @@ ol li {
 
 .section {
   margin-top: 100px; }
+  @media (max-width: 479px) {
+    .section {
+      margin-top: 25px; } }
 
 header.project h3 {
   margin-bottom: 25px; }
+  @media (max-width: 479px) {
+    header.project h3 {
+      margin-bottom: 0; } }
+
+.project__body h3.in-body {
+  margin-top: 25px;
+  margin-bottom: 10px; }
 
 .overview__container .row {
   border-bottom: 1px solid #E4EEF4;
   border-top: 1px solid #E4EEF4;
-  padding: 25px; }
+  padding: 25px 0; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .overview__container .row {
+      padding: 25px 0; } }
+  @media (max-width: 479px) {
+    .overview__container .row {
+      padding: 25px 0; } }
 
 @media (min-width: 768px) {
   .overview__container {
@@ -3018,7 +3031,7 @@ header.project h3 {
     padding-top: 1rem;
     padding-bottom: 2rem; } }
 
-.overview__container p a, p .overview__container a, .overview__container p .link, p .overview__container .link, .overview__container ul, .overview__container ol li, ol .overview__container li, .overview__container p {
+.overview__container p a, p .overview__container a, .overview__container p .link, p .overview__container .link, .overview__container ul li, ul .overview__container li, .overview__container ol li, ol .overview__container li, .overview__container p {
   font-size: 1.2rem;
   line-height: 2rem;
   margin-top: -1rem;
@@ -3026,12 +3039,12 @@ header.project h3 {
   padding-bottom: 0.4284rem;
   margin-bottom: 0rem; }
 
-.row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link {
+.row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link, .row header .intro h1, header .intro .row h1 {
   color: #000000;
   font-family: "DM Serif Display", serif;
   font-weight: 400; }
   @media (min-width: 768px) {
-    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link {
+    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link, .row header .intro h1, header .intro .row h1 {
       font-size: 2.8rem;
       line-height: 3rem;
       margin-top: -1rem;
@@ -3039,7 +3052,7 @@ header.project h3 {
       padding-bottom: 0.4828rem;
       margin-bottom: 2rem; } }
   @media (min-width: 480px) and (max-width: 767px) {
-    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link {
+    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link, .row header .intro h1, header .intro .row h1 {
       font-size: 2.25rem;
       line-height: 3rem;
       margin-top: 5rem;
@@ -3047,10 +3060,10 @@ header.project h3 {
       padding-bottom: 0.28975rem;
       margin-bottom: 2rem; } }
   @media (max-width: 479px) {
-    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link {
+    .row h1, .row h1 a, h1 .row a, .row h1 .link, h1 .row .link, .row header .intro h1, header .intro .row h1 {
       font-size: 2.25rem;
       line-height: 3rem;
-      margin-top: 3rem;
+      margin-top: 0rem;
       padding-top: 0.71025rem;
       padding-bottom: 0.28975rem;
       margin-bottom: 2rem; } }
@@ -3065,6 +3078,7 @@ header.project h3 {
     margin-bottom: 0rem; } }
 @media (min-width: 480px) and (max-width: 767px) {
   .overview__container h3 {
+    margin-top: 1rem;
     font-size: 0.8rem;
     line-height: 1rem;
     margin-top: 0rem;
@@ -3073,6 +3087,7 @@ header.project h3 {
     margin-bottom: 0rem; } }
 @media (max-width: 479px) {
   .overview__container h3 {
+    margin-top: 1rem;
     font-size: 1rem;
     line-height: 1rem;
     margin-top: 0rem;
@@ -3080,30 +3095,23 @@ header.project h3 {
     padding-bottom: 0.857rem;
     margin-bottom: 0rem; } }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  .overview__container h3 {
-    margin-top: 1rem; } }
-@media (max-width: 479px) {
-  .overview__container h3 {
-    margin-top: 1rem; } }
+@media (min-width: 480px) {
+  .row__img, .row__img--inbody {
+    margin-top: 10px;
+    margin-bottom: 10px; } }
 
 @media (min-width: 480px) {
-  .row__img {
-    margin: 2rem 0; } }
+  .row__img--inbody {
+    margin-top: 10px;
+    margin-bottom: 25px; } }
 
-.row__img .col-sm-12 {
+.row__img .col-sm-12, .row__img--inbody .col-sm-12 {
   padding: 0 !important; }
 
-.row__img img {
+.row__img img, .row__img--inbody img {
   width: 100%;
   height: auto;
   border-radius: 2px; }
-  @media (max-width: 479px) {
-    .row__img img {
-      margin: 1rem auto; } }
-  @media (min-width: 480px) {
-    .row__img img {
-      margin: 1rem 0; } }
 
 .home {
   padding: 100px 0; }
@@ -3156,6 +3164,9 @@ header.project h3 {
 .about img {
   width: 100%;
   border-radius: 12px; }
+
+footer {
+  padding-top: 100px; }
 
 footer.project {
   margin-top: 4rem; }

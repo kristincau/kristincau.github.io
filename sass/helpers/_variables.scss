@@ -1,24 +1,26 @@
 //Baselines
-$sans-baseline: 0.183;
-$serif-baseline: 0.129;
-$accent-baseline: 0.186;
+$sans-baseline: 0.143;
+$serif-baseline: 0.149;
+
+//Spacing
+$space-xsmall: 5px;
+$space-small: 10px;
+$space-medium: 25px;
+$space-large: 50px;
+$space-xlarge: 100px;
+
+$radius: 12px;
 
 //Font stacks
-$font-accent: 'Cormorant Garamond', serif;
-$font-serif: 'PT Serif', sans-serif;
-$font-sans: 'Avenir', sans-serif;
-
-//Loaded Fonts Stack
-$font-accent-loaded: 'Avenir', serif;
-$font-serif-loaded: 'PT Serif', sans-serif;
-$font-sans-loaded: 'Nimbus Sans', sans-serif;
+$font-serif: 'DM Serif Display', serif;
+$font-sans: 'SF Pro Text', 'San Francisco Text', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 //Typography Colors
-$black: #212429;
+$black: #000000;
 $white: #FFFFFF;
-$type-default: #3F464D;
+$type-default: #000000;
 $type-title-blue: #0B1426;
-$type-grey-light: #979DA8;
+$type-grey-light: #95999E;
 
 //Yellows
 $yellow-bold: #E9D18F;
@@ -26,11 +28,11 @@ $yellow-text: #AEA488;
 
 //Blues
 $blue-light: #E4EEF4;
-$blue-shadow: #193655;
+$blue-shadow: #00152B;
 $blue-box: #AEC3D9;
 $blue-bg: #EBF4FA;
 $blue-bg-light: #F0F6FA;
-$blue-link: #1A8DAF;
+$blue-link: #0E5DE9;
 
 //Project Colors
 $color-canopy: #FD7E00;

@@ -41,47 +41,43 @@ h1 a {
 
 h1 {
 	color: $type-default;
-	font-family: $font-accent;
+	font-family: $font-serif;
 	font-weight: 400;
 	color: $type-default;
 		@include plumber(
-			$baseline: $accent-baseline,
-			$grid-height: 0.5rem,		
-			$font-size: 4.5,
-			$line-height: 7,
-			$leading-top: 4
+			$baseline: $serif-baseline,
+			$grid-height: 1rem,		
+			$font-size: 4,
+			$line-height: 4			
 		);
 }
 
 
 h2 {
 	color: $type-default;
-	font-family: $font-accent;
+	font-family: $font-serif;
 	font-weight: 400;
 	@include for-tablet-landscape-up {
 		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 2.25,
-			$leading-top: 8,
+			$baseline: $serif-baseline,
+			$font-size: 2.8,			
 			$leading-bottom: 2,
 			$line-height: 3
 		);	
 	}
 	@include for-tablet-portrait {
 		@include plumber(
-			$baseline: $accent-baseline,
+			$baseline: $serif-baseline,
 			$font-size: 2.25,
-			$leading-top: 6,
-			$leading-bottom: 2,
+			$leading-bottom: 1,
 			$line-height: 3
 		);	
 	}
 	@include for-phone-only {
 		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 2.25,
-			$leading-top: 4,
-			$leading-bottom: 2,
+			$baseline: $serif-baseline,
+			$font-size: 2.25,			
+			$leading-bottom: 1,
 			$line-height: 3
 		);	
 	}
@@ -89,99 +85,28 @@ h2 {
 
 
 h3 {
+	color: $type-grey-light;
 	font-family: $font-sans;
-	text-transform: uppercase;
-	display: inline-block;        
-	letter-spacing: 0.1rem;
-	font-weight: 900;
-	color: $yellow-text;
-	@include for-tablet-landscape-up {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: 0.9,
-			$line-height: 1
-		);
-	}
-	@include for-tablet-portrait { 
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: 0.8,
-			$line-height: 1
-		);
-	}
-	@include for-phone-only {
-		@include plumber(
-			$baseline: $sans-baseline,
-			$font-size: 1,
-			$line-height: 1
-		);
-	}
-
-}
-
-h3.tag {
-	font-family: $font-accent;
 	font-style: italic;
-	color: $yellow-text;
-	text-transform: none;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.1,
-		$line-height: 1
-	);
-	margin: 0 4px 0 6px;
-}
+	display: inline-block;        
+	font-weight: 600;
 
-
-h4 {
-	font-family: $font-accent;
-	font-weight: 400;
-	@include for-tablet-landscape-up {
 		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 2.65,
-			$leading-top: 3,    	
-			$leading-bottom:2
-		);	
-	}
-	@include for-tablet-portrait { 
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 2.25,
-			$leading-top: 3,    	
-			$leading-bottom:2
-		);	
-	}
-	@include for-phone-only {
-		@include plumber(
-			$baseline: $accent-baseline,
-			$font-size: 2.25,
-			$leading-top: 3,    	
-			$leading-bottom:1
-		);	
-	}
-}
-
-h5 {
-	font-family: $font-accent;
-	font-weight: 400;
-	color: $type-title-blue;
-	@include plumber(
-		$baseline: $accent-baseline,
-		$font-size: 1.75,
-		$leading-top: 6,
-		$leading-bottom: 4
-	);
+			$baseline: $sans-baseline,
+			$font-size: 1.25,
+			$leading-bottom: 1,
+			$line-height: 1
+		);
 }
 
 p {
-	font-family: $font-serif;
+	font-family: $font-sans;
 	color: $type-default;
 	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.125,
+		$baseline: $sans-baseline,
+		$font-size: 1.3,
 		$line-height: 2,
-		$leading-top: 1
+		$leading-bottom: 1
 	);
 }
 
@@ -189,29 +114,24 @@ i {
 	font-style: italic;
 }
 
-ul {
+b {
+	font-weight: 700;
+}
+
+ul li {
 	@extend p;
+	list-style-type: circle;
 }
 
 ol li {
-	font-family: $font-serif;
-	font-weight: 700;
+	@extend p;	
 	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.1,
-		$leading-top:2
-	);
-}
-
-ol p {
-	@include plumber(
-		$baseline: $serif-baseline,
-		$font-size: 1.1,
+		$baseline: $sans-baseline,
+		$font-size: 1.4,
 		$line-height: 2,
-		$leading-top: 0
+		$leading-bottom: 0
 	);
 }
-
 
 
 
