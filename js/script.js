@@ -1,5 +1,6 @@
 $(window).load(function() {
   $("#comparison").twentytwenty();
+  $("#comparison_agg").twentytwenty();
 });
 
 $(document).ready(function() {
