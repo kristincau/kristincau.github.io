@@ -1,0 +1,47 @@
+@import "../../sass/mixins";
+
+.about {
+  @include max-width();
+}
+
+.container {
+  @include container-spacing();
+
+  h1,
+  h2 {
+    @include heading-spacing();
+  }
+
+  p,
+  li {
+    @include paragraph-spacing();
+  }
+
+  .caption {
+    @include caption();
+    margin-top: var(--size-xs);
+  }
+
+  .content,
+  .eventContent {
+    @include content-width();
+    @include section-spacing();
+  }
+
+  .eventContent {
+    margin-left: var(--size-nicon);
+  }
+
+  .lifeEvent {
+    display: flex;
+    gap: var(--size-m);
+  }
+
+  .literature {
+    @include paragraph-spacing();
+
+    p {
+      margin-bottom: var(--size-xs);
+    }
+  }
+}

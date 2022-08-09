@@ -1,0 +1,62 @@
+[
+  {
+    "title": "The Project",
+    "content": [
+      "[Watershed](https://watershed.com/)helps companies build and manage their climate programs.",
+      ""
+    ]
+  },
+  {
+    "caption": "Solution",
+    "title": "The Product",
+    "content": [
+      "Reports were released to Watershed customers in May 2022.",
+      ""
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-01-before.png"],
+    "alts": ["Old design"],
+    "imgCaption": "Before (left) and after (right) video support"
+  },
+  {
+    "caption": "The Big Picture",
+    "title": "Goals",
+    "content": [""],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-01-before.png"],
+    "alts": ["Old design"],
+    "imgCaption": "Before (left) and after (right) video support"
+  },
+  {
+    "caption": "Don't Make Me Think",
+    "title": "Interaction design",
+    "content": [
+      "Slack mobile video calls [launched](https://slack.com/blog/productivity/whats-new-mobile-video-calls-slack-connect-direct-messages) in January 2021.",
+      "Holding close a Slack product principle to not reinvent the wheel, I designed Slack mobile video calls to be familiar and intuitive, while also embracing the quirky Slack product brand."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-01-before.png"],
+    "alts": ["Old design"],
+    "imgCaption": "Before (left) and after (right) video support"
+  },
+  {
+    "caption": "Solution",
+    "title": "Product Branding",
+    "content": [
+      "Slack mobile video calls [launched](https://slack.com/blog/productivity/whats-new-mobile-video-calls-slack-connect-direct-messages) in January 2021.",
+      "Holding close a Slack product principle to not reinvent the wheel, I designed Slack mobile video calls to be familiar and intuitive, while also embracing the quirky Slack product brand."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-01-before.png"],
+    "alts": ["Old design"],
+    "imgCaption": "Before (left) and after (right) video support"
+  },
+  {
+    "caption": "Solution",
+    "title": "Release & Maintenance",
+    "content": [
+      "Slack mobile video calls [launched](https://slack.com/blog/productivity/whats-new-mobile-video-calls-slack-connect-direct-messages) in January 2021.",
+      "Holding close a Slack product principle to not reinvent the wheel, I designed Slack mobile video calls to be familiar and intuitive, while also embracing the quirky Slack product brand."
+    ]
+  }
+]

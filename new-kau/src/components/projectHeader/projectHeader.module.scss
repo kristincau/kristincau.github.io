@@ -1,0 +1,52 @@
+@import "../../sass/mixins";
+
+.container {
+  @include container-spacing();
+  margin-bottom: var(--space-xl);
+  opacity: 1;
+  background: var(--gradient-header);
+  z-index: 1;
+  @include transition(opacity 300ms);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: var(--gradient-header);
+    @include transition(opacity 300ms);
+  }
+
+  .header {
+    @include max-width();
+
+    display: flex;
+    align-items: center;
+    gap: var(--size-l);
+    margin-top: var(--space-m);
+
+    .content {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-m);
+    }
+
+    .imageContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      img {
+        position: absolute;
+        width: 420px;
+      }
+    }
+  }
+
+  .caption {
+    @include caption();
+  }
+}

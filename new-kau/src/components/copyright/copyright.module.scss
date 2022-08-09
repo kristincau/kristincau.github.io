@@ -1,0 +1,10 @@
+@import "../../sass/mixins";
+
+.content {
+  @include max-width();
+  padding-bottom: var(--size-s);
+}
+
+.caption {
+  @include caption();
+}

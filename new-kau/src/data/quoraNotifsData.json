@@ -1,0 +1,92 @@
+[
+  {
+    "title": "The Project",
+    "content": [
+      "[Quora](https://www.quora.com/) is a question and answer platform with a mission to grow and share the world's knowledge.",
+      "Notifications build community and spark life by bringing people into a product. As the notifications design owner, I incrementally improved Quora's notifications over the course of 2 years across multiple projects."
+    ]
+  },
+  {
+    "caption": "Solution",
+    "title": "The Product",
+    "content": [
+      "From mobile alerts, to inbox, to settings, I introduced the latest iOS and Android support, visual categories, and new product copy to make notifications engaging and trustworthy.",
+      "Along the way, I also developed a system to support the product's future growth."
+    ],
+    "isBeforeAfter": true,
+    "imgs": ["/notifs-01-before.png", "/notifs-01-after.png"],
+    "alts": ["Old design", "New design"],
+    "imgCaption": "Before (left) and after (right) of various notification product areas"
+  },
+  {
+    "caption": "The Big Picture",
+    "title": "The Problem",
+    "content": [
+      "In general, notifications trigger a negative knee-jerk reaction. User research and an audit revealed that Quora notifications were often deemed a nuisance, coming unbidden and offering little value."
+    ]
+  },
+  {
+    "caption": "UI is Communication",
+    "title": "Visual Design",
+    "subtitle": "Categories",
+    "content": [
+      "Categories with color and icon badges make different types of notifications recognizable. Users can form positive associations with eagerly anticipated notifications, and change the settings for unwanted notifications."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/notifs-03-categories.png"],
+    "alts": ["Old design", "New design"],
+    "imgCaption": "Before (left) and after (right) of various notification product areas"
+  },
+  {
+    "subtitle": "Design System & Content Strategy",
+    "content": [
+      "Consistent formatting helps set user expectations, particularly when it comes to scanning a long list of notifications. The updated format clearly announced the 1) from who or where, 2) what, and 3) what next of any notification. Each notification had up to one action for extra focus and simplicity."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/notifs-02-templates.png"],
+    "alts": ["Notification templates"],
+    "imgCaption": "Sample of notifications in the product inbox (left) and as iOS push alerts (right)"
+  },
+  {
+    "caption": "Honor Matters",
+    "title": "User Trust",
+    "subtitle": "Personalization",
+    "content": [
+      "Notifications are highly personal. Everyone expects something a little different, and trust comes from meeting expectations. Through in-line surveys and a way to opt for fewer of some notification, users could tell Quora how to better adapt machine learning models to meet preferences."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/notifs-04-signal.png"],
+    "alts": ["Inline survey and button to deliver negative signal"],
+    "imgCaption": "Inline survey (left) and \"See fewer\" button (right)"
+  },
+  {
+    "subtitle": "Settings",
+    "content": [
+      "Notifications are often cited as the reason why someone stops using an app. This is preventable by making notification settings easy to access and use. The inbox directly links to the settings page, which uses the same notification language for easy identification."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/notifs-05-settings.png"],
+    "alts": ["Notification settings"],
+    "imgCaption": "Notification settings access and language"
+  },
+  {
+    "subtitle": "Clickthrough Experience",
+    "content": [
+      "Certain notifications had an unexpected clickthrough experience. Clicking on an aggregated notification (think 3 new answers vs. 1 new answer) resulted in a dead-end. By embedding notification content directly on any page, aggregated notifications had a consistent clickthrough experience."
+    ],
+    "isBeforeAfter": true,
+    "imgs": [
+      "/notifs-09-clickthrough-before.png",
+      "/notifs-09-clickthrough-after.png"
+    ],
+    "alts": ["Old design", "New design"],
+    "imgCaption": "Before (left) and after (right) embedded content in the notification clickthrough"
+  },
+  {
+    "caption": "Product in the Wild",
+    "title": "Release & Maintenance",
+    "content": [
+      "These designs and more boosted notification metrics. Users spent 25% more time in app than before. The new flexible system also set groundwork for product scalability."
+    ]
+  }
+]

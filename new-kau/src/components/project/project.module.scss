@@ -1,0 +1,87 @@
+@import "../../sass/mixins";
+
+.container {
+  position: relative;
+
+  .project {
+    display: flex;
+    align-items: center;
+    gap: var(--size-m);
+    margin-left: var(--space-ns);
+    margin-bottom: var(--space-m);
+    padding: 2rem;
+    border-radius: 16px;
+    background: var(--color-border30);
+    border: 1px solid var(--color-border);
+    z-index: 1;
+
+    p,
+    p.caption {
+      margin-bottom: 0;
+    }
+  }
+
+  .project::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: var(--space-ns);
+    background: var(--gradient-project);
+    z-index: -1;
+    @include transition(opacity 200ms);
+    opacity: 0;
+    border-radius: 16px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-m);
+  }
+
+  .caption {
+    @include caption();
+    @include transition(color 200ms);
+    color: var(--color-secondary);
+  }
+
+  .readMore {
+    display: flex;
+    align-items: center;
+    gap: var(--size-xs);
+  }
+
+  .image {
+    display: flex;
+    flex: 0 0 240px;
+    align-items: center;
+
+    img {
+      position: absolute;
+      width: 240px;
+      @include transition(width 200ms);
+    }
+  }
+
+  .project:hover::before {
+    opacity: 1;
+  }
+
+  .project:hover {
+    border: transparent;
+    box-shadow: var(--box-glow), var(--box-shadow), var(--box-inset);
+
+    .caption,
+    .arrow {
+      color: var(--color-tertiary);
+      @include transition(color 200ms);
+    }
+
+    .image img {
+      width: 380px;
+      @include transition(width 200ms);
+    }
+  }
+}

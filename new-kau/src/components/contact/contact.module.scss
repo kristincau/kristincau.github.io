@@ -1,0 +1,32 @@
+@import "../../sass/mixins";
+
+.contact {
+  margin: var(--space-m) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.tooltip {
+  @include caption();
+}
+
+.contact .icon,
+.contact .logoIcon {
+  color: var(--color-inactive);
+}
+
+.contact .icon {
+  width: var(--size-icon);
+  height: var(--size-icon);
+}
+
+.contact .logoIcon {
+  width: var(--size-l);
+  height: var(--size-l);
+}
+
+.contact .icon:hover,
+.contact .logoIcon:hover {
+  color: var(--color-foreground);
+}

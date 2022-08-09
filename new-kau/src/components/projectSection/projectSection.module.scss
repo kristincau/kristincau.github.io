@@ -1,0 +1,120 @@
+@import "../../sass/mixins";
+
+.container {
+  @include max-width();
+}
+
+.section {
+  @include section-spacing(top);
+
+  h2,
+  h3 {
+    @include heading-spacing();
+  }
+
+  h3 {
+    color: var(--color-inactive);
+  }
+}
+
+.content {
+  @include content-width();
+
+  p {
+    @include paragraph-spacing();
+  }
+
+  li {
+    @include list-spacing();
+  }
+}
+
+.titleCaption,
+.imageCaption {
+  @include caption();
+}
+
+.titleCaption {
+  margin-bottom: var(--space-xs);
+}
+
+.imageContainer {
+  margin: var(--space-m) 0;
+  position: relative;
+  width: 100%;
+
+  .imageCaption {
+    margin-top: var(--space-s);
+    text-align: center;
+  }
+
+  .images {
+    display: flex;
+    width: 100%;
+    height: a uto;
+    max-width: 100%;
+    gap: var(--size-m);
+
+    img {
+      @include img-shadow();
+      min-width: 0;
+      width: 100%;
+      height: auto;
+      border-radius: var(--size-s);
+    }
+  }
+}
+
+/* Image comparison */
+
+.slider {
+  @include img-shadow();
+}
+
+.handle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-icon);
+    height: var(--size-icon);
+    border-radius: 100%;
+    border: 3px solid var(--color-background);
+    background: var(--color-foreground25);
+    padding: var(--size-xs);
+    box-shadow: 0px 0px 20px var(--color-foreground50);
+    transition: 150ms;
+  }
+}
+
+.handleLine {
+  width: 3px;
+  flex-grow: 1;
+  background: var(--color-background);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  transition: 150ms;
+}
+
+.handleIcon {
+  width: var(--size-m);
+  height: var(--size-m);
+  color: var(--color-background);
+}
+
+.slider:hover {
+  button {
+    width: 48px;
+    height: 48px;
+    background: var(--color-foreground50);
+    box-shadow: 0px 0px 28px var(--color-foreground80);
+  }
+
+  .handleLine {
+    box-shadow: 0px 0px 24px var(--color-foreground);
+  }
+}
