@@ -1,6 +1,7 @@
 {
   "name": "new-kau",
   "version": "0.1.0",
+  "homepage": "https://kristincau.github.io/new-kau",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
     "ajv": "^8.11.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "gh-pages": "^4.0.0",
     "nth-check": "^2.1.1",
     "react-scripts": "^5.0.1",
     "typescript": "^4.7.4"
