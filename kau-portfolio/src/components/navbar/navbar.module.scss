@@ -1,0 +1,110 @@
+@import "../../sass/mixins";
+
+.navbar {
+  background: var(--gradient-header);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.navbarActive {
+  width: 100%;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.navbarHidden {
+  visibility: hidden;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
+
+.navContainer {
+  @include max-width();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-p);
+  padding: var(--space-s) 0;
+  font-weight: 700;
+}
+
+.logo {
+  font-weight: 900;
+  color: var(--color-secondary);
+}
+
+.linksStick,
+.linksDefault {
+  border-radius: 500px;
+  padding: var(--size-m) var(--size-l) var(--size-s) var(--size-l);
+}
+
+.logoStick,
+.logoDefault {
+  border-radius: 500px;
+  padding: var(--size-m) var(--size-l);
+  margin-left: var(--size-nl);
+}
+
+.logoStick,
+.linksStick {
+  background: var(--color-background90);
+}
+
+.logo,
+.links a {
+  padding-bottom: var(--size-s);
+  transition: 200ms;
+}
+
+.links a:hover,
+.logo:hover {
+  color: var(--color-tertiary);
+}
+
+.links button {
+  margin-bottom: var(--size-s);
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-s);
+  color: var(--color-inactive);
+}
+
+.links button {
+  border: transparent;
+  background: transparent;
+  border-radius: 100%;
+  padding: var(--size-xs);
+  width: var(--size-icon);
+  height: var(--size-icon);
+  align-self: flex-start;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--size-nxs);
+}
+
+.links button:hover {
+  background: var(--color-foreground);
+}
+
+.links button:hover .icon {
+  stroke: var(--color-background);
+  fill: #ffda92;
+}
+
+.icon {
+  width: var(--size-l);
+  height: var(--size-l);
+  stroke: var(--color-inactive);
+}

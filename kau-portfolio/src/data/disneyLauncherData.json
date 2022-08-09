@@ -1,0 +1,92 @@
+[
+  {
+    "title": "The Project",
+    "content": [
+      "The [Disney Interactive Group](http://www.disney.co.jp/mobile/s-style/service.html) produces branded, Japanese mobile experiences by partnering with service carriers like SoftBank and DoCoMo.",
+      "A contract renewal gave our team the opportunity to expand our subscription-based mobile services on SoftBank. I collaborated with a lean, in-house team on everything from product conceptualization to user experience patterns and definition of guidelines."
+    ]
+  },
+  {
+    "caption": "Solution",
+    "title": "The Product",
+    "content": [
+      "In May 2015, we launched the [Disney Style Home Launcher](http://www.disney.co.jp/mobile/s-style/service.html). This launcher featured themed bundles of immersive home screen pages that also served as utility widgets like Calendar and Clock.",
+      "We collaborated with popular Japanese artists to provide a rich library of themed bundles. You can check out a promotional video for the service [here](https://youtu.be/9Vl0MVpXhzk)."
+    ],
+    "isBeforeAfter": false,
+    "imgs": [
+      "/dstyle-01-cal.gif",
+      "/dstyle-02-clock.gif",
+      "/dstyle-03-music.gif",
+      "/dstyle-04-weather.gif"
+    ],
+    "imgClass": "disney-widgets",
+    "alts": ["Calendar page", "Clock page", "Music page", "Weather page"],
+    "imgCaption": "Home screen pages in the Mickey's Paper World themed bundle"
+  },
+  {
+    "caption": "The Big Picture",
+    "title": "Goals",
+    "content": [
+      "The decision to build a home launcher was rooted deeply in market research. SoftBank users wanted offerings as rich as DoCoMo's, which had smartphones with Disney themed hardware and software. In addition to targeting our _yafu_ (young adult female) audience, the product also had to provide",
+      "1. _omotenashi_, or Japanese hospitality,",
+      "2. deep visual customization, and",
+      "3. world class Disney entertainment."
+    ]
+  },
+  {
+    "caption": "Trust the Process",
+    "title": "Deciding on a Concept",
+    "content": [
+      "Our initial set of concepts ranged from copying existing products to science fiction-esque ideas. Starting broad and low fidelity helped us understand our technical constraints and product principles.",
+      "Ultimately, we needed to deliver on entertainment, our strength, rather than something left-field like new technology. The final concept highlighted simplicity and native functionality."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/dstyle-05-sketch.jpg", "/dstyle-06-digi.jpg"],
+    "alts": ["Early sketches", "Early wireframes"],
+    "imgCaption": "Sketches and wireframes of early concepts"
+  },
+  {
+    "caption": "Design Decisions",
+    "title": "Core Navigation and Customization",
+    "content": [
+      "We designed everything in the launcher to highlight the immersive home pages.",
+      "To place focus on the artwork, we introduced a Mickey Home button. This let docked apps, like Messages, be accessible without cluttering the page.",
+      "Access to native apps was just a long tap away from any home screen widget. This let the home launcher be both useful and entertaining.",
+      "Last but not least, how someone organizes their phone is extremely personal. That's why we made sure that users could edit their home page widgets and add completely customizable pages."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/dstyle-07-ux.png", "/dstyle-08-ux.png"],
+    "alts": ["Clock widget and list of alarms", "Page customization"],
+    "imgCaption": "Clock app widget (left) and page and widget customization (right)"
+  },
+  {
+    "caption": "Thanks for the Feedback",
+    "title": "Usability Testing",
+    "content": [
+      "A few weeks before launch, we conducted usability studies. The studies revealed that users had a hard time distinguishing tap targets from illustrative elements. To mitigate this, I introduced",
+      "1. **guidelines for artists**, which prevent the artwork from interfering with interactive elements, and",
+      "2. **an onboarding flow**, which gave users the opportunity to learn about launcher in a guided fashion."
+    ],
+    "isBeforeAfter": false,
+    "imgs": [
+      "/dstyle-09-onboard.png",
+      "/dstyle-10-onboard.png",
+      "/dstyle-11-onboard.png"
+    ],
+    "alts": [
+      "Mickey home menu",
+      "Editing home screen pages",
+      "Customizing widgets"
+    ],
+    "imgCaption": "Onboarding flow that was added based on usability feedback"
+  },
+  {
+    "caption": "Product in the Wild",
+    "title": "Release & Sunset",
+    "content": [
+      "Disney Style Home Launcher was released with a SoftBank campaign in May 2015. The service [operated successfully](https://kyodonewsprwire.jp/release/201603178993) for 3 years, with the seasonal bundles gaining _yafu_ popularity.",
+      " In December 2018, SoftBank and Disney parted ways and the Disney Style Home Launcher was sunsetted."
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "title": "The Project",
+    "content": [
+      "[Slack](https://slack.com/) is a communication platform with a mission to make work more simple, pleasant, and productive.",
+      "The pandemic of 2020 introduced a new meaning to the hybrid-remote workplace. Empowering teams to build human connections in this era, we decided to add video to the voice-only mobile Slack calls."
+    ]
+  },
+  {
+    "caption": "Solution",
+    "title": "The Product",
+    "content": [
+      "Slack mobile video calls [launched](https://slack.com/blog/productivity/whats-new-mobile-video-calls-slack-connect-direct-messages) in January 2021.",
+      "Holding close a Slack product principle to not reinvent the wheel, I designed Slack mobile video calls to be familiar and intuitive, while also embracing the quirky Slack product brand."
+    ],
+    "isBeforeAfter": true,
+    "imgs": ["/calls-01-before.png", "/calls-02-after.png"],
+    "alts": ["Old design", "New design"],
+    "imgCaption": "Before (left) and after (right) video support"
+  },
+  {
+    "caption": "Together While Apart",
+    "title": "Video Streams",
+    "content": [
+      "We display up to 6 concurrent video streams, the maximum number of videos that comfortably fit on a phone screen. Basic information, like a person's name and call status, is visible by default for professional context."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-03-layout.png"],
+    "alts": ["Multiple video streams layouts"],
+    "imgCaption": "Video stream layouts for up to 6 people"
+  },
+  {
+    "caption": "Don't Make Me Think",
+    "title": "Interaction Design",
+    "content": [
+      "A dismissable drawer, that's kept out of the way until summoned with a tap or swipe up, houses all call options in a central, easy to find place. New active and inactive button states also let users tell if they are muted or not."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-04-actions.png"],
+    "alts": ["Drawer for call options"],
+    "imgCaption": "Accessing call options from the bottom drawer"
+  },
+  {
+    "caption": "Keep Slack Weird",
+    "title": "Product Branding",
+    "content": [
+      "Bringing some whimsy while waiting for someone to pick up a call, I partnered with our Content and Creative teams to introduce Slack branded background animation and copy."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-05-branding.png"],
+    "alts": ["Outgoing slack call"],
+    "imgCaption": "Outgoing call animation and randomized call copy"
+  },
+  {
+    "caption": "Value Sameness",
+    "title": "Accessibility",
+    "content": [
+      "So that as many people as possible could have experiences of similar value, we supported an efficient way for mobile screenreader users to interact with Slack calls."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/calls-06-a11y.png"],
+    "alts": ["Mobile screenreader specifications"],
+    "imgCaption": "Design specifications for mobile screenreaders"
+  },
+  {
+    "caption": "Product in the Wild",
+    "title": "Release & Next Steps",
+    "content": [
+      "Mobile video calls rolled out smoothly. In addition to filling gaps, the feature also won us a few enterprise sales.",
+      "Slack continues to invest in A/V features, like Huddles."
+    ]
+  }
+]

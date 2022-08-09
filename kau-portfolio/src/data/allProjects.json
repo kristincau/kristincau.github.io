@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "carbon-reporting",
+    "title": "Disclosing corporate carbon footprints",
+    "company": "Watershed",
+    "duration": "2 months",
+    "year": "2022",
+    "team": "Team of 3 engineers and 1 engineering manager",
+    "img": "/splash-calls.png",
+    "alt": "alt text",
+    "path": "/carbon-reporting"
+  },
+  {
+    "id": 1,
+    "name": "slack-calls",
+    "title": "Keeping teams close from afar with video",
+    "company": "Slack",
+    "duration": "3 months",
+    "year": "2021",
+    "team": "Team of 6 mobile engineers and 1 product manager",
+    "img": "/splash-calls.png",
+    "alt": "alt text",
+    "path": "/slack-calls"
+  },
+  {
+    "id": 2,
+    "name": "quora-notifs",
+    "title": "Refreshing notifications for trust and engagement",
+    "company": "Quora",
+    "duration": "Multiple projects over 2 years",
+    "year": " 2018-2020",
+    "team": "Team of 3 engineers, 2 data scientists, 1 product design intern, 1 product manager",
+    "img": "/splash-notifs.png",
+    "alt": "alt text",
+    "path": "/quora-notifications"
+  },
+  {
+    "id": 3,
+    "name": "canopy-design-system",
+    "title": "Scaling enterprise solutions with a design system",
+    "company": "VenueNext",
+    "duration": "2 months",
+    "year": "2017",
+    "team": "Team of 2 engineers and 1 product manager",
+    "img": "/splash-canopy.png",
+    "alt": "alt text",
+    "path": "/canopy-design-system"
+  },
+  {
+    "id": 4,
+    "name": "disney-home-launcher",
+    "title": "Enriching Android launchers with Disney magic",
+    "company": "The Walt Disney Co.",
+    "duration": "3 months",
+    "year": "2015",
+    "team": "Team of 1 creative director, 1 producer, multiple artists and vendors",
+    "img": "/splash-dstyle.png",
+    "alt": "alt text",
+    "path": "/disney-home-launcher"
+  }
+]

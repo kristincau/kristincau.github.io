@@ -1,0 +1,73 @@
+[
+  {
+    "title": "The Project",
+    "content": [
+      "[VenueNext](http://www.venuenext.com/) lets  venues integrate services, like wayfinding, to deliver premium guest experiences.",
+      "Canopy is a desktop web app where venue managers customize guest offerings. Hearing feedback and grumblings about the product's poor usability, I took initiative to deliver a lasting solution."
+    ]
+  },
+  {
+    "caption": "Solution",
+    "title": "The Product",
+    "content": [
+      "With the support of my team, I introduced a design system to solve usability problems and set a foundation for growth.",
+      "Notably, the system standardized navigation, data tables, and in-product colors. These changes rid Canopy of hard-to-find features, triple nested tabbars, cut off elements, and negative emotions."
+    ],
+    "isBeforeAfter": true,
+    "imgs": ["/canopy-01-before.png", "/canopy-02-after.png"],
+    "alts": ["Old design", "New design"],
+    "imgCaption": "Canopy before (left) and after (right)"
+  },
+  {
+    "caption": "The Big Picture",
+    "title": "User Research",
+    "content": [
+      "Venue managers dreaded using Canopy. We needed a serious refresh to improve this negative sentiment.",
+      "User interviews and in-field observations had revealed the symptoms: archaic features, non-responsive buttons, dead-ends, and jargon, just to name a few. Users didn't want to use Canopy because it was scary and confusing."
+    ]
+  },
+  {
+    "caption": "The Magic of Tidying Up",
+    "title": "Information Architecture",
+    "subtitle": "Navigation",
+    "content": [
+      "To make features easy to find and maintain, I introduced structure by standardizing the navigation.",
+      "Previously, some pages used triple nested tabbars while others used embedded links. Learnings from an audit and card sort exercise led me to design a two-tiered left navigation rail and a single, optional tabbar."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/canopy-03-wires.png"],
+    "alts": ["Wireframe product map"],
+    "imgCaption": "Wireframe map of product pages and subpages"
+  },
+  {
+    "subtitle": "Data Tables",
+    "content": [
+      "With cells mismatched and hidden behind horizontal scrolls, existing tables didn't serve the primary function of clearly displaying data. The new data tables did serve this and more with",
+      "* an object preview to reduce the tedium of editing,",
+      "* a details page to house advanced settings, and",
+      "* column filters to retrieve specific sets of data."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/canopy-04-layout.png"],
+    "alts": ["Data table and object listing"],
+    "imgCaption": "Table with an object preview (left) and details page (right)"
+  },
+  {
+    "caption": "Psychology of Colors",
+    "title": "Visual Design",
+    "content": [
+      "Traffic light reds and oranges made Canopy intimidating. With more white space and navy instead of orange, Canopy became focused and calm. It also became more accessible with higher foreground and background contrast."
+    ],
+    "isBeforeAfter": false,
+    "imgs": ["/canopy-05-buttons.png"],
+    "alts": ["Button styles"],
+    "imgCaption": "Predominantly navy button styles"
+  },
+  {
+    "caption": "Product in the Wild",
+    "title": "Release & Maintenance",
+    "content": [
+      "The new information architecture made it easier and faster for the design and engineering teams to support Canopy's ever increasing set of features. New components and visual refreshes are pending the Ruby on Rails to React migration on the horizon."
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+@import "../../sass/mixins";
+
+.container {
+  @include section-spacing();
+}
+
+.footer {
+  @include max-width();
+  padding-top: var(--space-m);
+
+  h2 {
+    @include heading-spacing();
+  }
+}
+
+.content {
+  @include content-width();
+
+  p {
+    @include paragraph-spacing();
+  }
+}

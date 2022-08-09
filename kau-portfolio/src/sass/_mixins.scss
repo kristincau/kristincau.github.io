@@ -1,0 +1,58 @@
+// @import "../../sass/mixins";
+
+@mixin max-width() {
+  max-width: var(--max-width);
+  box-sizing: content-box;
+  margin: auto;
+}
+
+@mixin content-width() {
+  max-width: var(--content-width);
+  box-sizing: content-box;
+}
+
+@mixin section-spacing($direction: bottom) {
+  padding-#{$direction}: var(--space-l);
+}
+
+@mixin paragraph-spacing() {
+  margin-bottom: var(--space-s);
+}
+
+@mixin list-spacing() {
+  margin-bottom: var(--size-s);
+}
+
+@mixin container-spacing() {
+  padding-top: var(--space-xl);
+}
+
+@mixin heading-spacing() {
+  margin-bottom: var(--space-s);
+}
+
+@mixin caption() {
+  font-family: var(--font-family);
+  line-height: 1.4;
+  font-size: var(--font-size-caption);
+  color: var(--color-inactive);
+  margin: 0;
+}
+
+@mixin shadow() {
+  filter: drop-shadow(var(--box-shadow));
+  -webkit-filter: drop-shadow(var(--box-shadow));
+}
+
+@mixin img-shadow() {
+  filter: drop-shadow(var(--img-shadow));
+  -webkit-filter: drop-shadow(var(--img-shadow));
+}
+
+@mixin transition($x...) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}

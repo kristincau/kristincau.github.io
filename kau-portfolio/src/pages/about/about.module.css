@@ -1,0 +1,10 @@
+.lifeEvent {
+  display: flex;
+  gap: var(--size-m);
+}
+
+.caption {
+  font-size: var(--font-size-caption);
+  color: var(--color-inactive);
+  margin-top: var(--size-xs);
+}

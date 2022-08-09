@@ -1,0 +1,6 @@
+@import "../../sass/mixins";
+
+.content {
+  @include max-width();
+  @include section-spacing();
+}

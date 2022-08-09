@@ -1,0 +1,19 @@
+@import "../../sass/mixins";
+
+.container {
+  @include container-spacing();
+  @include max-width();
+
+  .content {
+    @include content-width();
+    @include section-spacing();
+
+    h1 {
+      @include heading-spacing();
+    }
+
+    p {
+      @include paragraph-spacing();
+    }
+  }
+}
