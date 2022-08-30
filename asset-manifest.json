@@ -1,14 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d9528ed.css",
-    "main.js": "/static/js/main.b7c135b6.js",
-    "static/media/dstyle-00-splashB.svg": "/static/media/dstyle-00-splashB.0f1a239b7a057d286f9b.svg",
-    "static/media/dstyle-00-splashA.svg": "/static/media/dstyle-00-splashA.2a5de73e8d4e7132d6a2.svg",
-    "static/media/calls-03-layout.png": "/static/media/calls-03-layout.e416974afa38566f8ccb.png",
-    "static/media/calls-coverB.svg": "/static/media/calls-coverB.d06e69d1e7baf9f98b79.svg",
-    "static/media/calls-coverA.svg": "/static/media/calls-coverA.42d4eac64bdf3195cf47.svg",
-    "static/media/calls-00-product.png": "/static/media/calls-00-product.4a1e236077362c557056.png",
-    "static/media/calls-02-after.png": "/static/media/calls-02-after.4a1e236077362c557056.png",
+    "main.js": "/static/js/main.a1cf3816.js",
     "static/media/calls-04-actions.png": "/static/media/calls-04-actions.091cd3723f644a4a4d6d.png",
     "static/media/dstyle-01-cal.gif": "/static/media/dstyle-01-cal.7315a36476c250185b20.gif",
     "static/media/calls-05-branding.png": "/static/media/calls-05-branding.960eb8f3ebec64992fd7.png",
@@ -49,10 +42,10 @@
     "static/media/logo.svg": "/static/media/logo.e55d42712df6d97eaff936633f242451.svg",
     "index.html": "/index.html",
     "main.2d9528ed.css.map": "/static/css/main.2d9528ed.css.map",
-    "main.b7c135b6.js.map": "/static/js/main.b7c135b6.js.map"
+    "main.a1cf3816.js.map": "/static/js/main.a1cf3816.js.map"
   },
   "entrypoints": [
     "static/css/main.2d9528ed.css",
-    "static/js/main.b7c135b6.js"
+    "static/js/main.a1cf3816.js"
   ]
 }
